@@ -3,15 +3,16 @@ import type { PrimitiveProps } from '@/Primitive'
 
 export interface ComboboxEmptyProps extends PrimitiveProps {}
 </script>
-<script setup lang="ts">
-import {computed} from "vue";
-import { injectAIChatRootContext } from './AIChatRoot.vue'
-import {Primitive} from "@/Primitive";
-import {useForwardExpose} from "@/shared";
 
+<script setup lang="ts">
+import { computed } from 'vue'
+import { injectAIChatRootContext } from './AIChatRoot.vue'
+import { Primitive } from '@/Primitive'
+import { useForwardExpose } from '@/shared'
+
+const props = defineProps<ComboboxEmptyProps>()
 const rootContext = injectAIChatRootContext()
 const isEmpty = computed(() => rootContext.messages.value.length === 0)
-const props = defineProps<ComboboxEmptyProps>()
 useForwardExpose()
 </script>
 

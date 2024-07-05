@@ -35,8 +35,10 @@ export interface AIChatRootProps extends PrimitiveProps {
 import { useVModel } from '@vueuse/core'
 import { ref, watch } from 'vue'
 import { createCollection } from '@/Collection'
+import { Primitive } from '@/Primitive'
 
 const props = withDefaults(defineProps<AIChatRootProps>(), {
+  as: 'div',
   prompt: '',
   messages: () => [],
 })
@@ -76,10 +78,12 @@ provideAIChatRootContext({
 </script>
 
 <template>
-  <div class="">
-    AIChatRoot
+  <Primitive
+    :as="props.as"
+    :as-child="asChild"
+  >
     <slot />
-  </div>
+  </Primitive>
 </template>
 
 <style scoped>
