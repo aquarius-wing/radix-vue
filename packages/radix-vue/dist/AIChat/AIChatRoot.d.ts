@@ -22,6 +22,7 @@ export interface AIChatRootProps extends PrimitiveProps {
     messages?: Message[];
 }
 declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AIChatRootProps>, {
+    as: string;
     prompt: string;
     messages: () => never[];
 }>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
@@ -29,6 +30,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     "update:prompt": (...args: any[]) => void;
     "update:messages": (...args: any[]) => void;
 }, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AIChatRootProps>, {
+    as: string;
     prompt: string;
     messages: () => never[];
 }>>> & {
@@ -36,6 +38,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     "onUpdate:prompt"?: ((...args: any[]) => any) | undefined;
     "onUpdate:messages"?: ((...args: any[]) => any) | undefined;
 }, {
+    as: import('../Primitive').AsTag | import("vue").Component;
     prompt: string;
     messages: Message[];
 }, {}>, {
