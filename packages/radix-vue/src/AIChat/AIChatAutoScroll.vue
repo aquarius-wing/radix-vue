@@ -35,6 +35,8 @@ watch(rootContext.messages, () => {
   if (autoScroll.value) {
     scrollToBottom()
   }
+}, {
+  deep: true,
 })
 
 function onScrollToBottom() {
