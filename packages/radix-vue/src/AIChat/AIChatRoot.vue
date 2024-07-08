@@ -2,6 +2,7 @@
 import type { Ref } from 'vue'
 import { createContext } from '@/shared'
 import type { PrimitiveProps } from '@/Primitive'
+import type { Emitter } from 'mitt'
 
 export type Message = {
   content: string
@@ -13,7 +14,10 @@ type AIChatRootContext = {
   messages: Ref<Message[]>
   inputElement: Ref<HTMLInputElement | undefined>
   onInputElementChange: (el: HTMLInputElement) => void
+  contentElement: Ref<HTMLElement | undefined>
+  onContentElementChange: (el: HTMLElement) => void
   onSendMessage: () => void
+  emitter: Emitter<AIChatRootEvents>
 }
 
 export const [injectAIChatRootContext, provideAIChatRootContext]
@@ -25,9 +29,14 @@ export type AIChatRootEmits = {
   'update:messages': [value: Message[]]
 }
 
+export type AIChatRootEvents = {
+  scrollToBottom: void
+}
+
 export interface AIChatRootProps extends PrimitiveProps {
   prompt?: string
-  messages?: Message[]
+  messages: Message[]
+  emitter?: Emitter<AIChatRootEvents>
 }
 </script>
 
@@ -36,6 +45,7 @@ import { useVModel } from '@vueuse/core'
 import { ref, watch } from 'vue'
 import { createCollection } from '@/Collection'
 import { Primitive } from '@/Primitive'
+import mitt from 'mitt'
 
 const props = withDefaults(defineProps<AIChatRootProps>(), {
   as: 'div',
@@ -52,11 +62,12 @@ const prompt = useVModel(props, 'prompt', emit, {
 
 const messages = useVModel(props, 'messages', emit, {
   defaultValue: [],
-  passive: (props.messages === undefined) as false,
+  passive: true,
   deep: true,
 }) as Ref<Message[]>
 
 const inputElement = ref<HTMLInputElement>()
+const contentElement = ref<HTMLElement>()
 const { getItems, reactiveItems, itemMapSize } = createCollection<{ value: Message }>('data-radix-vue-ai-chat-item')
 
 watch(() => itemMapSize.value, () => {
@@ -71,9 +82,12 @@ provideAIChatRootContext({
   messages,
   inputElement,
   onInputElementChange: val => inputElement.value = val,
+  contentElement,
+  onContentElementChange: val => contentElement.value = val,
   onSendMessage: () => {
     emit('send')
   },
+  emitter: props.emitter || mitt<AIChatRootEvents>(),
 })
 </script>
 
