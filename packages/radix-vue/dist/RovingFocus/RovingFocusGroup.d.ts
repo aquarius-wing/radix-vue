@@ -1,6 +1,7 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import type { Direction, Orientation } from './utils';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { Direction, Orientation } from './utils';
+
 export interface RovingFocusGroupProps extends PrimitiveProps {
     /**
      * The orientation of the group.
@@ -35,7 +36,7 @@ interface RovingContext {
     onFocusableItemRemove: () => void;
 }
 export declare const injectRovingFocusGroupContext: <T extends RovingContext | null | undefined = RovingContext>(fallback?: T | undefined) => T extends null ? RovingContext | null : RovingContext, provideRovingFocusGroupContext: (contextValue: RovingContext) => RovingContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RovingFocusGroupProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RovingFocusGroupProps>, {
     loop: boolean;
     orientation: undefined;
     preventScrollOnEntryFocus: boolean;
@@ -44,10 +45,10 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
         ref: HTMLElement;
         value?: any;
     }[];
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     entryFocus: (event: Event) => void;
     "update:currentTabStopId": (value: string | null | undefined) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RovingFocusGroupProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RovingFocusGroupProps>, {
     loop: boolean;
     orientation: undefined;
     preventScrollOnEntryFocus: boolean;

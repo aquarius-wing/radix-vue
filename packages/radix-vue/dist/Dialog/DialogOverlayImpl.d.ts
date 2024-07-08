@@ -1,7 +1,8 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface DialogOverlayImplProps extends PrimitiveProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<DialogOverlayImplProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DialogOverlayImplProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<DialogOverlayImplProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DialogOverlayImplProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

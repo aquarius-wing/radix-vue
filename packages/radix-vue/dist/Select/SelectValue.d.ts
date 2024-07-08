@@ -1,16 +1,17 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface SelectValueProps extends PrimitiveProps {
     /** The content that will be rendered inside the `SelectValue` when no `value` or `defaultValue` is set. */
     placeholder?: string;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectValueProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectValueProps>, {
     as: string;
     placeholder: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectValueProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectValueProps>, {
     as: string;
     placeholder: string;
 }>>>, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
     placeholder: string;
 }, {}>, {
     default?(_: {}): any;

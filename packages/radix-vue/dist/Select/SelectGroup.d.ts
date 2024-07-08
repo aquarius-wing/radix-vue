@@ -1,11 +1,12 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface SelectGroupProps extends PrimitiveProps {
 }
 interface SelectGroupContext {
     id: string;
 }
 export declare const injectSelectGroupContext: <T extends SelectGroupContext | null | undefined = SelectGroupContext>(fallback?: T | undefined) => T extends null ? SelectGroupContext | null : SelectGroupContext, provideSelectGroupContext: (contextValue: SelectGroupContext) => SelectGroupContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<SelectGroupProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<SelectGroupProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<SelectGroupProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<SelectGroupProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

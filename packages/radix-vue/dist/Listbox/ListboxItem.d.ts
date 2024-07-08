@@ -1,6 +1,7 @@
-import { type Ref } from 'vue';
-import { type PrimitiveProps } from '..';
-import type { AcceptableValue } from '../shared/types';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '..';
+import { AcceptableValue } from '../shared/types';
+
 export interface ListboxItemProps<T = AcceptableValue> extends PrimitiveProps {
     /** The value given as data when submitted with a `name`. */
     value: T;
@@ -24,8 +25,8 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     value: AcceptableValue;
     onSelect?: ((event: SelectEvent<AcceptableValue>) => any) | undefined;
     asChild?: boolean | undefined;
-    as?: import('../Primitive/Primitive').AsTag | import("vue").Component | undefined;
-} & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, __VLS_ctx?: {
+    as?: import('..').AsTag | import('vue').Component | undefined;
+} & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: {
         default?(_: {}): any;
     };
@@ -37,15 +38,15 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
         value: AcceptableValue;
         onSelect?: ((event: SelectEvent<AcceptableValue>) => any) | undefined;
         asChild?: boolean | undefined;
-        as?: import('../Primitive/Primitive').AsTag | import("vue").Component | undefined;
-    } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
+        as?: import('..').AsTag | import('vue').Component | undefined;
+    } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
     expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
     attrs: any;
     slots: {
         default?(_: {}): any;
     };
     emit: (evt: "select", event: SelectEvent<AcceptableValue>) => void;
-}>) => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+}>) => import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
     [key: string]: any;
 }> & {
     __ctx?: {
@@ -54,8 +55,8 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
             value: AcceptableValue;
             onSelect?: ((event: SelectEvent<AcceptableValue>) => any) | undefined;
             asChild?: boolean | undefined;
-            as?: import('../Primitive/Primitive').AsTag | import("vue").Component | undefined;
-        } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
+            as?: import('..').AsTag | import('vue').Component | undefined;
+        } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
         expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
         attrs: any;
         slots: {

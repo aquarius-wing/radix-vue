@@ -1,7 +1,8 @@
-import type { ScrollAreaScrollbarAutoProps } from "./ScrollAreaScrollbarAuto";
+import { ScrollAreaScrollbarAutoProps } from './ScrollAreaScrollbarAuto';
+
 export interface ScrollAreaScrollbarHoverProps extends ScrollAreaScrollbarAutoProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<ScrollAreaScrollbarHoverProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ScrollAreaScrollbarHoverProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ScrollAreaScrollbarHoverProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ScrollAreaScrollbarHoverProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

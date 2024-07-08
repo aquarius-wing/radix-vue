@@ -1,7 +1,8 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface ComboboxAnchorProps extends PrimitiveProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<ComboboxAnchorProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ComboboxAnchorProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ComboboxAnchorProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ComboboxAnchorProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

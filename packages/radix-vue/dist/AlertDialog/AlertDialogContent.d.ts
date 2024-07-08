@@ -1,4 +1,5 @@
-import type { DialogContentEmits, DialogContentProps } from '../Dialog';
+import { DialogContentEmits, DialogContentProps } from '../Dialog';
+
 interface AlertDialogContentContext {
     onCancelElementChange: (el: HTMLElement | undefined) => void;
 }
@@ -6,14 +7,14 @@ export declare const injectAlertDialogContentContext: <T extends AlertDialogCont
 export type AlertDialogContentEmits = DialogContentEmits;
 export interface AlertDialogContentProps extends DialogContentProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<AlertDialogContentProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<AlertDialogContentProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent) => void;
     focusOutside: (event: import('../DismissableLayer').FocusOutsideEvent) => void;
     interactOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent | import('../DismissableLayer').FocusOutsideEvent) => void;
     openAutoFocus: (event: Event) => void;
     closeAutoFocus: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AlertDialogContentProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AlertDialogContentProps>>> & {
     onEscapeKeyDown?: ((event: KeyboardEvent) => any) | undefined;
     onPointerDownOutside?: ((event: import('../DismissableLayer').PointerDownOutsideEvent) => any) | undefined;
     onFocusOutside?: ((event: import('../DismissableLayer').FocusOutsideEvent) => any) | undefined;

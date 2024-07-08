@@ -1,4 +1,5 @@
-import type { Ref } from 'vue';
+import { Ref } from 'vue';
+
 export declare function useTypeahead(collections?: Ref<HTMLElement[]>): {
     search: Ref<string>;
     handleTypeaheadSearch: (key: string, fallback?: HTMLElement[]) => HTMLElement | undefined;

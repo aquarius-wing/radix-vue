@@ -1,7 +1,8 @@
-import type { MenuGroupProps } from '../Menu';
+import { MenuGroupProps } from '../Menu';
+
 export interface MenubarGroupProps extends MenuGroupProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<MenubarGroupProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenubarGroupProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<MenubarGroupProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenubarGroupProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

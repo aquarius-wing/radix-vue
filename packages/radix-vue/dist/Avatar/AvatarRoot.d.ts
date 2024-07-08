@@ -1,18 +1,19 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import type { ImageLoadingStatus } from './utils';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { ImageLoadingStatus } from './utils';
+
 export interface AvatarRootProps extends PrimitiveProps {
 }
 export type AvatarRootContext = {
     imageLoadingStatus: Ref<ImageLoadingStatus>;
 };
 export declare const injectAvatarRootContext: <T extends AvatarRootContext | null | undefined = AvatarRootContext>(fallback?: T | undefined) => T extends null ? AvatarRootContext | null : AvatarRootContext, provideAvatarRootContext: (contextValue: AvatarRootContext) => AvatarRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AvatarRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AvatarRootProps>, {
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AvatarRootProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AvatarRootProps>, {
     as: string;
 }>>>, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
 }, {}>, {
     default?(_: {}): any;
 }>;

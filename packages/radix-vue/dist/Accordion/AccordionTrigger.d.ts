@@ -1,7 +1,8 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface AccordionTriggerProps extends PrimitiveProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<AccordionTriggerProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AccordionTriggerProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<AccordionTriggerProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AccordionTriggerProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

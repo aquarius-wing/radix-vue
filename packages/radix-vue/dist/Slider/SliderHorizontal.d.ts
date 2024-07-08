@@ -1,15 +1,16 @@
-import type { Direction, SliderOrientationPrivateProps } from './utils';
+import { Direction, SliderOrientationPrivateProps } from './utils';
+
 interface SliderHorizontalProps extends SliderOrientationPrivateProps {
     dir?: Direction;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<SliderHorizontalProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<SliderHorizontalProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     slideStart: (value: number) => void;
     slideMove: (value: number) => void;
     slideEnd: () => void;
     homeKeyDown: (event: KeyboardEvent) => void;
     endKeyDown: (event: KeyboardEvent) => void;
     stepKeyDown: (event: KeyboardEvent, direction: number) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<SliderHorizontalProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<SliderHorizontalProps>>> & {
     onSlideStart?: ((value: number) => any) | undefined;
     onSlideMove?: ((value: number) => any) | undefined;
     onSlideEnd?: (() => any) | undefined;

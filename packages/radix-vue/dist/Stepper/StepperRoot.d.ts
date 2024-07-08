@@ -1,6 +1,7 @@
-import type { Ref } from 'vue';
-import type { DataOrientation, Direction } from '../shared/types';
-import type { PrimitiveProps } from '../Primitive';
+import { Ref } from 'vue';
+import { DataOrientation, Direction } from '../shared/types';
+import { PrimitiveProps } from '../Primitive';
+
 export interface StepperRootContext {
     modelValue: Ref<number | undefined>;
     changeModelValue: (value: number) => void;
@@ -35,13 +36,13 @@ export type StepperRootEmits = {
     'update:modelValue': [payload: number | undefined];
 };
 export declare const injectStepperRootContext: <T extends StepperRootContext | null | undefined = StepperRootContext>(fallback?: T | undefined) => T extends null ? StepperRootContext | null : StepperRootContext, provideStepperRootContext: (contextValue: StepperRootContext) => StepperRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<StepperRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<StepperRootProps>, {
     orientation: string;
     linear: boolean;
     defaultValue: number;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (payload: number | undefined) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<StepperRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<StepperRootProps>, {
     orientation: string;
     linear: boolean;
     defaultValue: number;

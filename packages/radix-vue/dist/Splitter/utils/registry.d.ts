@@ -1,4 +1,5 @@
-import type { Direction, ResizeEvent } from './types';
+import { Direction, ResizeEvent } from './types';
+
 export type ResizeHandlerAction = 'down' | 'move' | 'up';
 export type SetResizeHandlerState = (action: ResizeHandlerAction, isActive: boolean, event: ResizeEvent) => void;
 export type PointerHitAreaMargins = {

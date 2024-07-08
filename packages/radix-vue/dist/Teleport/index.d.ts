@@ -1,1 +1,1 @@
-export { default as TeleportPrimitive, type TeleportProps } from "./Teleport";
+export { default as TeleportPrimitive, type TeleportProps } from './Teleport';

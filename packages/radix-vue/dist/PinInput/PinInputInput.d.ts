@@ -1,16 +1,17 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface PinInputInputProps extends PrimitiveProps {
     /** Position of the value this input binds to. */
     index: number;
     /** When `true`, prevents the user from interacting with the pin input */
     disabled?: boolean;
 }
-declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PinInputInputProps>, {
+declare const _default: import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PinInputInputProps>, {
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PinInputInputProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PinInputInputProps>, {
     as: string;
 }>>>, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
 }, {}>;
 export default _default;
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;

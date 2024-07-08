@@ -1,4 +1,5 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export type ToggleEmits = {
     /** Event handler called when the pressed state of the toggle changes. */
     'update:pressed': [value: boolean];
@@ -18,13 +19,13 @@ export interface ToggleProps extends PrimitiveProps {
      */
     disabled?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToggleProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToggleProps>, {
     pressed: undefined;
     disabled: boolean;
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:pressed": (value: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToggleProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToggleProps>, {
     pressed: undefined;
     disabled: boolean;
     as: string;
@@ -32,7 +33,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     "onUpdate:pressed"?: ((value: boolean) => any) | undefined;
 }, {
     disabled: boolean;
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
     pressed: boolean;
 }, {}>, Readonly<{
     default: (props: {

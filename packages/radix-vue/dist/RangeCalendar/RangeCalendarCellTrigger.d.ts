@@ -1,15 +1,16 @@
-import type { PrimitiveProps } from '../Primitive';
-import { type DateValue } from '@internationalized/date';
+import { PrimitiveProps } from '../Primitive';
+import { DateValue } from '@internationalized/date';
+
 export interface RangeCalendarCellTriggerProps extends PrimitiveProps {
     day: DateValue;
     month: DateValue;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RangeCalendarCellTriggerProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RangeCalendarCellTriggerProps>, {
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RangeCalendarCellTriggerProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RangeCalendarCellTriggerProps>, {
     as: string;
 }>>>, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
 }, {}>, Readonly<{
     default: (props: {
         /** Current day */

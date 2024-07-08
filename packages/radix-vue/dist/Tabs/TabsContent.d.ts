@@ -1,5 +1,6 @@
-import type { PrimitiveProps } from '../Primitive';
-import type { StringOrNumber } from '../shared/types';
+import { PrimitiveProps } from '../Primitive';
+import { StringOrNumber } from '../shared/types';
+
 export interface TabsContentProps extends PrimitiveProps {
     /** A unique value that associates the content with a trigger. */
     value: StringOrNumber;
@@ -9,7 +10,7 @@ export interface TabsContentProps extends PrimitiveProps {
      */
     forceMount?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<TabsContentProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<TabsContentProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<TabsContentProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<TabsContentProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

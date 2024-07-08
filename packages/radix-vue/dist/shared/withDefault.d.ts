@@ -1,5 +1,6 @@
-import type { DefineComponent, VNodeProps } from 'vue';
-import type { ComponentProps } from 'vue-component-type-helpers';
+import { DefineComponent, VNodeProps } from 'vue';
+import { ComponentProps } from 'vue-component-type-helpers';
+
 type RawProps = VNodeProps & {
     __v_isVNode?: never;
     [Symbol.iterator]?: never;

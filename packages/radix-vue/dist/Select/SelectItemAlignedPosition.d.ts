@@ -1,5 +1,6 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+
 interface SelectItemAlignedPositionContext {
     contentWrapper?: Ref<HTMLElement | undefined>;
     shouldExpandOnScrollRef?: Ref<boolean>;
@@ -8,9 +9,9 @@ interface SelectItemAlignedPositionContext {
 export interface SelectItemAlignedPositionProps extends PrimitiveProps {
 }
 export declare const injectSelectItemAlignedPositionContext: <T extends SelectItemAlignedPositionContext | null | undefined = SelectItemAlignedPositionContext>(fallback?: T | undefined) => T extends null ? SelectItemAlignedPositionContext | null : SelectItemAlignedPositionContext, provideSelectItemAlignedPositionContext: (contextValue: SelectItemAlignedPositionContext) => SelectItemAlignedPositionContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<SelectItemAlignedPositionProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<SelectItemAlignedPositionProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     placed: () => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<SelectItemAlignedPositionProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<SelectItemAlignedPositionProps>>> & {
     onPlaced?: (() => any) | undefined;
 }, {}, {}>, {
     default?(_: {}): any;

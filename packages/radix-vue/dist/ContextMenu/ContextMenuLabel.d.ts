@@ -1,7 +1,8 @@
-import type { MenuLabelProps } from '../Menu';
+import { MenuLabelProps } from '../Menu';
+
 export interface ContextMenuLabelProps extends MenuLabelProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<ContextMenuLabelProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ContextMenuLabelProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ContextMenuLabelProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ContextMenuLabelProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

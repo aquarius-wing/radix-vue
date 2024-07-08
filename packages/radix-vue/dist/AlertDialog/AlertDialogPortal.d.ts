@@ -1,7 +1,8 @@
-import type { TeleportProps } from '../Teleport';
+import { TeleportProps } from '../Teleport';
+
 export interface AlertDialogPortalProps extends TeleportProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<AlertDialogPortalProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AlertDialogPortalProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<AlertDialogPortalProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AlertDialogPortalProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

@@ -1,4 +1,5 @@
-import type { ToastRootImplEmits, ToastRootImplProps } from "./ToastRootImpl";
+import { ToastRootImplEmits, ToastRootImplProps } from './ToastRootImpl';
+
 export type ToastRootEmits = Omit<ToastRootImplEmits, 'close'> & {
     /** Event handler called when the open state changes */
     'update:open': [value: boolean];
@@ -12,21 +13,21 @@ export interface ToastRootProps extends ToastRootImplProps {
      */
     forceMount?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastRootProps>, {
     type: string;
     open: undefined;
     defaultOpen: boolean;
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     pause: () => void;
-    resume: () => void;
     "update:open": (value: boolean) => void;
     escapeKeyDown: (event: KeyboardEvent) => void;
+    resume: () => void;
     swipeStart: (event: import('./utils').SwipeEvent) => void;
     swipeMove: (event: import('./utils').SwipeEvent) => void;
     swipeCancel: (event: import('./utils').SwipeEvent) => void;
     swipeEnd: (event: import('./utils').SwipeEvent) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastRootProps>, {
     type: string;
     open: undefined;
     defaultOpen: boolean;
@@ -42,9 +43,9 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     onSwipeEnd?: ((event: import('./utils').SwipeEvent) => any) | undefined;
 }, {
     type: "background" | "foreground";
-    as: import('../Primitive').AsTag | import("vue").Component;
-    open: boolean;
+    as: import('..').AsTag | import('vue').Component;
     defaultOpen: boolean;
+    open: boolean;
 }, {}>, Readonly<{
     default: (props: {
         /** Current open state */

@@ -1,7 +1,8 @@
-import { type PopoverArrowProps } from '..';
+import { PopoverArrowProps } from '..';
+
 export interface DateRangePickerArrowProps extends PopoverArrowProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<DateRangePickerArrowProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DateRangePickerArrowProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<DateRangePickerArrowProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DateRangePickerArrowProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

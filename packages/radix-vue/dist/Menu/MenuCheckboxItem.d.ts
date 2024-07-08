@@ -1,5 +1,6 @@
-import type { CheckedState } from './utils';
-import type { MenuItemEmits, MenuItemProps } from "./MenuItem";
+import { CheckedState } from './utils';
+import { MenuItemEmits, MenuItemProps } from './MenuItem';
+
 export type MenuCheckboxItemEmits = MenuItemEmits & {
     /** Event handler called when the checked state changes. */
     'update:checked': [payload: boolean];
@@ -8,12 +9,12 @@ export interface MenuCheckboxItemProps extends MenuItemProps {
     /** The controlled checked state of the item. Can be used as `v-model:checked`. */
     checked?: CheckedState;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuCheckboxItemProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuCheckboxItemProps>, {
     checked: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     select: (event: Event) => void;
     "update:checked": (payload: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuCheckboxItemProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuCheckboxItemProps>, {
     checked: boolean;
 }>>> & {
     onSelect?: ((event: Event) => any) | undefined;

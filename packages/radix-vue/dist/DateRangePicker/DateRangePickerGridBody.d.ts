@@ -1,7 +1,8 @@
-import { type RangeCalendarGridBodyProps } from '..';
+import { RangeCalendarGridBodyProps } from '..';
+
 export interface DateRangePickerGridBodyProps extends RangeCalendarGridBodyProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<DateRangePickerGridBodyProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DateRangePickerGridBodyProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<DateRangePickerGridBodyProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DateRangePickerGridBodyProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

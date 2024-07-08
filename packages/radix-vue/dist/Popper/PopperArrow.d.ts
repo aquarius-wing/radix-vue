@@ -1,13 +1,14 @@
-import type { PrimitiveProps } from '../Primitive';
-import type { ArrowProps } from "../shared/component/Arrow";
+import { PrimitiveProps } from '../Primitive';
+import { ArrowProps } from '../shared/component/Arrow';
+
 export interface PopperArrowProps extends ArrowProps, PrimitiveProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopperArrowProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopperArrowProps>, {
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopperArrowProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopperArrowProps>, {
     as: string;
 }>>>, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
 }, {}>, {
     default?(_: {}): any;
 }>;

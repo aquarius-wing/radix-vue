@@ -1,7 +1,8 @@
-import { type RangeCalendarHeadCellProps } from '..';
+import { RangeCalendarHeadCellProps } from '..';
+
 export interface DateRangePickerHeadCellProps extends RangeCalendarHeadCellProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<DateRangePickerHeadCellProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DateRangePickerHeadCellProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<DateRangePickerHeadCellProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DateRangePickerHeadCellProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

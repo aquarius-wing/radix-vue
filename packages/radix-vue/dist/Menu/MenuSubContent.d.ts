@@ -1,4 +1,5 @@
-import type { MenuContentImplEmits, MenuContentImplProps } from "./MenuContentImpl";
+import { MenuContentImplEmits, MenuContentImplProps } from './MenuContentImpl';
+
 export type MenuSubContentEmits = MenuContentImplEmits;
 export interface MenuSubContentProps extends Omit<MenuContentImplProps, 'disableOutsidePointerEvents' | 'disableOutsideScroll' | 'trapFocus' | 'side' | 'align'> {
     /**
@@ -7,9 +8,9 @@ export interface MenuSubContentProps extends Omit<MenuContentImplProps, 'disable
      */
     forceMount?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuSubContentProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuSubContentProps>, {
     prioritizePosition: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent) => void;
     focusOutside: (event: import('../DismissableLayer').FocusOutsideEvent) => void;
@@ -17,7 +18,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     openAutoFocus: (event: Event) => void;
     closeAutoFocus: (event: Event) => void;
     entryFocus: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuSubContentProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuSubContentProps>, {
     prioritizePosition: boolean;
 }>>> & {
     onEscapeKeyDown?: ((event: KeyboardEvent) => any) | undefined;

@@ -1,5 +1,6 @@
-import type { PrimitiveProps } from '../Primitive';
-import type { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { Ref } from 'vue';
+
 export interface CollapsibleRootProps extends PrimitiveProps {
     /** The open state of the collapsible when it is initially rendered. <br> Use when you do not need to control its open state. */
     defaultOpen?: boolean;
@@ -19,21 +20,21 @@ interface CollapsibleRootContext {
     onOpenToggle: () => void;
 }
 export declare const injectCollapsibleRootContext: <T extends CollapsibleRootContext | null | undefined = CollapsibleRootContext>(fallback?: T | undefined) => T extends null ? CollapsibleRootContext | null : CollapsibleRootContext, provideCollapsibleRootContext: (contextValue: CollapsibleRootContext) => CollapsibleRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CollapsibleRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CollapsibleRootProps>, {
     open: undefined;
     defaultOpen: boolean;
 }>, {
     open: Ref<boolean>;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (value: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CollapsibleRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CollapsibleRootProps>, {
     open: undefined;
     defaultOpen: boolean;
 }>>> & {
     "onUpdate:open"?: ((value: boolean) => any) | undefined;
 }, {
-    open: boolean;
     defaultOpen: boolean;
+    open: boolean;
 }, {}>, Readonly<{
     default: (props: {
         /** Current open state */

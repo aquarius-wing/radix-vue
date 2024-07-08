@@ -1,4 +1,5 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export type FocusScopeEmits = {
     /**
      * Event handler called when auto-focusing on mount.
@@ -25,13 +26,13 @@ export interface FocusScopeProps extends PrimitiveProps {
      */
     trapped?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<FocusScopeProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<FocusScopeProps>, {
     loop: boolean;
     trapped: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     mountAutoFocus: (event: Event) => void;
     unmountAutoFocus: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<FocusScopeProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<FocusScopeProps>, {
     loop: boolean;
     trapped: boolean;
 }>>> & {

@@ -1,5 +1,6 @@
-import type { Orientation } from './utils';
-import type { PrimitiveProps } from '../Primitive';
+import { Orientation } from './utils';
+import { PrimitiveProps } from '../Primitive';
+
 export type NavigationMenuSubEmits = {
     /** Event handler called when the value changes. */
     'update:modelValue': [value: string];
@@ -16,11 +17,11 @@ export interface NavigationMenuSubProps extends PrimitiveProps {
     /** The orientation of the menu. */
     orientation?: Orientation;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NavigationMenuSubProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NavigationMenuSubProps>, {
     orientation: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (value: string) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NavigationMenuSubProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NavigationMenuSubProps>, {
     orientation: string;
 }>>> & {
     "onUpdate:modelValue"?: ((value: string) => any) | undefined;

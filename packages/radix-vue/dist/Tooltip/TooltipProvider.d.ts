@@ -1,4 +1,5 @@
-import type { Ref } from 'vue';
+import { Ref } from 'vue';
+
 interface TooltipProviderContext {
     isOpenDelayed: Ref<boolean>;
     delayDuration: Ref<number>;
@@ -46,12 +47,12 @@ export interface TooltipProviderProps {
      */
     ignoreNonKeyboardFocus?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipProviderProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipProviderProps>, {
     delayDuration: number;
     skipDelayDuration: number;
     disableHoverableContent: boolean;
     ignoreNonKeyboardFocus: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipProviderProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipProviderProps>, {
     delayDuration: number;
     skipDelayDuration: number;
     disableHoverableContent: boolean;

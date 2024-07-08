@@ -1,6 +1,7 @@
-import { type DateValue } from '@internationalized/date';
-import { type Ref } from 'vue';
-import { type Matcher } from '../date';
+import { DateValue } from '@internationalized/date';
+import { Ref } from 'vue';
+import { Matcher } from '../date';
+
 export type UseRangeCalendarProps = {
     start: Ref<DateValue | undefined>;
     end: Ref<DateValue | undefined>;
@@ -9,9 +10,9 @@ export type UseRangeCalendarProps = {
     focusedValue: Ref<DateValue | undefined>;
 };
 export declare function useRangeCalendarState(props: UseRangeCalendarProps): {
-    isInvalid: import("vue").ComputedRef<boolean>;
+    isInvalid: import('vue').ComputedRef<boolean>;
     isSelected: (date: DateValue) => boolean;
-    highlightedRange: import("vue").ComputedRef<{
+    highlightedRange: import('vue').ComputedRef<{
         start: DateValue;
         end: DateValue;
     } | null>;

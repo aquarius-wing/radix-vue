@@ -1,7 +1,8 @@
-import { type RangeCalendarCellProps } from '..';
+import { RangeCalendarCellProps } from '..';
+
 export interface DateRangePickerCellProps extends RangeCalendarCellProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<DateRangePickerCellProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DateRangePickerCellProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<DateRangePickerCellProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DateRangePickerCellProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

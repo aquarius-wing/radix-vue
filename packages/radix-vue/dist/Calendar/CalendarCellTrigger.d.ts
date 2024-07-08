@@ -1,17 +1,18 @@
-import type { PrimitiveProps } from '../Primitive';
-import { type DateValue } from '@internationalized/date';
+import { PrimitiveProps } from '../Primitive';
+import { DateValue } from '@internationalized/date';
+
 export interface CalendarCellTriggerProps extends PrimitiveProps {
     /** The date value provided to the cell trigger */
     day: DateValue;
     /** The month in which the cell is rendered */
     month: DateValue;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CalendarCellTriggerProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CalendarCellTriggerProps>, {
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CalendarCellTriggerProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CalendarCellTriggerProps>, {
     as: string;
 }>>>, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
 }, {}>, Readonly<{
     default: (props: {
         /** Current day */

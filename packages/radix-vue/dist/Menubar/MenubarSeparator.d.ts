@@ -1,7 +1,8 @@
-import type { MenuSeparatorProps } from '../Menu';
+import { MenuSeparatorProps } from '../Menu';
+
 export interface MenubarSeparatorProps extends MenuSeparatorProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<MenubarSeparatorProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenubarSeparatorProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<MenubarSeparatorProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenubarSeparatorProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

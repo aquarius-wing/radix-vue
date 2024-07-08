@@ -1,5 +1,6 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+
 export interface NavigationMenuItemProps extends PrimitiveProps {
     /**
      * A unique value that associates the item with an active value when the navigation menu is controlled.
@@ -20,12 +21,12 @@ export type NavigationMenuItemContext = {
     onRootContentClose: () => void;
 };
 export declare const injectNavigationMenuItemContext: <T extends NavigationMenuItemContext | null | undefined = NavigationMenuItemContext>(fallback?: T | undefined) => T extends null ? NavigationMenuItemContext | null : NavigationMenuItemContext, provideNavigationMenuItemContext: (contextValue: NavigationMenuItemContext) => NavigationMenuItemContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NavigationMenuItemProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NavigationMenuItemProps>, {
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NavigationMenuItemProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NavigationMenuItemProps>, {
     as: string;
 }>>>, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
 }, {}>, {
     default?(_: {}): any;
 }>;

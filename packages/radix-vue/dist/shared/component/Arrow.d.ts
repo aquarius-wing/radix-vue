@@ -1,4 +1,5 @@
-import type { PrimitiveProps } from '../../Primitive';
+import { PrimitiveProps } from '../../Primitive';
+
 export interface ArrowProps extends PrimitiveProps {
     /**
      * The width of the arrow in pixels.
@@ -13,18 +14,18 @@ export interface ArrowProps extends PrimitiveProps {
      */
     height?: number;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ArrowProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ArrowProps>, {
     width: number;
     height: number;
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ArrowProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ArrowProps>, {
     width: number;
     height: number;
     as: string;
 }>>>, {
     width: number;
     height: number;
-    as: import('../../Primitive').AsTag | import("vue").Component;
+    as: import('../../Primitive').AsTag | import('vue').Component;
 }, {}>, {
     default?(_: {}): any;
 }>;

@@ -1,7 +1,7 @@
+import { PrimitiveProps } from '../Primitive';
 export interface StepperIndicatorProps extends PrimitiveProps {
 }
-import type { PrimitiveProps } from '../Primitive';
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<StepperIndicatorProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<StepperIndicatorProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<StepperIndicatorProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<StepperIndicatorProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

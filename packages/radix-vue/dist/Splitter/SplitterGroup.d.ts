@@ -1,7 +1,8 @@
-import type { PanelConstraints, PanelData } from "./SplitterPanel";
-import type { Direction, DragState, ResizeEvent, ResizeHandler } from './utils/types';
-import type { PrimitiveProps } from '../Primitive';
-import { type CSSProperties, type Ref } from 'vue';
+import { PanelConstraints, PanelData } from './SplitterPanel';
+import { Direction, DragState, ResizeEvent, ResizeHandler } from './utils/types';
+import { PrimitiveProps } from '../Primitive';
+import { CSSProperties, Ref } from 'vue';
+
 export interface SplitterGroupProps extends PrimitiveProps {
     /** Group id; falls back to `useId` when not provided. */
     id?: string | null;
@@ -42,13 +43,13 @@ export type PanelGroupContext = {
     getPanelStyle: (panelData: PanelData, defaultSize: number | undefined) => CSSProperties;
 };
 export declare const injectPanelGroupContext: <T extends PanelGroupContext | null | undefined = PanelGroupContext>(fallback?: T | undefined) => T extends null ? PanelGroupContext | null : PanelGroupContext, providePanelGroupContext: (contextValue: PanelGroupContext) => PanelGroupContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SplitterGroupProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SplitterGroupProps>, {
     autoSaveId: null;
     keyboardResizeBy: number;
     storage: () => PanelGroupStorage;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     layout: (val: number[]) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SplitterGroupProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SplitterGroupProps>, {
     autoSaveId: null;
     keyboardResizeBy: number;
     storage: () => PanelGroupStorage;

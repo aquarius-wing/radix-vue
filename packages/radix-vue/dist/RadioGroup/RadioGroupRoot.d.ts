@@ -1,6 +1,7 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import type { DataOrientation, Direction } from '../shared/types';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { DataOrientation, Direction } from '../shared/types';
+
 export interface RadioGroupRootProps extends PrimitiveProps {
     /** The controlled value of the radio item to check. Can be binded as `v-model`. */
     modelValue?: string;
@@ -37,14 +38,14 @@ interface RadioGroupRootContext {
     required: Ref<boolean>;
 }
 export declare const injectRadioGroupRootContext: <T extends RadioGroupRootContext | null | undefined = RadioGroupRootContext>(fallback?: T | undefined) => T extends null ? RadioGroupRootContext | null : RadioGroupRootContext, provideRadioGroupRootContext: (contextValue: RadioGroupRootContext) => RadioGroupRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RadioGroupRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RadioGroupRootProps>, {
     disabled: boolean;
     required: boolean;
     orientation: undefined;
     loop: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (payload: string) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RadioGroupRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RadioGroupRootProps>, {
     disabled: boolean;
     required: boolean;
     orientation: undefined;
@@ -54,8 +55,8 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
 }, {
     disabled: boolean;
     loop: boolean;
-    orientation: DataOrientation;
     required: boolean;
+    orientation: DataOrientation;
 }, {}>, Readonly<{
     default: (props: {
         /** Current input values */

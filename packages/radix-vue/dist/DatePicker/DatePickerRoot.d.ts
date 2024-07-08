@@ -1,9 +1,10 @@
-import { type DateValue } from '@internationalized/date';
-import type { Ref } from 'vue';
-import { type Granularity, type HourCycle } from '../shared/date';
-import type { Matcher, WeekDayFormat } from '../date';
-import { type CalendarRootProps, type DateFieldRoot, type DateFieldRootProps, type PopoverRootProps } from '..';
-import type { Direction } from '../shared/types';
+import { DateValue } from '@internationalized/date';
+import { Ref } from 'vue';
+import { Granularity, HourCycle } from '../shared/date';
+import { Matcher, WeekDayFormat } from '../date';
+import { CalendarRootProps, DateFieldRoot, DateFieldRootProps, PopoverRootProps } from '..';
+import { Direction } from '../shared/types';
+
 type DatePickerRootContext = {
     id: Ref<string | undefined>;
     name: Ref<string | undefined>;
@@ -42,7 +43,7 @@ export type DatePickerRootEmits = {
     'update:placeholder': [date: DateValue];
 };
 export declare const injectDatePickerRootContext: <T extends DatePickerRootContext | null | undefined = DatePickerRootContext>(fallback?: T | undefined) => T extends null ? DatePickerRootContext | null : DatePickerRootContext, provideDatePickerRootContext: (contextValue: DatePickerRootContext) => DatePickerRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DatePickerRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DatePickerRootProps>, {
     defaultValue: undefined;
     defaultOpen: boolean;
     open: undefined;
@@ -60,11 +61,11 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     locale: string;
     isDateDisabled: undefined;
     isDateUnavailable: undefined;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (value: boolean) => void;
     "update:modelValue": (date: DateValue | undefined) => void;
     "update:placeholder": (date: DateValue) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DatePickerRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DatePickerRootProps>, {
     defaultValue: undefined;
     defaultOpen: boolean;
     open: undefined;
@@ -94,13 +95,13 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     locale: string;
     numberOfMonths: number;
     pagedNavigation: boolean;
-    open: boolean;
-    readonly: boolean;
     defaultOpen: boolean;
+    open: boolean;
     modal: boolean;
     placeholder: DateValue;
     preventDeselect: boolean;
     weekdayFormat: WeekDayFormat;
+    readonly: boolean;
     isDateDisabled: Matcher;
     isDateUnavailable: Matcher;
 }, {}>, {

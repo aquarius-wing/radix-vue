@@ -1,4 +1,5 @@
-import { type PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface TreeItemProps<T> extends PrimitiveProps {
     /** Value given to this item */
     value: T;
@@ -28,9 +29,9 @@ declare const _default: <T extends Record<string, any>>(__VLS_props: {
     onSelect?: ((event: SelectEvent<T>) => any) | undefined;
     onToggle?: ((event: ToggleEvent<T>) => any) | undefined;
     asChild?: boolean | undefined;
-    as?: import('../Primitive').AsTag | import("vue").Component | undefined;
+    as?: import('../Primitive').AsTag | import('vue').Component | undefined;
     level: number;
-} & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, __VLS_ctx?: {
+} & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: Readonly<{
         default: (props: {
             isExpanded: boolean;
@@ -50,10 +51,10 @@ declare const _default: <T extends Record<string, any>>(__VLS_props: {
     };
     attrs: any;
     emit: ((evt: "select", event: SelectEvent<T>) => void) & ((evt: "toggle", event: ToggleEvent<T>) => void);
-} | undefined, __VLS_expose?: ((exposed: import("vue").ShallowUnwrapRef<{
-    isExpanded: import("vue").ComputedRef<boolean>;
-    isSelected: import("vue").ComputedRef<boolean>;
-    isIndeterminate: import("vue").ComputedRef<boolean | undefined>;
+} | undefined, __VLS_expose?: ((exposed: import('vue').ShallowUnwrapRef<{
+    isExpanded: import('vue').ComputedRef<boolean>;
+    isSelected: import('vue').ComputedRef<boolean>;
+    isIndeterminate: import('vue').ComputedRef<boolean | undefined>;
     handleToggle: () => void;
     handleSelect: () => void;
 }>) => void) | undefined, __VLS_setup?: Promise<{
@@ -62,13 +63,13 @@ declare const _default: <T extends Record<string, any>>(__VLS_props: {
         onSelect?: ((event: SelectEvent<T>) => any) | undefined;
         onToggle?: ((event: ToggleEvent<T>) => any) | undefined;
         asChild?: boolean | undefined;
-        as?: import('../Primitive').AsTag | import("vue").Component | undefined;
+        as?: import('../Primitive').AsTag | import('vue').Component | undefined;
         level: number;
-    } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
-    expose(exposed: import("vue").ShallowUnwrapRef<{
-        isExpanded: import("vue").ComputedRef<boolean>;
-        isSelected: import("vue").ComputedRef<boolean>;
-        isIndeterminate: import("vue").ComputedRef<boolean | undefined>;
+    } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
+    expose(exposed: import('vue').ShallowUnwrapRef<{
+        isExpanded: import('vue').ComputedRef<boolean>;
+        isSelected: import('vue').ComputedRef<boolean>;
+        isIndeterminate: import('vue').ComputedRef<boolean | undefined>;
         handleToggle: () => void;
         handleSelect: () => void;
     }>): void;
@@ -91,7 +92,7 @@ declare const _default: <T extends Record<string, any>>(__VLS_props: {
         }) => any;
     };
     emit: ((evt: "select", event: SelectEvent<T>) => void) & ((evt: "toggle", event: ToggleEvent<T>) => void);
-}>) => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+}>) => import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
     [key: string]: any;
 }> & {
     __ctx?: {
@@ -100,13 +101,13 @@ declare const _default: <T extends Record<string, any>>(__VLS_props: {
             onSelect?: ((event: SelectEvent<T>) => any) | undefined;
             onToggle?: ((event: ToggleEvent<T>) => any) | undefined;
             asChild?: boolean | undefined;
-            as?: import('../Primitive').AsTag | import("vue").Component | undefined;
+            as?: import('../Primitive').AsTag | import('vue').Component | undefined;
             level: number;
-        } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
-        expose(exposed: import("vue").ShallowUnwrapRef<{
-            isExpanded: import("vue").ComputedRef<boolean>;
-            isSelected: import("vue").ComputedRef<boolean>;
-            isIndeterminate: import("vue").ComputedRef<boolean | undefined>;
+        } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
+        expose(exposed: import('vue').ShallowUnwrapRef<{
+            isExpanded: import('vue').ComputedRef<boolean>;
+            isSelected: import('vue').ComputedRef<boolean>;
+            isIndeterminate: import('vue').ComputedRef<boolean | undefined>;
             handleToggle: () => void;
             handleSelect: () => void;
         }>): void;

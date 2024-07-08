@@ -1,7 +1,8 @@
-import { type EventHook } from '@vueuse/core';
-import { type Ref } from 'vue';
-import { type PrimitiveProps } from '../Primitive';
-import type { AcceptableValue, DataOrientation, Direction } from '../shared/types';
+import { EventHook } from '@vueuse/core';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { AcceptableValue, DataOrientation, Direction } from '../shared/types';
+
 type ListboxRootContext<T> = {
     modelValue: Ref<T | Array<T> | undefined>;
     onValueChange: (val: T) => void;
@@ -72,19 +73,19 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     name?: string | undefined;
     selectionBehavior?: "replace" | "toggle" | undefined;
     asChild?: boolean | undefined;
-    as?: import('../Primitive').AsTag | import("vue").Component | undefined;
-    orientation?: DataOrientation | undefined;
+    as?: import('../Primitive').AsTag | import('vue').Component | undefined;
     modelValue?: AcceptableValue | AcceptableValue[] | undefined;
+    orientation?: DataOrientation | undefined;
     "onUpdate:modelValue"?: ((value: AcceptableValue) => any) | undefined;
     onEntryFocus?: ((event: CustomEvent<any>) => any) | undefined;
     highlightOnHover?: boolean | undefined;
     by?: string | ((a: AcceptableValue, b: AcceptableValue) => boolean) | undefined;
+    onLeave?: ((event: Event) => any) | undefined;
     onHighlight?: ((payload: {
         ref: HTMLElement;
         value: AcceptableValue;
     } | undefined) => any) | undefined;
-    onLeave?: ((event: Event) => any) | undefined;
-} & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, __VLS_ctx?: {
+} & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: Readonly<{
         default: (props: {
             /** Current active value */
@@ -97,10 +98,10 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
         }) => any;
     };
     attrs: any;
-    emit: ((evt: "highlight", payload: {
+    emit: ((evt: "leave", event: Event) => void) & ((evt: "update:modelValue", value: AcceptableValue) => void) & ((evt: "entryFocus", event: CustomEvent<any>) => void) & ((evt: "highlight", payload: {
         ref: HTMLElement;
         value: AcceptableValue;
-    } | undefined) => void) & ((evt: "leave", event: Event) => void) & ((evt: "update:modelValue", value: AcceptableValue) => void) & ((evt: "entryFocus", event: CustomEvent<any>) => void);
+    } | undefined) => void);
 } | undefined, __VLS_expose?: ((exposed: import('vue').ShallowUnwrapRef<{}>) => void) | undefined, __VLS_setup?: Promise<{
     props: {
         defaultValue?: AcceptableValue | AcceptableValue[] | undefined;
@@ -110,19 +111,19 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
         name?: string | undefined;
         selectionBehavior?: "replace" | "toggle" | undefined;
         asChild?: boolean | undefined;
-        as?: import('../Primitive').AsTag | import("vue").Component | undefined;
-        orientation?: DataOrientation | undefined;
+        as?: import('../Primitive').AsTag | import('vue').Component | undefined;
         modelValue?: AcceptableValue | AcceptableValue[] | undefined;
+        orientation?: DataOrientation | undefined;
         "onUpdate:modelValue"?: ((value: AcceptableValue) => any) | undefined;
         onEntryFocus?: ((event: CustomEvent<any>) => any) | undefined;
         highlightOnHover?: boolean | undefined;
         by?: string | ((a: AcceptableValue, b: AcceptableValue) => boolean) | undefined;
+        onLeave?: ((event: Event) => any) | undefined;
         onHighlight?: ((payload: {
             ref: HTMLElement;
             value: AcceptableValue;
         } | undefined) => any) | undefined;
-        onLeave?: ((event: Event) => any) | undefined;
-    } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
+    } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
     expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
     attrs: any;
     slots: Readonly<{
@@ -136,11 +137,11 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
             modelValue: T | T[] | undefined;
         }) => any;
     };
-    emit: ((evt: "highlight", payload: {
+    emit: ((evt: "leave", event: Event) => void) & ((evt: "update:modelValue", value: AcceptableValue) => void) & ((evt: "entryFocus", event: CustomEvent<any>) => void) & ((evt: "highlight", payload: {
         ref: HTMLElement;
         value: AcceptableValue;
-    } | undefined) => void) & ((evt: "leave", event: Event) => void) & ((evt: "update:modelValue", value: AcceptableValue) => void) & ((evt: "entryFocus", event: CustomEvent<any>) => void);
-}>) => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+    } | undefined) => void);
+}>) => import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
     [key: string]: any;
 }> & {
     __ctx?: {
@@ -152,19 +153,19 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
             name?: string | undefined;
             selectionBehavior?: "replace" | "toggle" | undefined;
             asChild?: boolean | undefined;
-            as?: import('../Primitive').AsTag | import("vue").Component | undefined;
-            orientation?: DataOrientation | undefined;
+            as?: import('../Primitive').AsTag | import('vue').Component | undefined;
             modelValue?: AcceptableValue | AcceptableValue[] | undefined;
+            orientation?: DataOrientation | undefined;
             "onUpdate:modelValue"?: ((value: AcceptableValue) => any) | undefined;
             onEntryFocus?: ((event: CustomEvent<any>) => any) | undefined;
             highlightOnHover?: boolean | undefined;
             by?: string | ((a: AcceptableValue, b: AcceptableValue) => boolean) | undefined;
+            onLeave?: ((event: Event) => any) | undefined;
             onHighlight?: ((payload: {
                 ref: HTMLElement;
                 value: AcceptableValue;
             } | undefined) => any) | undefined;
-            onLeave?: ((event: Event) => any) | undefined;
-        } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
+        } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
         expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
         attrs: any;
         slots: Readonly<{
@@ -178,10 +179,10 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
                 modelValue: T | T[] | undefined;
             }) => any;
         };
-        emit: ((evt: "highlight", payload: {
+        emit: ((evt: "leave", event: Event) => void) & ((evt: "update:modelValue", value: AcceptableValue) => void) & ((evt: "entryFocus", event: CustomEvent<any>) => void) & ((evt: "highlight", payload: {
             ref: HTMLElement;
             value: AcceptableValue;
-        } | undefined) => void) & ((evt: "leave", event: Event) => void) & ((evt: "update:modelValue", value: AcceptableValue) => void) & ((evt: "entryFocus", event: CustomEvent<any>) => void);
+        } | undefined) => void);
     } | undefined;
 };
 export default _default;

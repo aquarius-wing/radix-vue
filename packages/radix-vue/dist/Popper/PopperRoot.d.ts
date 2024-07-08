@@ -1,4 +1,5 @@
-import type { Ref } from 'vue';
+import { Ref } from 'vue';
+
 export interface Measurable {
     getBoundingClientRect: () => DOMRect;
 }
@@ -7,7 +8,7 @@ interface PopperRootContext {
     onAnchorChange: (element: Measurable | HTMLElement | undefined) => void;
 }
 export declare const injectPopperRootContext: <T extends PopperRootContext | null | undefined = PopperRootContext>(fallback?: T | undefined) => T extends null ? PopperRootContext | null : PopperRootContext, providePopperRootContext: (contextValue: PopperRootContext) => PopperRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<{}, {}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{}, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{}>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

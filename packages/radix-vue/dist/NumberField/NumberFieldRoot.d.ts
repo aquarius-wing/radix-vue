@@ -1,5 +1,6 @@
-import type { PrimitiveProps } from '../Primitive';
-import { type HTMLAttributes, type Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { HTMLAttributes, Ref } from 'vue';
+
 export interface NumberFieldRootProps extends PrimitiveProps {
     defaultValue?: number;
     modelValue?: number;
@@ -44,14 +45,14 @@ interface NumberFieldRootContext {
     id: Ref<string | undefined>;
 }
 export declare const injectNumberFieldRootContext: <T extends NumberFieldRootContext | null | undefined = NumberFieldRootContext>(fallback?: T | undefined) => T extends null ? NumberFieldRootContext | null : NumberFieldRootContext, provideNumberFieldRootContext: (contextValue: NumberFieldRootContext) => NumberFieldRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NumberFieldRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NumberFieldRootProps>, {
     as: string;
     defaultValue: undefined;
     locale: string;
     step: number;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (val: number) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NumberFieldRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NumberFieldRootProps>, {
     as: string;
     defaultValue: undefined;
     locale: string;
@@ -61,7 +62,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
 }, {
     defaultValue: number;
     locale: string;
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
     step: number;
 }, {}>, {
     default?(_: {

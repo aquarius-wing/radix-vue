@@ -1,6 +1,7 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import type { Direction, Orientation } from './utils';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { Direction, Orientation } from './utils';
+
 export interface NavigationMenuRootProps extends PrimitiveProps {
     /** The controlled value of the menu item to activate. Can be used as `v-model`. */
     modelValue?: string;
@@ -65,7 +66,7 @@ export interface NavigationMenuContext {
     onItemDismiss: () => void;
 }
 export declare const injectNavigationMenuContext: <T extends NavigationMenuContext | null | undefined = NavigationMenuContext>(fallback?: T | undefined) => T extends null ? NavigationMenuContext | null : NavigationMenuContext, provideNavigationMenuContext: (contextValue: NavigationMenuContext) => NavigationMenuContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NavigationMenuRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NavigationMenuRootProps>, {
     modelValue: undefined;
     delayDuration: number;
     skipDelayDuration: number;
@@ -73,9 +74,9 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     disableClickTrigger: boolean;
     disableHoverTrigger: boolean;
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (value: string) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NavigationMenuRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<NavigationMenuRootProps>, {
     modelValue: undefined;
     delayDuration: number;
     skipDelayDuration: number;
@@ -86,9 +87,9 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
 }>>> & {
     "onUpdate:modelValue"?: ((value: string) => any) | undefined;
 }, {
-    as: import('../Primitive').AsTag | import("vue").Component;
-    orientation: Orientation;
+    as: import('../Primitive').AsTag | import('vue').Component;
     modelValue: string;
+    orientation: Orientation;
     delayDuration: number;
     skipDelayDuration: number;
     disableClickTrigger: boolean;

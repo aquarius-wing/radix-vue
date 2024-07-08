@@ -1,6 +1,7 @@
-import { type ComputedRef, type Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import type { Direction } from '../shared/types';
+import { ComputedRef, Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { Direction } from '../shared/types';
+
 export type PinInputRootEmits = {
     'update:modelValue': [value: string[]];
     'complete': [value: string[]];
@@ -42,13 +43,13 @@ export interface PinInputRootContext {
     onInputElementChange: (el: HTMLInputElement) => void;
 }
 export declare const injectPinInputRootContext: <T extends PinInputRootContext | null | undefined = PinInputRootContext>(fallback?: T | undefined) => T extends null ? PinInputRootContext | null : PinInputRootContext, providePinInputRootContext: (contextValue: PinInputRootContext) => PinInputRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PinInputRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PinInputRootProps>, {
     placeholder: string;
     type: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
-    complete: (value: string[]) => void;
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (value: string[]) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PinInputRootProps>, {
+    complete: (value: string[]) => void;
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PinInputRootProps>, {
     placeholder: string;
     type: string;
 }>>> & {

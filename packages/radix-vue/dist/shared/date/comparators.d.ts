@@ -1,4 +1,5 @@
-import { type DateValue } from '@internationalized/date';
+import { DateValue } from '@internationalized/date';
+
 export type Granularity = 'day' | 'hour' | 'minute' | 'second';
 type GetDefaultDateProps = {
     defaultValue?: DateValue | DateValue[] | undefined;

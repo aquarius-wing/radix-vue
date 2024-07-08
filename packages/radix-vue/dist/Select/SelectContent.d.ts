@@ -1,4 +1,5 @@
-import type { SelectContentImplEmits, SelectContentImplProps } from "./SelectContentImpl";
+import { SelectContentImplEmits, SelectContentImplProps } from './SelectContentImpl';
+
 export type SelectContentEmits = SelectContentImplEmits;
 export interface SelectContentProps extends SelectContentImplProps {
     /**
@@ -7,11 +8,11 @@ export interface SelectContentProps extends SelectContentImplProps {
      */
     forceMount?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<SelectContentProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<SelectContentProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent) => void;
     closeAutoFocus: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<SelectContentProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<SelectContentProps>>> & {
     onEscapeKeyDown?: ((event: KeyboardEvent) => any) | undefined;
     onPointerDownOutside?: ((event: import('../DismissableLayer').PointerDownOutsideEvent) => any) | undefined;
     onCloseAutoFocus?: ((event: Event) => any) | undefined;

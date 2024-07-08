@@ -1,5 +1,6 @@
-import type { Ref } from 'vue';
-import type { SwipeDirection } from './utils';
+import { Ref } from 'vue';
+import { SwipeDirection } from './utils';
+
 type ToastProviderContext = {
     label: Ref<string>;
     duration: Ref<number>;
@@ -37,12 +38,12 @@ export interface ToastProviderProps {
     swipeThreshold?: number;
 }
 export declare const injectToastProviderContext: <T extends ToastProviderContext | null | undefined = ToastProviderContext>(fallback?: T | undefined) => T extends null ? ToastProviderContext | null : ToastProviderContext, provideToastProviderContext: (contextValue: ToastProviderContext) => ToastProviderContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastProviderProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastProviderProps>, {
     label: string;
     duration: number;
     swipeDirection: string;
     swipeThreshold: number;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastProviderProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastProviderProps>, {
     label: string;
     duration: number;
     swipeDirection: string;

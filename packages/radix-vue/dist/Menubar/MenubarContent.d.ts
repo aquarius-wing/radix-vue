@@ -1,16 +1,17 @@
-import type { MenuContentEmits, MenuContentProps } from '../Menu';
+import { MenuContentEmits, MenuContentProps } from '../Menu';
+
 export type MenubarContentEmits = MenuContentEmits;
 export interface MenubarContentProps extends MenuContentProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenubarContentProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenubarContentProps>, {
     align: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent) => void;
     focusOutside: (event: import('../DismissableLayer').FocusOutsideEvent) => void;
     interactOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent | import('../DismissableLayer').FocusOutsideEvent) => void;
     closeAutoFocus: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenubarContentProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenubarContentProps>, {
     align: string;
 }>>> & {
     onEscapeKeyDown?: ((event: KeyboardEvent) => any) | undefined;

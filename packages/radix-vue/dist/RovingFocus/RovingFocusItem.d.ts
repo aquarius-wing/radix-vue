@@ -1,22 +1,23 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface RovingFocusItemProps extends PrimitiveProps {
     tabStopId?: string;
     focusable?: boolean;
     active?: boolean;
     allowShiftKey?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RovingFocusItemProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RovingFocusItemProps>, {
     focusable: boolean;
     active: boolean;
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RovingFocusItemProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RovingFocusItemProps>, {
     focusable: boolean;
     active: boolean;
     as: string;
 }>>>, {
-    as: import('../Primitive').AsTag | import("vue").Component;
-    active: boolean;
+    as: import('../Primitive').AsTag | import('vue').Component;
     focusable: boolean;
+    active: boolean;
 }, {}>, {
     default?(_: {}): any;
 }>;

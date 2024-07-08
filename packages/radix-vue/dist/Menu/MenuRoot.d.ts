@@ -1,5 +1,6 @@
-import type { Ref } from 'vue';
-import type { Direction } from './utils';
+import { Ref } from 'vue';
+import { Direction } from './utils';
+
 export interface MenuContext {
     open: Ref<boolean>;
     onOpenChange: (open: boolean) => void;
@@ -33,12 +34,12 @@ export type MenuEmits = {
 };
 export declare const injectMenuContext: <T extends MenuContext | null | undefined = MenuContext>(fallback?: T | undefined) => T extends null ? MenuContext | null : MenuContext, provideMenuContext: (contextValue: MenuContext) => MenuContext;
 export declare const injectMenuRootContext: <T extends MenuRootContext | null | undefined = MenuRootContext>(fallback?: T | undefined) => T extends null ? MenuRootContext | null : MenuRootContext, provideMenuRootContext: (contextValue: MenuRootContext) => MenuRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuProps>, {
     open: boolean;
     modal: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (payload: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuProps>, {
     open: boolean;
     modal: boolean;
 }>>> & {

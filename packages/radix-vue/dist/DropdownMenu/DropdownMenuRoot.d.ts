@@ -1,6 +1,7 @@
-import type { Ref } from 'vue';
-import type { Direction } from '../shared/types';
-import type { MenuEmits, MenuProps } from '../Menu';
+import { Ref } from 'vue';
+import { Direction } from '../shared/types';
+import { MenuEmits, MenuProps } from '../Menu';
+
 export interface DropdownMenuRootProps extends MenuProps {
     /** The open state of the dropdown menu when it is initially rendered. Use when you do not need to control its open state. */
     defaultOpen?: boolean;
@@ -17,12 +18,12 @@ export interface DropdownMenuRootContext {
     dir: Ref<Direction>;
 }
 export declare const injectDropdownMenuRootContext: <T extends DropdownMenuRootContext | null | undefined = DropdownMenuRootContext>(fallback?: T | undefined) => T extends null ? DropdownMenuRootContext | null : DropdownMenuRootContext, provideDropdownMenuRootContext: (contextValue: DropdownMenuRootContext) => DropdownMenuRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DropdownMenuRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DropdownMenuRootProps>, {
     modal: boolean;
     open: undefined;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (payload: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DropdownMenuRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DropdownMenuRootProps>, {
     modal: boolean;
     open: undefined;
 }>>> & {

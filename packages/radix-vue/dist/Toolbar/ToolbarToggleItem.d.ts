@@ -1,7 +1,8 @@
-import type { ToggleGroupItemProps } from '../ToggleGroup';
+import { ToggleGroupItemProps } from '../ToggleGroup';
+
 export interface ToolbarToggleItemProps extends ToggleGroupItemProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<ToolbarToggleItemProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ToolbarToggleItemProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ToolbarToggleItemProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ToolbarToggleItemProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

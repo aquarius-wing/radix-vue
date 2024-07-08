@@ -1,4 +1,5 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export type SliderImplEmits = {
     slideStart: [event: PointerEvent];
     slideMove: [event: PointerEvent];
@@ -9,16 +10,16 @@ export type SliderImplEmits = {
 };
 export interface SliderImplProps extends PrimitiveProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SliderImplProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SliderImplProps>, {
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     slideStart: (event: PointerEvent) => void;
     slideMove: (event: PointerEvent) => void;
     slideEnd: (event: PointerEvent) => void;
     homeKeyDown: (event: KeyboardEvent) => void;
     endKeyDown: (event: KeyboardEvent) => void;
     stepKeyDown: (event: KeyboardEvent) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SliderImplProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SliderImplProps>, {
     as: string;
 }>>> & {
     onSlideStart?: ((event: PointerEvent) => any) | undefined;
@@ -28,7 +29,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     onEndKeyDown?: ((event: KeyboardEvent) => any) | undefined;
     onStepKeyDown?: ((event: KeyboardEvent) => any) | undefined;
 }, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
 }, {}>, {
     default?(_: {}): any;
 }>;

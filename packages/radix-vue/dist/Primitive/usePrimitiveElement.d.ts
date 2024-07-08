@@ -1,6 +1,7 @@
-import { type ComponentPublicInstance } from 'vue';
+import { ComponentPublicInstance } from 'vue';
+
 /** deprecated */
 export declare function usePrimitiveElement(): {
-    primitiveElement: import("vue").Ref<ComponentPublicInstance | undefined>;
-    currentElement: import("vue").ComputedRef<HTMLElement>;
+    primitiveElement: import('vue').Ref<ComponentPublicInstance | undefined>;
+    currentElement: import('vue').ComputedRef<HTMLElement>;
 };

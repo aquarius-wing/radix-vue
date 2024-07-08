@@ -1,7 +1,8 @@
-import type { MenuItemImplProps } from "./MenuItemImpl";
+import { MenuItemImplProps } from './MenuItemImpl';
+
 export interface MenuSubTriggerProps extends MenuItemImplProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<MenuSubTriggerProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenuSubTriggerProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<MenuSubTriggerProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenuSubTriggerProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

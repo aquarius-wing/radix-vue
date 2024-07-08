@@ -1,4 +1,5 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface ToastViewportProps extends PrimitiveProps {
     /**
      * The keys to use as the keyboard shortcut that will move focus to the toast viewport.
@@ -13,17 +14,17 @@ export interface ToastViewportProps extends PrimitiveProps {
      */
     label?: string | ((hotkey: string) => string);
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastViewportProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastViewportProps>, {
     hotkey: () => string[];
     label: string;
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastViewportProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastViewportProps>, {
     hotkey: () => string[];
     label: string;
     as: string;
 }>>>, {
     label: string | ((hotkey: string) => string);
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
     hotkey: string[];
 }, {}>, {
     default?(_: {}): any;

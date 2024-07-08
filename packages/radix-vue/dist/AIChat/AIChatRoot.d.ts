@@ -1,5 +1,7 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { Emitter } from 'mitt';
+
 export type Message = {
     content: string;
     role: 'system' | 'user' | 'assistant';
@@ -9,7 +11,10 @@ type AIChatRootContext = {
     messages: Ref<Message[]>;
     inputElement: Ref<HTMLInputElement | undefined>;
     onInputElementChange: (el: HTMLInputElement) => void;
+    contentElement: Ref<HTMLElement | undefined>;
+    onContentElementChange: (el: HTMLElement) => void;
     onSendMessage: () => void;
+    emitter: Emitter<AIChatRootEvents>;
 };
 export declare const injectAIChatRootContext: <T extends AIChatRootContext | null | undefined = AIChatRootContext>(fallback?: T | undefined) => T extends null ? AIChatRootContext | null : AIChatRootContext, provideAIChatRootContext: (contextValue: AIChatRootContext) => AIChatRootContext;
 export type AIChatRootEmits = {
@@ -17,28 +22,32 @@ export type AIChatRootEmits = {
     'update:prompt': [value: string];
     'update:messages': [value: Message[]];
 };
+export type AIChatRootEvents = {
+    scrollToBottom: void;
+};
 export interface AIChatRootProps extends PrimitiveProps {
     prompt?: string;
-    messages?: Message[];
+    messages: Message[];
+    emitter?: Emitter<AIChatRootEvents>;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AIChatRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AIChatRootProps>, {
     as: string;
     prompt: string;
     messages: () => never[];
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
-    send: (...args: any[]) => void;
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:prompt": (...args: any[]) => void;
     "update:messages": (...args: any[]) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AIChatRootProps>, {
+    send: (...args: any[]) => void;
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AIChatRootProps>, {
     as: string;
     prompt: string;
     messages: () => never[];
 }>>> & {
-    onSend?: ((...args: any[]) => any) | undefined;
     "onUpdate:prompt"?: ((...args: any[]) => any) | undefined;
     "onUpdate:messages"?: ((...args: any[]) => any) | undefined;
+    onSend?: ((...args: any[]) => any) | undefined;
 }, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
     prompt: string;
     messages: Message[];
 }, {}>, {

@@ -1,4 +1,5 @@
-import type { AcceptableValue } from '../shared/types';
+import { AcceptableValue } from '../shared/types';
+
 export interface ListboxVirtualizerProps<T extends AcceptableValue = AcceptableValue> {
     /** List of items */
     options: T[];
@@ -11,7 +12,7 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     textContent?: ((option: T) => string) | undefined;
     options: T[];
     estimateSize?: number | undefined;
-} & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, __VLS_ctx?: {
+} & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: Readonly<{
         default: (props: {
             option: T;
@@ -28,7 +29,7 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
         textContent?: ((option: T) => string) | undefined;
         options: T[];
         estimateSize?: number | undefined;
-    } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
+    } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
     expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
     attrs: any;
     slots: Readonly<{
@@ -41,7 +42,7 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
         }) => any;
     };
     emit: any;
-}>) => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+}>) => import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
     [key: string]: any;
 }> & {
     __ctx?: {
@@ -49,7 +50,7 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
             textContent?: ((option: T) => string) | undefined;
             options: T[];
             estimateSize?: number | undefined;
-        } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
+        } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
         expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
         attrs: any;
         slots: Readonly<{

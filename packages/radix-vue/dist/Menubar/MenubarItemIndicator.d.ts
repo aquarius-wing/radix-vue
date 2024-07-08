@@ -1,7 +1,8 @@
-import type { MenuItemIndicatorProps } from '../Menu';
+import { MenuItemIndicatorProps } from '../Menu';
+
 export interface MenubarItemIndicatorProps extends MenuItemIndicatorProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<MenubarItemIndicatorProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenubarItemIndicatorProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<MenubarItemIndicatorProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenubarItemIndicatorProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

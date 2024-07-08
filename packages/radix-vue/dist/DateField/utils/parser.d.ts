@@ -1,7 +1,8 @@
-import { type Granularity, type HourCycle, type SegmentContentObj, type SegmentPart, type SegmentValueObj } from '../../shared/date';
-import type { Formatter } from '../../shared';
-import type { DateValue } from '@internationalized/date';
-import type { Ref } from 'vue';
+import { Granularity, HourCycle, SegmentContentObj, SegmentPart, SegmentValueObj } from '../../shared/date';
+import { Formatter } from '../../shared';
+import { DateValue } from '@internationalized/date';
+import { Ref } from 'vue';
+
 type SyncSegmentValuesProps = {
     value: DateValue;
     formatter: Formatter;

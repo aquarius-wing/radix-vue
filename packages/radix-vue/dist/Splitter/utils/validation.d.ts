@@ -1,4 +1,5 @@
-import type { PanelConstraints } from "../SplitterPanel";
+import { PanelConstraints } from '../SplitterPanel';
+
 export declare function validatePanelGroupLayout({ layout: prevLayout, panelConstraints, }: {
     layout: number[];
     panelConstraints: PanelConstraints[];

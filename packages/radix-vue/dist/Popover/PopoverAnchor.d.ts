@@ -1,7 +1,8 @@
-import type { PopperAnchorProps } from '../Popper';
+import { PopperAnchorProps } from '../Popper';
+
 export interface PopoverAnchorProps extends PopperAnchorProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<PopoverAnchorProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<PopoverAnchorProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<PopoverAnchorProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<PopoverAnchorProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

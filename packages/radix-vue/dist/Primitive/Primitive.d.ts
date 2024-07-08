@@ -1,4 +1,5 @@
-import { type Component, type PropType } from 'vue';
+import { Component, PropType } from 'vue';
+
 export type AsTag = 'a' | 'button' | 'div' | 'form' | 'h2' | 'h3' | 'img' | 'input' | 'label' | 'li' | 'nav' | 'ol' | 'p' | 'span' | 'svg' | 'ul' | 'template' | ({} & string);
 export interface PrimitiveProps {
     /**
@@ -13,7 +14,7 @@ export interface PrimitiveProps {
      */
     as?: AsTag | Component;
 }
-export declare const Primitive: import("vue").DefineComponent<{
+export declare const Primitive: import('vue').DefineComponent<{
     asChild: {
         type: BooleanConstructor;
         default: boolean;
@@ -22,9 +23,9 @@ export declare const Primitive: import("vue").DefineComponent<{
         type: PropType<AsTag | Component>;
         default: string;
     };
-}, () => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+}, () => import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
     [key: string]: any;
-}>, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
+}>, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
     asChild: {
         type: BooleanConstructor;
         default: boolean;

@@ -1,2 +1,2 @@
-export { default as Arrow } from "./Arrow";
-export { default as BaseSeparator } from "./BaseSeparator";
+export { default as Arrow } from './Arrow';
+export { default as BaseSeparator } from './BaseSeparator';

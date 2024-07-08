@@ -1,5 +1,6 @@
-import type { Ref } from 'vue';
-import type { MenuContext } from "./MenuRoot";
+import { Ref } from 'vue';
+import { MenuContext } from './MenuRoot';
+
 export interface MenuSubContext {
     contentId: string;
     triggerId: string;
@@ -16,11 +17,11 @@ export type MenuSubEmits = {
     /** Event handler called when the open state of the submenu changes. */
     'update:open': [payload: boolean];
 };
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuSubProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuSubProps>, {
     open: undefined;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (payload: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuSubProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuSubProps>, {
     open: undefined;
 }>>> & {
     "onUpdate:open"?: ((payload: boolean) => any) | undefined;

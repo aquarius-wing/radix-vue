@@ -1,6 +1,7 @@
-import type { PrimitiveProps } from '../Primitive';
-import { type ComputedRef, type Ref } from 'vue';
-import { type AcceptableInputValue } from "./TagsInputRoot";
+import { PrimitiveProps } from '../Primitive';
+import { ComputedRef, Ref } from 'vue';
+import { AcceptableInputValue } from './TagsInputRoot';
+
 export interface TagsInputItemProps extends PrimitiveProps {
     /** Value associated with the tags */
     value: AcceptableInputValue;
@@ -15,7 +16,7 @@ export interface TagsInputItemContext {
     textId: string;
 }
 export declare const injectTagsInputItemContext: <T extends TagsInputItemContext | null | undefined = TagsInputItemContext>(fallback?: T | undefined) => T extends null ? TagsInputItemContext | null : TagsInputItemContext, provideTagsInputItemContext: (contextValue: TagsInputItemContext) => TagsInputItemContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<TagsInputItemProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<TagsInputItemProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<TagsInputItemProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<TagsInputItemProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

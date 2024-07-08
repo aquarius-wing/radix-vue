@@ -1,4 +1,5 @@
-import type { TooltipContentImplEmits, TooltipContentImplProps } from "./TooltipContentImpl";
+import { TooltipContentImplEmits, TooltipContentImplProps } from './TooltipContentImpl';
+
 export type TooltipContentEmits = TooltipContentImplEmits;
 export interface TooltipContentProps extends TooltipContentImplProps {
     /**
@@ -7,12 +8,12 @@ export interface TooltipContentProps extends TooltipContentImplProps {
      */
     forceMount?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipContentProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipContentProps>, {
     side: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipContentProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipContentProps>, {
     side: string;
 }>>> & {
     onEscapeKeyDown?: ((event: KeyboardEvent) => any) | undefined;

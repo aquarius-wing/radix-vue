@@ -1,4 +1,5 @@
-import type { Direction } from './types';
+import { Direction } from './types';
+
 type ArrowKeyOptions = 'horizontal' | 'vertical' | 'both';
 interface ArrowNavigationOptions {
     /**

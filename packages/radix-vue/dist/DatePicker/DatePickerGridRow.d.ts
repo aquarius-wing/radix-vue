@@ -1,7 +1,8 @@
-import { type CalendarGridRowProps } from '..';
+import { CalendarGridRowProps } from '..';
+
 export interface DatePickerGridRowProps extends CalendarGridRowProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<DatePickerGridRowProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DatePickerGridRowProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<DatePickerGridRowProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DatePickerGridRowProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

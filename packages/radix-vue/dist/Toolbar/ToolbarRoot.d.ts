@@ -1,6 +1,7 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import type { DataOrientation, Direction } from '../shared/types';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { DataOrientation, Direction } from '../shared/types';
+
 export interface ToolbarRootProps extends PrimitiveProps {
     /** The orientation of the toolbar */
     orientation?: DataOrientation;
@@ -14,9 +15,9 @@ export interface ToolbarRootContext {
     dir: Ref<Direction>;
 }
 export declare const injectToolbarRootContext: <T extends ToolbarRootContext | null | undefined = ToolbarRootContext>(fallback?: T | undefined) => T extends null ? ToolbarRootContext | null : ToolbarRootContext, provideToolbarRootContext: (contextValue: ToolbarRootContext) => ToolbarRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToolbarRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToolbarRootProps>, {
     orientation: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToolbarRootProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToolbarRootProps>, {
     orientation: string;
 }>>>, {
     orientation: DataOrientation;

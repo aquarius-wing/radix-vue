@@ -1,4 +1,5 @@
-import type { Ref } from 'vue';
+import { Ref } from 'vue';
+
 export interface MenubarMenuProps {
     /**
      * A unique value that associates the item with an active value when the navigation menu is controlled.
@@ -15,7 +16,7 @@ type MenubarMenuContext = {
     wasKeyboardTriggerOpenRef: Ref<boolean>;
 };
 export declare const injectMenubarMenuContext: <T extends MenubarMenuContext | null | undefined = MenubarMenuContext>(fallback?: T | undefined) => T extends null ? MenubarMenuContext | null : MenubarMenuContext, provideMenubarMenuContext: (contextValue: MenubarMenuContext) => MenubarMenuContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<MenubarMenuProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenubarMenuProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<MenubarMenuProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenubarMenuProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

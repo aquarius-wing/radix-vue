@@ -1,4 +1,5 @@
-import type { MenuItemImplProps } from "./MenuItemImpl";
+import { MenuItemImplProps } from './MenuItemImpl';
+
 export type MenuItemEmits = {
     /**
      * Event handler called when the user selects an item (via mouse or keyboard). <br>
@@ -8,9 +9,9 @@ export type MenuItemEmits = {
 };
 export interface MenuItemProps extends MenuItemImplProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<MenuItemProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<MenuItemProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     select: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenuItemProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenuItemProps>>> & {
     onSelect?: ((event: Event) => any) | undefined;
 }, {}, {}>, {
     default?(_: {}): any;

@@ -1,7 +1,8 @@
-import type { TeleportProps } from '../Teleport';
+import { TeleportProps } from '../Teleport';
+
 export interface HoverCardPortalProps extends TeleportProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<HoverCardPortalProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<HoverCardPortalProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<HoverCardPortalProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<HoverCardPortalProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

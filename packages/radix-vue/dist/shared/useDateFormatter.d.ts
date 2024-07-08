@@ -1,4 +1,5 @@
-import type { DateValue } from '@internationalized/date';
+import { DateValue } from '@internationalized/date';
+
 export interface DateFormatterOptions extends Intl.DateTimeFormatOptions {
     calendar?: string;
 }

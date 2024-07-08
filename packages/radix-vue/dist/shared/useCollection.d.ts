@@ -1,4 +1,5 @@
-import { type Ref } from 'vue';
+import { Ref } from 'vue';
+
 type ContextValue = Ref<HTMLElement[]>;
 /**
  * Composables for provide/inject collections

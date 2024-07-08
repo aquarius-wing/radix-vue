@@ -1,21 +1,22 @@
-import type { MenuContentEmits, MenuContentProps } from '../Menu';
+import { MenuContentEmits, MenuContentProps } from '../Menu';
+
 export type ContextMenuContentEmits = MenuContentEmits;
 export interface ContextMenuContentProps extends Omit<MenuContentProps, 'side' | 'sideOffset' | 'align' | 'arrowPadding' | 'updatePositionStrategy'> {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ContextMenuContentProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ContextMenuContentProps>, {
     alignOffset: number;
     avoidCollisions: boolean;
     collisionBoundary: () => never[];
     collisionPadding: number;
     sticky: string;
     hideWhenDetached: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent) => void;
     focusOutside: (event: import('../DismissableLayer').FocusOutsideEvent) => void;
     interactOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent | import('../DismissableLayer').FocusOutsideEvent) => void;
     closeAutoFocus: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ContextMenuContentProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ContextMenuContentProps>, {
     alignOffset: number;
     avoidCollisions: boolean;
     collisionBoundary: () => never[];

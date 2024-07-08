@@ -1,5 +1,6 @@
-import type { PointerHitAreaMargins } from './utils/registry';
-import type { PrimitiveProps } from '../Primitive';
+import { PointerHitAreaMargins } from './utils/registry';
+import { PrimitiveProps } from '../Primitive';
+
 export interface SplitterResizeHandleProps extends PrimitiveProps {
     /** Resize handle id (unique within group); falls back to `useId` when not provided */
     id?: string;
@@ -16,11 +17,11 @@ export type SplitterResizeHandleEmits = {
     /** Event handler called when dragging the handler. */
     dragging: [isDragging: boolean];
 };
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SplitterResizeHandleProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SplitterResizeHandleProps>, {
     tabindex: number;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     dragging: (isDragging: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SplitterResizeHandleProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SplitterResizeHandleProps>, {
     tabindex: number;
 }>>> & {
     onDragging?: ((isDragging: boolean) => any) | undefined;

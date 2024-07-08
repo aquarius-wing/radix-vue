@@ -1,5 +1,6 @@
-import type { ComputedRef, Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
+import { ComputedRef, Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+
 export type ProgressRootEmits = {
     /** Event handler called when the progress value changes */
     'update:modelValue': [value: string[] | undefined];
@@ -25,13 +26,13 @@ interface ProgressRootContext {
 }
 export declare const injectProgressRootContext: <T extends ProgressRootContext | null | undefined = ProgressRootContext>(fallback?: T | undefined) => T extends null ? ProgressRootContext | null : ProgressRootContext, provideProgressRootContext: (contextValue: ProgressRootContext) => ProgressRootContext;
 export type ProgressState = 'indeterminate' | 'loading' | 'complete';
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ProgressRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ProgressRootProps>, {
     max: number;
     getValueLabel: (value: number, max: number) => string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (value: string[] | undefined) => void;
     "update:max": (value: number) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ProgressRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ProgressRootProps>, {
     max: number;
     getValueLabel: (value: number, max: number) => string;
 }>>> & {

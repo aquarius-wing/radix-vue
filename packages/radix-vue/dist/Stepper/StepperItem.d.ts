@@ -1,5 +1,6 @@
-import { type Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+
 export declare const injectStepperItemContext: <T extends StepperItemContext | null | undefined = StepperItemContext>(fallback?: T | undefined) => T extends null ? StepperItemContext | null : StepperItemContext, provideStepperItemContext: (contextValue: StepperItemContext) => StepperItemContext;
 export type StepperState = 'completed' | 'active' | 'inactive';
 export interface StepperItemContext {
@@ -18,10 +19,10 @@ export interface StepperItemProps extends PrimitiveProps {
     /** Shows whether the step is completed. */
     completed?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<StepperItemProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<StepperItemProps>, {
     completed: boolean;
     disabled: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<StepperItemProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<StepperItemProps>, {
     completed: boolean;
     disabled: boolean;
 }>>>, {

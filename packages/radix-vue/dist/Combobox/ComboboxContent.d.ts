@@ -1,4 +1,5 @@
-import type { ComboboxContentImplEmits, ComboboxContentImplProps } from "./ComboboxContentImpl";
+import { ComboboxContentImplEmits, ComboboxContentImplProps } from './ComboboxContentImpl';
+
 export type ComboboxContentEmits = ComboboxContentImplEmits;
 export interface ComboboxContentProps extends ComboboxContentImplProps {
     /**
@@ -7,12 +8,12 @@ export interface ComboboxContentProps extends ComboboxContentImplProps {
      */
     forceMount?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<ComboboxContentProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ComboboxContentProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent) => void;
     focusOutside: (event: import('../DismissableLayer').FocusOutsideEvent) => void;
     interactOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent | import('../DismissableLayer').FocusOutsideEvent) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ComboboxContentProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ComboboxContentProps>>> & {
     onEscapeKeyDown?: ((event: KeyboardEvent) => any) | undefined;
     onPointerDownOutside?: ((event: import('../DismissableLayer').PointerDownOutsideEvent) => any) | undefined;
     onFocusOutside?: ((event: import('../DismissableLayer').FocusOutsideEvent) => any) | undefined;

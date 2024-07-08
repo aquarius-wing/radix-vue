@@ -1,4 +1,5 @@
-import { type DialogOverlayImplProps } from "./DialogOverlayImpl";
+import { DialogOverlayImplProps } from './DialogOverlayImpl';
+
 export interface DialogOverlayProps extends DialogOverlayImplProps {
     /**
      * Used to force mounting when more control is needed. Useful when
@@ -6,7 +7,7 @@ export interface DialogOverlayProps extends DialogOverlayImplProps {
      */
     forceMount?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<DialogOverlayProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DialogOverlayProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<DialogOverlayProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DialogOverlayProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

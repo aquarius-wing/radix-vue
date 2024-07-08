@@ -1,5 +1,6 @@
-import type { ComputedRef } from 'vue';
-import type { RadioProps } from "./Radio";
+import { ComputedRef } from 'vue';
+import { RadioProps } from './Radio';
+
 export interface RadioGroupItemProps extends Omit<RadioProps, 'checked'> {
 }
 interface RadioGroupItemContext {
@@ -7,15 +8,15 @@ interface RadioGroupItemContext {
     checked: ComputedRef<boolean>;
 }
 export declare const injectRadioGroupItemContext: <T extends RadioGroupItemContext | null | undefined = RadioGroupItemContext>(fallback?: T | undefined) => T extends null ? RadioGroupItemContext | null : RadioGroupItemContext, provideRadiogroupItemContext: (contextValue: RadioGroupItemContext) => RadioGroupItemContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RadioGroupItemProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RadioGroupItemProps>, {
     disabled: boolean;
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RadioGroupItemProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RadioGroupItemProps>, {
     disabled: boolean;
     as: string;
 }>>>, {
     disabled: boolean;
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('..').AsTag | import('vue').Component;
 }, {}>, {
     default?(_: {}): any;
 }>;

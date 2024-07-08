@@ -1,11 +1,12 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface ComboboxGroupProps extends PrimitiveProps {
 }
 type ComboboxGroupContext = {
     id: string;
 };
 export declare const injectComboboxGroupContext: <T extends ComboboxGroupContext | null | undefined = ComboboxGroupContext>(fallback?: T | undefined) => T extends null ? ComboboxGroupContext | null : ComboboxGroupContext, provideComboboxGroupContext: (contextValue: ComboboxGroupContext) => ComboboxGroupContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<ComboboxGroupProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ComboboxGroupProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ComboboxGroupProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ComboboxGroupProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

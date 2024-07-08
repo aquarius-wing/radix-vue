@@ -1,7 +1,8 @@
-import { type Formatter } from '../shared';
-import type { HourCycle, SegmentPart, SegmentValueObj } from '../shared/date';
-import type { DateValue } from '@internationalized/date';
-import { type Ref } from 'vue';
+import { Formatter } from '../shared';
+import { HourCycle, SegmentPart, SegmentValueObj } from '../shared/date';
+import { DateValue } from '@internationalized/date';
+import { Ref } from 'vue';
+
 type SegmentAttrProps = {
     segmentValues: SegmentValueObj;
     hourCycle: HourCycle;
@@ -117,6 +118,6 @@ export type UseDateFieldProps = {
 export declare function useDateField(props: UseDateFieldProps): {
     handleSegmentClick: (e: MouseEvent) => void;
     handleSegmentKeydown: (e: KeyboardEvent) => void;
-    attributes: import("vue").ComputedRef<{}>;
+    attributes: import('vue').ComputedRef<{}>;
 };
 export {};

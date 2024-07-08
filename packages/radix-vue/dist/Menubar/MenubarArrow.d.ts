@@ -1,18 +1,19 @@
-import type { MenuArrowProps } from '../Menu';
+import { MenuArrowProps } from '../Menu';
+
 export interface MenubarArrowProps extends MenuArrowProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenubarArrowProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenubarArrowProps>, {
     width: number;
     height: number;
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenubarArrowProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenubarArrowProps>, {
     width: number;
     height: number;
     as: string;
 }>>>, {
     width: number;
     height: number;
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('..').AsTag | import('vue').Component;
 }, {}>, {
     default?(_: {}): any;
 }>;

@@ -1,7 +1,8 @@
-import { type DateValue } from '@internationalized/date';
-import { type Ref } from 'vue';
-import { type Grid, type Matcher, type WeekDayFormat } from '../date';
-import type { CalendarIncrement } from '../shared/date';
+import { DateValue } from '@internationalized/date';
+import { Ref } from 'vue';
+import { Grid, Matcher, WeekDayFormat } from '../date';
+import { CalendarIncrement } from '../shared/date';
+
 export type UseCalendarProps = {
     locale: Ref<string>;
     placeholder: Ref<DateValue>;
@@ -26,7 +27,7 @@ export type UseCalendarStateProps = {
 };
 export declare function useCalendarState(props: UseCalendarStateProps): {
     isDateSelected: (dateObj: DateValue) => boolean;
-    isInvalid: import("vue").ComputedRef<boolean>;
+    isInvalid: import('vue').ComputedRef<boolean>;
 };
 export declare function useCalendar(props: UseCalendarProps): {
     isDateDisabled: (dateObj: DateValue) => boolean;
@@ -34,12 +35,12 @@ export declare function useCalendar(props: UseCalendarProps): {
     isNextButtonDisabled: (step?: CalendarIncrement, nextPageFunc?: ((date: DateValue) => DateValue) | undefined) => boolean;
     isPrevButtonDisabled: (step?: CalendarIncrement, prevPageFunc?: ((date: DateValue) => DateValue) | undefined) => boolean;
     grid: Ref<Grid<DateValue>[]>;
-    weekdays: import("vue").ComputedRef<string[]>;
-    visibleView: import("vue").ComputedRef<DateValue[]>;
+    weekdays: import('vue').ComputedRef<string[]>;
+    visibleView: import('vue').ComputedRef<DateValue[]>;
     isOutsideVisibleView: (date: DateValue) => boolean;
     formatter: import('../shared').Formatter;
     nextPage: (step?: CalendarIncrement, nextPageFunc?: ((date: DateValue) => DateValue) | undefined) => void;
     prevPage: (step?: CalendarIncrement, prevPageFunc?: ((date: DateValue) => DateValue) | undefined) => void;
-    headingValue: import("vue").ComputedRef<string>;
-    fullCalendarLabel: import("vue").ComputedRef<string>;
+    headingValue: import('vue').ComputedRef<string>;
+    fullCalendarLabel: import('vue').ComputedRef<string>;
 };

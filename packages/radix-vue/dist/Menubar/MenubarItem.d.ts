@@ -1,10 +1,11 @@
-import type { MenuItemEmits, MenuItemProps } from '../Menu';
+import { MenuItemEmits, MenuItemProps } from '../Menu';
+
 export type MenubarItemEmits = MenuItemEmits;
 export interface MenubarItemProps extends MenuItemProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<MenubarItemProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<MenubarItemProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     select: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenubarItemProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenubarItemProps>>> & {
     onSelect?: ((event: Event) => any) | undefined;
 }, {}, {}>, {
     default?(_: {}): any;

@@ -1,6 +1,7 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import type { DataOrientation, Direction } from '../shared/types';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { DataOrientation, Direction } from '../shared/types';
+
 export interface SliderRootProps extends PrimitiveProps {
     name?: string;
     /** The value of the slider when initially rendered. Use when you do not need to control the state of the slider. */
@@ -46,7 +47,7 @@ export interface SliderRootContext {
     thumbElements: Ref<HTMLElement[]>;
 }
 export declare const injectSliderRootContext: <T extends SliderRootContext | null | undefined = SliderRootContext>(fallback?: T | undefined) => T extends null ? SliderRootContext | null : SliderRootContext, provideSliderRootContext: (contextValue: SliderRootContext) => SliderRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SliderRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SliderRootProps>, {
     min: number;
     max: number;
     step: number;
@@ -55,10 +56,10 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     minStepsBetweenThumbs: number;
     defaultValue: () => number[];
     inverted: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (payload: number[] | undefined) => void;
     valueCommit: (payload: number[]) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SliderRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SliderRootProps>, {
     min: number;
     max: number;
     step: number;
@@ -74,9 +75,9 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     defaultValue: number[];
     disabled: boolean;
     orientation: DataOrientation;
-    max: number;
-    min: number;
     step: number;
+    min: number;
+    max: number;
     inverted: boolean;
     minStepsBetweenThumbs: number;
 }, {}>, Readonly<{

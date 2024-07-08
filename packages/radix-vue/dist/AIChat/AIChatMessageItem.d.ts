@@ -1,10 +1,11 @@
-import type { PrimitiveProps } from '../Primitive';
-import type { Message } from "./AIChatRoot";
+import { PrimitiveProps } from '../Primitive';
+import { Message } from './AIChatRoot';
+
 export interface AIChatMessageItemProps extends PrimitiveProps {
     /** The value given as data when submitted with a `name`. */
     value: Message;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<AIChatMessageItemProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AIChatMessageItemProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<AIChatMessageItemProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AIChatMessageItemProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

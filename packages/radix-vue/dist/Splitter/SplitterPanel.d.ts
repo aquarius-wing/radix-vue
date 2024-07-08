@@ -1,4 +1,5 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface SplitterPanelProps extends PrimitiveProps {
     /** The size of panel when it is collapsed. */
     collapsedSize?: number;
@@ -46,7 +47,7 @@ export type PanelData = {
     idIsFromProps: boolean;
     order: number | undefined;
 };
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<SplitterPanelProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<SplitterPanelProps>, {
     /** If panel is `collapsible`, collapse it fully. */
     collapse: () => void;
     /** If panel is currently collapsed, expand it to its most recent size. */
@@ -56,14 +57,14 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     /** Resize panel to the specified percentage (1 - 100). */
     resize: (size: number) => void;
     /** Returns `true` if the panel is currently collapsed */
-    isCollapsed: import("vue").ComputedRef<boolean>;
+    isCollapsed: import('vue').ComputedRef<boolean>;
     /** Returns `true` if the panel is currently not collapsed */
-    isExpanded: import("vue").ComputedRef<boolean>;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+    isExpanded: import('vue').ComputedRef<boolean>;
+}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     resize: (size: number, prevSize: number | undefined) => void;
     collapse: () => void;
     expand: () => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<SplitterPanelProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<SplitterPanelProps>>> & {
     onResize?: ((size: number, prevSize: number | undefined) => any) | undefined;
     onCollapse?: (() => any) | undefined;
     onExpand?: (() => any) | undefined;

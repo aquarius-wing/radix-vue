@@ -1,3 +1,4 @@
-import type { Direction } from './types';
-import { type Ref } from 'vue';
-export declare function useDirection(dir?: Ref<Direction | undefined>): import("vue").ComputedRef<Direction>;
+import { Direction } from './types';
+import { Ref } from 'vue';
+
+export declare function useDirection(dir?: Ref<Direction | undefined>): import('vue').ComputedRef<Direction>;

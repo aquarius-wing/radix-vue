@@ -1,4 +1,5 @@
-import { type Ref, type UnwrapNestedRefs, ref } from 'vue';
+import { Ref, UnwrapNestedRefs, ref } from 'vue';
+
 export declare function useSelectionBehavior<T>(modelValue: Ref<T | T[]>, props: UnwrapNestedRefs<{
     multiple?: boolean;
     selectionBehavior?: 'toggle' | 'replace';

@@ -1,5 +1,6 @@
-import { type Ref } from 'vue';
-import type { PanelData } from "../../SplitterPanel";
+import { Ref } from 'vue';
+import { PanelData } from '../../SplitterPanel';
+
 export declare function useWindowSplitterPanelGroupBehavior({ eagerValuesRef, groupId, layout, panelDataArray, panelGroupElement, setLayout, }: {
     eagerValuesRef: Ref<{
         panelDataArray: PanelData[];

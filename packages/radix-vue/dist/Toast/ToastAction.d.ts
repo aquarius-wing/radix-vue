@@ -1,4 +1,5 @@
-import type { ToastCloseProps } from "./ToastClose";
+import { ToastCloseProps } from './ToastClose';
+
 export interface ToastActionProps extends ToastCloseProps {
     /**
      * A short description for an alternate way to carry out the action. For screen reader users
@@ -8,7 +9,7 @@ export interface ToastActionProps extends ToastCloseProps {
      */
     altText: string;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<ToastActionProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ToastActionProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ToastActionProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ToastActionProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

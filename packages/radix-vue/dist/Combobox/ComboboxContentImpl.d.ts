@@ -1,6 +1,7 @@
-import type { Ref } from 'vue';
-import type { DismissableLayerEmits, DismissableLayerProps } from '../DismissableLayer';
-import type { PopperContentProps } from '../Popper';
+import { Ref } from 'vue';
+import { DismissableLayerEmits, DismissableLayerProps } from '../DismissableLayer';
+import { PopperContentProps } from '../Popper';
+
 export type ComboboxContentImplEmits = DismissableLayerEmits;
 export interface ComboboxContentImplProps extends PopperContentProps, DismissableLayerProps {
     /**
@@ -30,15 +31,15 @@ export declare const injectComboboxContentContext: <T extends {
 }) => {
     position: Ref<'inline' | 'popper'>;
 };
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ComboboxContentImplProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ComboboxContentImplProps>, {
     position: string;
     dismissable: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent) => void;
     focusOutside: (event: import('../DismissableLayer').FocusOutsideEvent) => void;
     interactOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent | import('../DismissableLayer').FocusOutsideEvent) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ComboboxContentImplProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ComboboxContentImplProps>, {
     position: string;
     dismissable: boolean;
 }>>> & {

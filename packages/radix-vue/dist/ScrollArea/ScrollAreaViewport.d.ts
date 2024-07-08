@@ -1,10 +1,11 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface ScrollAreaViewportProps extends PrimitiveProps {
     nonce?: string;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<ScrollAreaViewportProps>, {
-    viewportElement: import("vue").Ref<HTMLElement | undefined>;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ScrollAreaViewportProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ScrollAreaViewportProps>, {
+    viewportElement: import('vue').Ref<HTMLElement | undefined>;
+}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ScrollAreaViewportProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

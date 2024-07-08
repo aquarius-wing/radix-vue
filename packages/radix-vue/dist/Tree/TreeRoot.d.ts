@@ -1,8 +1,9 @@
-import { type PrimitiveProps } from '../Primitive';
-import { type EventHook } from '@vueuse/core';
-import { type Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { EventHook } from '@vueuse/core';
+import { Ref } from 'vue';
 import { useSelectionBehavior } from '../shared';
-import type { Direction } from '../shared/types';
+import { Direction } from '../shared/types';
+
 export interface TreeRootProps<T = Record<string, any>, U extends Record<string, any> = Record<string, any>> extends PrimitiveProps {
     /** The controlled value of the tree. Can be binded-with with `v-model`. */
     modelValue?: U | U[];
@@ -69,16 +70,16 @@ declare const _default: <T extends Record<string, any>, U extends Record<string,
     multiple?: boolean | undefined;
     selectionBehavior?: "replace" | "toggle" | undefined;
     asChild?: boolean | undefined;
-    as?: import('../Primitive').AsTag | import("vue").Component | undefined;
-    expanded?: string[] | undefined;
-    items?: T[] | undefined;
-    getKey: (val: T) => string;
+    as?: import('../Primitive').AsTag | import('vue').Component | undefined;
     modelValue?: U | U[] | undefined;
     "onUpdate:modelValue"?: ((val: U) => any) | undefined;
+    expanded?: string[] | undefined;
+    items?: T[] | undefined;
     defaultExpanded?: string[] | undefined;
+    getKey: (val: T) => string;
     propagateSelect?: boolean | undefined;
     "onUpdate:expanded"?: ((val: string[]) => any) | undefined;
-} & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, __VLS_ctx?: {
+} & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: Readonly<{
         default: (props: {
             flattenItems: FlattenedItem<T>[];
@@ -102,16 +103,16 @@ declare const _default: <T extends Record<string, any>, U extends Record<string,
         multiple?: boolean | undefined;
         selectionBehavior?: "replace" | "toggle" | undefined;
         asChild?: boolean | undefined;
-        as?: import('../Primitive').AsTag | import("vue").Component | undefined;
-        expanded?: string[] | undefined;
-        items?: T[] | undefined;
-        getKey: (val: T) => string;
+        as?: import('../Primitive').AsTag | import('vue').Component | undefined;
         modelValue?: U | U[] | undefined;
         "onUpdate:modelValue"?: ((val: U) => any) | undefined;
+        expanded?: string[] | undefined;
+        items?: T[] | undefined;
         defaultExpanded?: string[] | undefined;
+        getKey: (val: T) => string;
         propagateSelect?: boolean | undefined;
         "onUpdate:expanded"?: ((val: string[]) => any) | undefined;
-    } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
+    } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
     expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
     attrs: any;
     slots: Readonly<{
@@ -128,7 +129,7 @@ declare const _default: <T extends Record<string, any>, U extends Record<string,
         }) => any;
     };
     emit: ((evt: "update:modelValue", val: U) => void) & ((evt: "update:expanded", val: string[]) => void);
-}>) => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+}>) => import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
     [key: string]: any;
 }> & {
     __ctx?: {
@@ -139,16 +140,16 @@ declare const _default: <T extends Record<string, any>, U extends Record<string,
             multiple?: boolean | undefined;
             selectionBehavior?: "replace" | "toggle" | undefined;
             asChild?: boolean | undefined;
-            as?: import('../Primitive').AsTag | import("vue").Component | undefined;
-            expanded?: string[] | undefined;
-            items?: T[] | undefined;
-            getKey: (val: T) => string;
+            as?: import('../Primitive').AsTag | import('vue').Component | undefined;
             modelValue?: U | U[] | undefined;
             "onUpdate:modelValue"?: ((val: U) => any) | undefined;
+            expanded?: string[] | undefined;
+            items?: T[] | undefined;
             defaultExpanded?: string[] | undefined;
+            getKey: (val: T) => string;
             propagateSelect?: boolean | undefined;
             "onUpdate:expanded"?: ((val: string[]) => any) | undefined;
-        } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
+        } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
         expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
         attrs: any;
         slots: Readonly<{

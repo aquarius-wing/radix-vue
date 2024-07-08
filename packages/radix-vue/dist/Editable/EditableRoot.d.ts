@@ -1,6 +1,7 @@
-import { type Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import type { Direction } from '../shared/types';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { Direction } from '../shared/types';
+
 type ActivationMode = 'focus' | 'dblclick' | 'none';
 type SubmitMode = 'blur' | 'enter' | 'none' | 'both';
 type EditableRootContext = {
@@ -70,7 +71,7 @@ export type EditableRootEmits = {
     'update:state': [state: 'edit' | 'submit' | 'cancel'];
 };
 export declare const injectEditableRootContext: <T extends EditableRootContext | null | undefined = EditableRootContext>(fallback?: T | undefined) => T extends null ? EditableRootContext | null : EditableRootContext, provideEditableRootContext: (contextValue: EditableRootContext) => EditableRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<EditableRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<EditableRootProps>, {
     as: string;
     disabled: boolean;
     submitMode: string;
@@ -86,11 +87,11 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     cancel: () => void;
     /** Function to set the editable in edit mode */
     edit: () => void;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     submit: (value: string | undefined) => void;
     "update:modelValue": (value: string) => void;
     "update:state": (state: "cancel" | "submit" | "edit") => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<EditableRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<EditableRootProps>, {
     as: string;
     disabled: boolean;
     submitMode: string;
@@ -105,7 +106,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     "onUpdate:state"?: ((state: "cancel" | "submit" | "edit") => any) | undefined;
 }, {
     disabled: boolean;
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
     required: boolean;
     placeholder: string | {
         edit: string;

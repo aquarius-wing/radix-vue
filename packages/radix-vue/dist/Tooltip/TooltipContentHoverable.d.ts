@@ -1,5 +1,6 @@
-import { type TooltipContentImplProps } from "./TooltipContentImpl";
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<TooltipContentImplProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<TooltipContentImplProps>>>, {}, {}>, {
+import { TooltipContentImplProps } from './TooltipContentImpl';
+
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<TooltipContentImplProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<TooltipContentImplProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

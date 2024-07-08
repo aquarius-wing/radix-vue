@@ -1,5 +1,6 @@
-import type { PrimitiveProps } from '../Primitive';
-import type { FocusOutsideEvent, PointerDownOutsideEvent } from './utils';
+import { PrimitiveProps } from '../Primitive';
+import { FocusOutsideEvent, PointerDownOutsideEvent } from './utils';
+
 export interface DismissableLayerProps extends PrimitiveProps {
     /**
      * When `true`, hover/focus/click interactions will be disabled on elements outside
@@ -42,15 +43,15 @@ export declare const context: {
     layersWithOutsidePointerEventsDisabled: Set<HTMLElement> & Omit<Set<HTMLElement>, keyof Set<any>>;
     branches: Set<HTMLElement> & Omit<Set<HTMLElement>, keyof Set<any>>;
 };
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DismissableLayerProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DismissableLayerProps>, {
     disableOutsidePointerEvents: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: PointerDownOutsideEvent) => void;
     focusOutside: (event: FocusOutsideEvent) => void;
     interactOutside: (event: PointerDownOutsideEvent | FocusOutsideEvent) => void;
     dismiss: () => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DismissableLayerProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DismissableLayerProps>, {
     disableOutsidePointerEvents: boolean;
 }>>> & {
     onEscapeKeyDown?: ((event: KeyboardEvent) => any) | undefined;

@@ -1,6 +1,7 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import type { CheckedState } from './utils';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { CheckedState } from './utils';
+
 interface MenuItemIndicatorContext {
     checked: Ref<CheckedState>;
 }
@@ -12,12 +13,12 @@ export interface MenuItemIndicatorProps extends PrimitiveProps {
     forceMount?: boolean;
 }
 export declare const injectMenuItemIndicatorContext: <T extends MenuItemIndicatorContext | null | undefined = MenuItemIndicatorContext>(fallback?: T | undefined) => T extends null ? MenuItemIndicatorContext | null : MenuItemIndicatorContext, provideMenuItemIndicatorContext: (contextValue: MenuItemIndicatorContext) => MenuItemIndicatorContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuItemIndicatorProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuItemIndicatorProps>, {
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuItemIndicatorProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuItemIndicatorProps>, {
     as: string;
 }>>>, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
 }, {}>, {
     default?(_: {}): any;
 }>;

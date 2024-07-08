@@ -1,4 +1,5 @@
-import type { Ref, SlotsType, VNode } from 'vue';
+import { Ref, SlotsType, VNode } from 'vue';
+
 export interface PresenceProps {
     /**
      * Conditional to mount or unmount the child element. Similar to `v-if`
@@ -14,7 +15,7 @@ export interface PresenceProps {
      */
     forceMount?: boolean;
 }
-declare const _default: import("vue").DefineComponent<{
+declare const _default: import('vue').DefineComponent<{
     present: {
         type: BooleanConstructor;
         required: true;
@@ -22,9 +23,9 @@ declare const _default: import("vue").DefineComponent<{
     forceMount: {
         type: BooleanConstructor;
     };
-}, () => VNode<import("vue").RendererNode, import("vue").RendererElement, {
+}, () => VNode<import('vue').RendererNode, import('vue').RendererElement, {
     [key: string]: any;
-}> | null, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
+}> | null, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
     present: {
         type: BooleanConstructor;
         required: true;

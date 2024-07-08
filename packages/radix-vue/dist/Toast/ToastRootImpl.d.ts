@@ -1,5 +1,6 @@
-import type { PrimitiveProps } from '../Primitive';
-import type { SwipeEvent } from './utils';
+import { PrimitiveProps } from '../Primitive';
+import { SwipeEvent } from './utils';
+
 export type ToastRootImplEmits = {
     close: [];
     /** Event handler called when the escape key is down. It can be prevented by calling `event.preventDefault`. */
@@ -46,19 +47,19 @@ export declare const injectToastRootContext: <T extends {
 }) => {
     onClose: () => void;
 };
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastRootImplProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastRootImplProps>, {
     open: boolean;
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     close: () => void;
     pause: () => void;
-    resume: () => void;
     escapeKeyDown: (event: KeyboardEvent) => void;
+    resume: () => void;
     swipeStart: (event: SwipeEvent) => void;
     swipeMove: (event: SwipeEvent) => void;
     swipeCancel: (event: SwipeEvent) => void;
     swipeEnd: (event: SwipeEvent) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastRootImplProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToastRootImplProps>, {
     open: boolean;
     as: string;
 }>>> & {
@@ -71,7 +72,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     onSwipeCancel?: ((event: SwipeEvent) => any) | undefined;
     onSwipeEnd?: ((event: SwipeEvent) => any) | undefined;
 }, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
     open: boolean;
 }, {}>, {
     default?(_: {

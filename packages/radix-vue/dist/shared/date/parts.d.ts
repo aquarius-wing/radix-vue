@@ -1,4 +1,5 @@
-import type { DateSegmentPart, EditableSegmentPart, SegmentPart } from './types';
+import { DateSegmentPart, EditableSegmentPart, SegmentPart } from './types';
+
 export declare const DATE_SEGMENT_PARTS: readonly ["day", "month", "year"];
 export declare const TIME_SEGMENT_PARTS: readonly ["hour", "minute", "second", "dayPeriod"];
 export declare const NON_EDITABLE_SEGMENT_PARTS: readonly ["literal", "timeZoneName"];

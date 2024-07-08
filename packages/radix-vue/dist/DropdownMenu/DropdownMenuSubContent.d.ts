@@ -1,8 +1,9 @@
-import type { MenuSubContentEmits, MenuSubContentProps } from '../Menu';
+import { MenuSubContentEmits, MenuSubContentProps } from '../Menu';
+
 export type DropdownMenuSubContentEmits = MenuSubContentEmits;
 export interface DropdownMenuSubContentProps extends MenuSubContentProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<DropdownMenuSubContentProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<DropdownMenuSubContentProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent) => void;
     focusOutside: (event: import('../DismissableLayer').FocusOutsideEvent) => void;
@@ -10,7 +11,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     openAutoFocus: (event: Event) => void;
     closeAutoFocus: (event: Event) => void;
     entryFocus: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DropdownMenuSubContentProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DropdownMenuSubContentProps>>> & {
     onEscapeKeyDown?: ((event: KeyboardEvent) => any) | undefined;
     onPointerDownOutside?: ((event: import('../DismissableLayer').PointerDownOutsideEvent) => any) | undefined;
     onFocusOutside?: ((event: import('../DismissableLayer').FocusOutsideEvent) => any) | undefined;

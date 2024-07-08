@@ -1,10 +1,11 @@
-import type { DialogRootEmits, DialogRootProps } from '../Dialog';
+import { DialogRootEmits, DialogRootProps } from '../Dialog';
+
 export type AlertDialogEmits = DialogRootEmits;
 export interface AlertDialogProps extends Omit<DialogRootProps, 'modal'> {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<AlertDialogProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<AlertDialogProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (value: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AlertDialogProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AlertDialogProps>>> & {
     "onUpdate:open"?: ((value: boolean) => any) | undefined;
 }, {}, {}>, {
     default?(_: {}): any;

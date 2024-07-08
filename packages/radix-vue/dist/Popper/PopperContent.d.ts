@@ -1,6 +1,7 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import type { Align, Side } from './utils';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { Align, Side } from './utils';
+
 export declare const PopperContentPropsDefaultValue: {
     side: "right" | "left" | "top" | "bottom";
     sideOffset: number;
@@ -112,7 +113,7 @@ export interface PopperContentContext {
     shouldHideArrow: Ref<boolean>;
 }
 export declare const injectPopperContentContext: <T extends PopperContentContext | null | undefined = PopperContentContext>(fallback?: T | undefined) => T extends null ? PopperContentContext | null : PopperContentContext, providePopperContentContext: (contextValue: PopperContentContext) => PopperContentContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopperContentProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopperContentProps>, {
     side: "right" | "left" | "top" | "bottom";
     sideOffset: number;
     align: "center" | "end" | "start";
@@ -125,9 +126,9 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     hideWhenDetached: boolean;
     updatePositionStrategy: "always" | "optimized";
     prioritizePosition: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     [x: string]: (...args: unknown[]) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopperContentProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopperContentProps>, {
     side: "right" | "left" | "top" | "bottom";
     sideOffset: number;
     align: "center" | "end" | "start";

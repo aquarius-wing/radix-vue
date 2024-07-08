@@ -1,13 +1,14 @@
-import { type PrimitiveProps } from '../Primitive';
-import type { SegmentPart } from '../shared/date';
-import { type DateRangeType } from "./DateRangeFieldRoot";
+import { PrimitiveProps } from '../Primitive';
+import { SegmentPart } from '../shared/date';
+import { DateRangeType } from './DateRangeFieldRoot';
+
 export interface DateRangeFieldInputProps extends PrimitiveProps {
     /** The part of the date to render */
     part: SegmentPart;
     /** The type of field to render (start or end) */
     type: DateRangeType;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<DateRangeFieldInputProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DateRangeFieldInputProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<DateRangeFieldInputProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DateRangeFieldInputProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

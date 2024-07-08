@@ -1,10 +1,11 @@
-import { type DateValue } from '@internationalized/date';
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import { type Formatter } from '../shared';
-import { type Grid, type Matcher, type WeekDayFormat } from '../date';
-import type { CalendarIncrement, DateRange } from '../shared/date';
-import type { Direction } from '../shared/types';
+import { DateValue } from '@internationalized/date';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { Formatter } from '../shared';
+import { Grid, Matcher, WeekDayFormat } from '../date';
+import { CalendarIncrement, DateRange } from '../shared/date';
+import { Direction } from '../shared/types';
+
 type RangeCalendarRootContext = {
     modelValue: Ref<DateRange>;
     startValue: Ref<DateValue | undefined>;
@@ -99,7 +100,7 @@ export type RangeCalendarRootEmits = {
     'update:startValue': [date: DateValue | undefined];
 };
 export declare const injectRangeCalendarRootContext: <T extends RangeCalendarRootContext | null | undefined = RangeCalendarRootContext>(fallback?: T | undefined) => T extends null ? RangeCalendarRootContext | null : RangeCalendarRootContext, provideRangeCalendarRootContext: (contextValue: RangeCalendarRootContext) => RangeCalendarRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RangeCalendarRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RangeCalendarRootProps>, {
     defaultValue: () => {
         start: undefined;
         end: undefined;
@@ -119,11 +120,11 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     isDateDisabled: undefined;
     isDateUnavailable: undefined;
     initialView: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (date: DateRange) => void;
     "update:placeholder": (date: DateValue) => void;
     "update:startValue": (date: DateValue | undefined) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RangeCalendarRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RangeCalendarRootProps>, {
     defaultValue: () => {
         start: undefined;
         end: undefined;
@@ -155,11 +156,11 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     locale: string;
     numberOfMonths: number;
     pagedNavigation: boolean;
-    as: import('../Primitive').AsTag | import("vue").Component;
-    readonly: boolean;
+    as: import('../Primitive').AsTag | import('vue').Component;
     placeholder: DateValue;
     preventDeselect: boolean;
     weekdayFormat: WeekDayFormat;
+    readonly: boolean;
     initialFocus: boolean;
     isDateDisabled: Matcher;
     isDateUnavailable: Matcher;

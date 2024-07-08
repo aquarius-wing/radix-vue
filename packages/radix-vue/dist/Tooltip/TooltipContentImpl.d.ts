@@ -1,5 +1,6 @@
-import type { PrimitiveProps } from '../Primitive';
-import type { PopperContentProps } from '../Popper';
+import { PrimitiveProps } from '../Primitive';
+import { PopperContentProps } from '../Popper';
+
 export type TooltipContentImplEmits = {
     /** Event handler called when focus moves to the destructive action after opening. It can be prevented by calling `event.preventDefault` */
     escapeKeyDown: [event: KeyboardEvent];
@@ -17,7 +18,7 @@ export interface TooltipContentImplProps extends PrimitiveProps, Pick<PopperCont
      */
     ariaLabel?: string;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipContentImplProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipContentImplProps>, {
     side: string;
     sideOffset: number;
     align: string;
@@ -27,10 +28,10 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     arrowPadding: number;
     sticky: string;
     hideWhenDetached: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipContentImplProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipContentImplProps>, {
     side: string;
     sideOffset: number;
     align: string;

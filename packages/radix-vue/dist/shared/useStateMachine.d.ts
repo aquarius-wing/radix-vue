@@ -18,7 +18,7 @@ type UnionToIntersection<T> = (T extends any ? (x: T) => any : never) extends (x
  * `dispatch`.
  */
 export declare function useStateMachine<M>(initialState: MachineState<M>, machine: M & Machine<MachineState<M>>): {
-    state: import("vue").Ref<import("vue").UnwrapRef<keyof M>>;
+    state: import('vue').Ref<import('vue').UnwrapRef<keyof M>>;
     dispatch: (event: MachineEvent<M>) => void;
 };
 export {};

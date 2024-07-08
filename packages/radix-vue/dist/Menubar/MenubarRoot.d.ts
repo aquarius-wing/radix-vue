@@ -1,5 +1,6 @@
-import type { Ref } from 'vue';
-import type { Direction } from '../shared/types';
+import { Ref } from 'vue';
+import { Direction } from '../shared/types';
+
 export interface MenubarRootProps {
     /** The controlled value of the menu to open. Can be used as `v-model`. */
     modelValue?: string;
@@ -27,11 +28,11 @@ export interface MenubarRootContext {
     onMenuToggle: (value: string) => void;
 }
 export declare const injectMenubarRootContext: <T extends MenubarRootContext | null | undefined = MenubarRootContext>(fallback?: T | undefined) => T extends null ? MenubarRootContext | null : MenubarRootContext, provideMenubarRootContext: (contextValue: MenubarRootContext) => MenubarRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenubarRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenubarRootProps>, {
     loop: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (value: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenubarRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenubarRootProps>, {
     loop: boolean;
 }>>> & {
     "onUpdate:modelValue"?: ((value: boolean) => any) | undefined;

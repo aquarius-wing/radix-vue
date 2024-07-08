@@ -1,5 +1,6 @@
-import type { DataOrientation } from '../types';
-import type { PrimitiveProps } from '../../Primitive';
+import { DataOrientation } from '../types';
+import { PrimitiveProps } from '../../Primitive';
+
 export interface BaseSeparatorProps extends PrimitiveProps {
     /**
      * Orientation of the component.
@@ -13,9 +14,9 @@ export interface BaseSeparatorProps extends PrimitiveProps {
      */
     decorative?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<BaseSeparatorProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<BaseSeparatorProps>, {
     orientation: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<BaseSeparatorProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<BaseSeparatorProps>, {
     orientation: string;
 }>>>, {
     orientation: DataOrientation;

@@ -1,7 +1,8 @@
-import type { DialogOverlayProps } from '../Dialog';
+import { DialogOverlayProps } from '../Dialog';
+
 export interface AlertDialogOverlayProps extends DialogOverlayProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<AlertDialogOverlayProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AlertDialogOverlayProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<AlertDialogOverlayProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AlertDialogOverlayProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

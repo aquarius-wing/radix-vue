@@ -1,6 +1,7 @@
-import type { Ref } from 'vue';
-import type { PopperContentProps } from '../Popper';
-import type { PointerDownOutsideEvent } from '../DismissableLayer';
+import { Ref } from 'vue';
+import { PopperContentProps } from '../Popper';
+import { PointerDownOutsideEvent } from '../DismissableLayer';
+
 interface SelectContentContext {
     content?: Ref<HTMLElement | undefined>;
     viewport?: Ref<HTMLElement | undefined>;
@@ -45,15 +46,15 @@ export interface SelectContentImplProps extends PopperContentProps {
     bodyLock?: boolean;
 }
 export declare const injectSelectContentContext: <T extends SelectContentContext | null | undefined = SelectContentContext>(fallback?: T | undefined) => T extends null ? SelectContentContext | null : SelectContentContext, provideSelectContentContext: (contextValue: SelectContentContext) => SelectContentContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectContentImplProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectContentImplProps>, {
     align: string;
     position: string;
     bodyLock: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: PointerDownOutsideEvent) => void;
     closeAutoFocus: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectContentImplProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectContentImplProps>, {
     align: string;
     position: string;
     bodyLock: boolean;

@@ -1,5 +1,6 @@
-import type { PrimitiveProps } from '../Primitive';
-import type { ImageLoadingStatus } from './utils';
+import { PrimitiveProps } from '../Primitive';
+import { ImageLoadingStatus } from './utils';
+
 export type AvatarImageEmits = {
     /**
      * A callback providing information about the loading status of the image. <br>
@@ -10,16 +11,16 @@ export type AvatarImageEmits = {
 export interface AvatarImageProps extends PrimitiveProps {
     src: string;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AvatarImageProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AvatarImageProps>, {
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     loadingStatusChange: (value: ImageLoadingStatus) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AvatarImageProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<AvatarImageProps>, {
     as: string;
 }>>> & {
     onLoadingStatusChange?: ((value: ImageLoadingStatus) => any) | undefined;
 }, {
-    as: import('../Primitive/Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
 }, {}>, {
     default?(_: {}): any;
 }>;

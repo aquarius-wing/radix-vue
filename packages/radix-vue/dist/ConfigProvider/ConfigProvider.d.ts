@@ -1,5 +1,6 @@
-import type { Direction, ScrollBodyOption } from '../shared/types';
-import type { Ref } from 'vue';
+import { Direction, ScrollBodyOption } from '../shared/types';
+import { Ref } from 'vue';
+
 interface ConfigProviderContextValue {
     dir?: Ref<Direction>;
     scrollBody?: Ref<boolean | ScrollBodyOption>;
@@ -22,11 +23,11 @@ export interface ConfigProviderProps {
      */
     useId?: () => string;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ConfigProviderProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ConfigProviderProps>, {
     dir: string;
     scrollBody: boolean;
     useId: undefined;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ConfigProviderProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ConfigProviderProps>, {
     dir: string;
     scrollBody: boolean;
     useId: undefined;

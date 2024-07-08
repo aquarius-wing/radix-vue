@@ -1,4 +1,5 @@
-import type { Ref } from 'vue';
+import { Ref } from 'vue';
+
 export interface PopoverRootProps {
     /**
      * The open state of the popover when it is initially rendered. Use when you do not need to control its open state.
@@ -31,21 +32,21 @@ export interface PopoverRootContext {
     hasCustomAnchor: Ref<boolean>;
 }
 export declare const injectPopoverRootContext: <T extends PopoverRootContext | null | undefined = PopoverRootContext>(fallback?: T | undefined) => T extends null ? PopoverRootContext | null : PopoverRootContext, providePopoverRootContext: (contextValue: PopoverRootContext) => PopoverRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopoverRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopoverRootProps>, {
     defaultOpen: boolean;
     open: undefined;
     modal: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (value: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopoverRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopoverRootProps>, {
     defaultOpen: boolean;
     open: undefined;
     modal: boolean;
 }>>> & {
     "onUpdate:open"?: ((value: boolean) => any) | undefined;
 }, {
-    open: boolean;
     defaultOpen: boolean;
+    open: boolean;
     modal: boolean;
 }, {}>, Readonly<{
     default: (props: {

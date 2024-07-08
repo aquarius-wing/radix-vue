@@ -1,6 +1,7 @@
-import type { ComputedRef, Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import type { DataOrientation, Direction, SingleOrMultipleProps, SingleOrMultipleType } from '../shared/types';
+import { ComputedRef, Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { DataOrientation, Direction, SingleOrMultipleProps, SingleOrMultipleType } from '../shared/types';
+
 export interface ToggleGroupRootProps<ValidValue = string | string[], ExplicitType = SingleOrMultipleType> extends PrimitiveProps, SingleOrMultipleProps<ValidValue, ExplicitType> {
     /** When `false`, navigating through the items using arrow keys will be disabled. */
     rovingFocus?: boolean;
@@ -28,13 +29,13 @@ interface ToggleGroupRootContext {
     disabled?: Ref<boolean>;
 }
 export declare const injectToggleGroupRootContext: <T extends ToggleGroupRootContext | null | undefined = ToggleGroupRootContext>(fallback?: T | undefined) => T extends null ? ToggleGroupRootContext | null : ToggleGroupRootContext, provideToggleGroupRootContext: (contextValue: ToggleGroupRootContext) => ToggleGroupRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToggleGroupRootProps<string | string[], SingleOrMultipleType>>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToggleGroupRootProps<string | string[], SingleOrMultipleType>>, {
     loop: boolean;
     rovingFocus: boolean;
     disabled: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (payload: string | string[]) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToggleGroupRootProps<string | string[], SingleOrMultipleType>>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ToggleGroupRootProps<string | string[], SingleOrMultipleType>>, {
     loop: boolean;
     rovingFocus: boolean;
     disabled: boolean;

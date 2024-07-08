@@ -1,11 +1,12 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export interface ListboxGroupProps extends PrimitiveProps {
 }
 interface ListboxGroupContext {
     id: string;
 }
 export declare const injectListboxGroupContext: <T extends ListboxGroupContext | null | undefined = ListboxGroupContext>(fallback?: T | undefined) => T extends null ? ListboxGroupContext | null : ListboxGroupContext, provideListboxGroupContext: (contextValue: ListboxGroupContext) => ListboxGroupContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<ListboxGroupProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ListboxGroupProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ListboxGroupProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ListboxGroupProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

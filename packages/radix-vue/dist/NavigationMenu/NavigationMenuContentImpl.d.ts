@@ -1,14 +1,15 @@
-import type { DismissableLayerEmits, DismissableLayerProps, FocusOutsideEvent } from '../DismissableLayer';
-import type { PointerDownOutsideEvent } from '../DismissableLayer/utils';
+import { DismissableLayerEmits, DismissableLayerProps, FocusOutsideEvent } from '../DismissableLayer';
+import { PointerDownOutsideEvent } from '../DismissableLayer/utils';
+
 export type NavigationMenuContentImplEmits = DismissableLayerEmits;
 export interface NavigationMenuContentImplProps extends DismissableLayerProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<NavigationMenuContentImplProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<NavigationMenuContentImplProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: PointerDownOutsideEvent) => void;
     focusOutside: (event: FocusOutsideEvent) => void;
     interactOutside: (event: PointerDownOutsideEvent | FocusOutsideEvent) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<NavigationMenuContentImplProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<NavigationMenuContentImplProps>>> & {
     onEscapeKeyDown?: ((event: KeyboardEvent) => any) | undefined;
     onPointerDownOutside?: ((event: PointerDownOutsideEvent) => any) | undefined;
     onFocusOutside?: ((event: FocusOutsideEvent) => any) | undefined;

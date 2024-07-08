@@ -1,5 +1,6 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+
 export interface SwitchRootProps extends PrimitiveProps {
     /** The state of the switch when it is initially rendered. Use when you do not need to control its state. */
     defaultChecked?: boolean;
@@ -25,13 +26,13 @@ export interface SwitchRootContext {
     disabled: Ref<boolean>;
 }
 export declare const injectSwitchRootContext: <T extends SwitchRootContext | null | undefined = SwitchRootContext>(fallback?: T | undefined) => T extends null ? SwitchRootContext | null : SwitchRootContext, provideSwitchRootContext: (contextValue: SwitchRootContext) => SwitchRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SwitchRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SwitchRootProps>, {
     as: string;
     checked: undefined;
     value: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:checked": (payload: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SwitchRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SwitchRootProps>, {
     as: string;
     checked: undefined;
     value: string;
@@ -39,7 +40,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     "onUpdate:checked"?: ((payload: boolean) => any) | undefined;
 }, {
     value: string;
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
     checked: boolean;
 }, {}>, Readonly<{
     default: (props: {

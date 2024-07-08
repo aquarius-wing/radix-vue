@@ -1,7 +1,7 @@
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<{}, {}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{}, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{}>>, {}, {}>, {
     default?(_: {
-        date: import("@internationalized/date").DateValue;
-        grid: import('../date').Grid<import("@internationalized/date").DateValue>[];
+        date: import('@internationalized/date').DateValue;
+        grid: import('../date').Grid<import('@internationalized/date').DateValue>[];
         weekDays: string[];
         weekStartsOn: 0 | 2 | 1 | 3 | 4 | 5 | 6;
         locale: string;

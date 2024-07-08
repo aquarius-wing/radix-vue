@@ -1,4 +1,5 @@
-import type { Ref } from 'vue';
+import { Ref } from 'vue';
+
 export interface TooltipRootProps {
     /**
      * The open state of the tooltip when it is initially rendered.
@@ -61,7 +62,7 @@ export interface TooltipContext {
     ignoreNonKeyboardFocus: Ref<boolean>;
 }
 export declare const injectTooltipRootContext: <T extends TooltipContext | null | undefined = TooltipContext>(fallback?: T | undefined) => T extends null ? TooltipContext | null : TooltipContext, provideTooltipRootContext: (contextValue: TooltipContext) => TooltipContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipRootProps>, {
     defaultOpen: boolean;
     open: undefined;
     delayDuration: undefined;
@@ -69,9 +70,9 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     disableClosingTrigger: undefined;
     disabled: undefined;
     ignoreNonKeyboardFocus: undefined;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (value: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TooltipRootProps>, {
     defaultOpen: boolean;
     open: undefined;
     delayDuration: undefined;
@@ -83,8 +84,8 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     "onUpdate:open"?: ((value: boolean) => any) | undefined;
 }, {
     disabled: boolean;
-    open: boolean;
     defaultOpen: boolean;
+    open: boolean;
     delayDuration: number;
     disableHoverableContent: boolean;
     disableClosingTrigger: boolean;

@@ -1,5 +1,6 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+
 type PaginationRootContext = {
     page: Ref<number>;
     onPageChange: (value: number) => void;
@@ -33,16 +34,16 @@ export type PaginationRootEmits = {
     'update:page': [value: number];
 };
 export declare const injectPaginationRootContext: <T extends PaginationRootContext | null | undefined = PaginationRootContext>(fallback?: T | undefined) => T extends null ? PaginationRootContext | null : PaginationRootContext, providePaginationRootContext: (contextValue: PaginationRootContext) => PaginationRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PaginationRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PaginationRootProps>, {
     as: string;
     total: number;
     itemsPerPage: number;
     siblingCount: number;
     defaultPage: number;
     showEdges: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:page": (value: number) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PaginationRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PaginationRootProps>, {
     as: string;
     total: number;
     itemsPerPage: number;
@@ -52,10 +53,10 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
 }>>> & {
     "onUpdate:page"?: ((value: number) => any) | undefined;
 }, {
-    as: import('../Primitive').AsTag | import("vue").Component;
-    total: number;
+    as: import('../Primitive').AsTag | import('vue').Component;
     defaultPage: number;
     itemsPerPage: number;
+    total: number;
     siblingCount: number;
     showEdges: boolean;
 }, {}>, Readonly<{

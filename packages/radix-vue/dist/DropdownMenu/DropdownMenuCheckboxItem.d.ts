@@ -1,11 +1,12 @@
-import type { MenuCheckboxItemEmits, MenuCheckboxItemProps } from '../Menu';
+import { MenuCheckboxItemEmits, MenuCheckboxItemProps } from '../Menu';
+
 export type DropdownMenuCheckboxItemEmits = MenuCheckboxItemEmits;
 export interface DropdownMenuCheckboxItemProps extends MenuCheckboxItemProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<DropdownMenuCheckboxItemProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<DropdownMenuCheckboxItemProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     select: (event: Event) => void;
     "update:checked": (payload: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DropdownMenuCheckboxItemProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DropdownMenuCheckboxItemProps>>> & {
     onSelect?: ((event: Event) => any) | undefined;
     "onUpdate:checked"?: ((payload: boolean) => any) | undefined;
 }, {}, {}>, {

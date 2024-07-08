@@ -1,6 +1,7 @@
-import type { PrimitiveProps } from '../Primitive';
-import type { CalendarIncrement } from '../shared/date';
-import type { DateValue } from '@internationalized/date';
+import { PrimitiveProps } from '../Primitive';
+import { CalendarIncrement } from '../shared/date';
+import { DateValue } from '@internationalized/date';
+
 export interface CalendarPrevProps extends PrimitiveProps {
     /**
      * The calendar unit to go back
@@ -10,14 +11,14 @@ export interface CalendarPrevProps extends PrimitiveProps {
     /** The function to be used for the prev page. Overwrites the `prevPage` function set on the `CalendarRoot`. */
     prevPage?: (placeholder: DateValue) => DateValue;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CalendarPrevProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CalendarPrevProps>, {
     as: string;
     step: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CalendarPrevProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CalendarPrevProps>, {
     as: string;
     step: string;
 }>>>, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
     step: CalendarIncrement;
 }, {}>, {
     default?(_: {}): any;

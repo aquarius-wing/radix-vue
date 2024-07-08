@@ -1,4 +1,5 @@
-import type { Ref } from 'vue';
+import { Ref } from 'vue';
+
 export interface DialogRootProps {
     /** The controlled open state of the dialog. Can be binded as `v-model:open`. */
     open?: boolean;
@@ -27,21 +28,21 @@ export interface DialogRootContext {
     descriptionId: string;
 }
 export declare const injectDialogRootContext: <T extends DialogRootContext | null | undefined = DialogRootContext>(fallback?: T | undefined) => T extends null ? DialogRootContext | null : DialogRootContext, provideDialogRootContext: (contextValue: DialogRootContext) => DialogRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DialogRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DialogRootProps>, {
     open: undefined;
     defaultOpen: boolean;
     modal: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (value: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DialogRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DialogRootProps>, {
     open: undefined;
     defaultOpen: boolean;
     modal: boolean;
 }>>> & {
     "onUpdate:open"?: ((value: boolean) => any) | undefined;
 }, {
-    open: boolean;
     defaultOpen: boolean;
+    open: boolean;
     modal: boolean;
 }, {}>, Readonly<{
     default: (props: {

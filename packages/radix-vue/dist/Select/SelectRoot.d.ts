@@ -1,5 +1,6 @@
-import type { Ref, VNode } from 'vue';
-import type { Direction } from '../shared/types';
+import { Ref, VNode } from 'vue';
+import { Direction } from '../shared/types';
+
 export interface SelectRootProps {
     /** The controlled open state of the Select. Can be bind as `v-model:open`. */
     open?: boolean;
@@ -52,14 +53,14 @@ export interface SelectNativeOptionsContext {
     onNativeOptionRemove: (option: VNode) => void;
 }
 export declare const injectSelectNativeOptionsContext: <T extends SelectNativeOptionsContext | null | undefined = SelectNativeOptionsContext>(fallback?: T | undefined) => T extends null ? SelectNativeOptionsContext | null : SelectNativeOptionsContext, provideSelectNativeOptionsContext: (contextValue: SelectNativeOptionsContext) => SelectNativeOptionsContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectRootProps>, {
     defaultValue: string;
     modelValue: undefined;
     open: undefined;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (value: boolean) => void;
     "update:modelValue": (value: string) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectRootProps>, {
     defaultValue: string;
     modelValue: undefined;
     open: undefined;

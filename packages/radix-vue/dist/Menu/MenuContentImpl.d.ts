@@ -1,9 +1,10 @@
-import type { Ref } from 'vue';
-import type { GraceIntent } from './utils';
-import type { FocusScopeProps } from '../FocusScope';
-import type { RovingFocusGroupEmits } from '../RovingFocus';
-import type { DismissableLayerEmits, DismissableLayerProps } from '../DismissableLayer';
-import type { PopperContentProps } from '../Popper';
+import { Ref } from 'vue';
+import { GraceIntent } from './utils';
+import { FocusScopeProps } from '../FocusScope';
+import { RovingFocusGroupEmits } from '../RovingFocus';
+import { DismissableLayerEmits, DismissableLayerProps } from '../DismissableLayer';
+import { PopperContentProps } from '../Popper';
+
 export interface MenuContentContext {
     onItemEnter: (event: PointerEvent) => boolean;
     onItemLeave: (event: PointerEvent) => void;
@@ -48,7 +49,7 @@ export interface MenuContentImplProps extends MenuContentImplPrivateProps, Omit<
 }
 export interface MenuRootContentTypeProps extends Omit<MenuContentImplProps, 'disableOutsidePointerEvents' | 'disableOutsideScroll' | 'trapFocus'> {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuContentImplProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuContentImplProps>, {
     side: "right" | "left" | "top" | "bottom";
     sideOffset: number;
     align: "center" | "end" | "start";
@@ -61,7 +62,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     hideWhenDetached: boolean;
     updatePositionStrategy: "always" | "optimized";
     prioritizePosition: boolean;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: import('../DismissableLayer').PointerDownOutsideEvent) => void;
     focusOutside: (event: import('../DismissableLayer').FocusOutsideEvent) => void;
@@ -70,7 +71,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     openAutoFocus: (event: Event) => void;
     closeAutoFocus: (event: Event) => void;
     entryFocus: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuContentImplProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuContentImplProps>, {
     side: "right" | "left" | "top" | "bottom";
     sideOffset: number;
     align: "center" | "end" | "start";

@@ -1,4 +1,5 @@
-import type { Ref } from 'vue';
+import { Ref } from 'vue';
+
 export interface HoverCardRootProps {
     /** The open state of the hover card when it is initially rendered. Use when you do not need to control its open state. */
     defaultOpen?: false;
@@ -25,14 +26,14 @@ export interface HoverCardRootContext {
     triggerElement: Ref<HTMLElement | undefined>;
 }
 export declare const injectHoverCardRootContext: <T extends HoverCardRootContext | null | undefined = HoverCardRootContext>(fallback?: T | undefined) => T extends null ? HoverCardRootContext | null : HoverCardRootContext, provideHoverCardRootContext: (contextValue: HoverCardRootContext) => HoverCardRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<HoverCardRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<HoverCardRootProps>, {
     defaultOpen: boolean;
     open: undefined;
     openDelay: number;
     closeDelay: number;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (value: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<HoverCardRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<HoverCardRootProps>, {
     defaultOpen: boolean;
     open: undefined;
     openDelay: number;
@@ -40,8 +41,8 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
 }>>> & {
     "onUpdate:open"?: ((value: boolean) => any) | undefined;
 }, {
-    open: boolean;
     defaultOpen: false;
+    open: boolean;
     openDelay: number;
     closeDelay: number;
 }, {}>, Readonly<{

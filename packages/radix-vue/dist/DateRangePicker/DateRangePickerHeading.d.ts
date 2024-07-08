@@ -1,7 +1,8 @@
-import { type RangeCalendarHeadingProps } from '..';
+import { RangeCalendarHeadingProps } from '..';
+
 export interface DateRangePickerHeadingProps extends RangeCalendarHeadingProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<DateRangePickerHeadingProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DateRangePickerHeadingProps>>>, {}, {}>, Readonly<{
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<DateRangePickerHeadingProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DateRangePickerHeadingProps>>>, {}, {}>, Readonly<{
     default: (props: {
         /** Current month and year */
         headingValue: string;

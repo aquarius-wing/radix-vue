@@ -1,10 +1,11 @@
-import type { MenuRadioGroupEmits, MenuRadioGroupProps } from '../Menu';
+import { MenuRadioGroupEmits, MenuRadioGroupProps } from '../Menu';
+
 export type ContextMenuRadioGroupEmits = MenuRadioGroupEmits;
 export interface ContextMenuRadioGroupProps extends MenuRadioGroupProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<ContextMenuRadioGroupProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ContextMenuRadioGroupProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (payload: string) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ContextMenuRadioGroupProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ContextMenuRadioGroupProps>>> & {
     "onUpdate:modelValue"?: ((payload: string) => any) | undefined;
 }, {}, {}>, {
     default?(_: {}): any;

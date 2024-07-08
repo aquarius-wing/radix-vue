@@ -1,4 +1,5 @@
-import type { DateValue } from '@internationalized/date';
+import { DateValue } from '@internationalized/date';
+
 export type Matcher = (date: DateValue) => boolean;
 export type Grid<T> = {
     /**

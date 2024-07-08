@@ -1,5 +1,6 @@
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+
 export interface ScrollAreaScrollbarProps extends PrimitiveProps {
     /** The orientation of the scrollbar */
     orientation?: 'vertical' | 'horizontal';
@@ -17,14 +18,14 @@ export interface ScrollAreaScollbarContext {
     asChild: Ref<boolean>;
 }
 export declare const injectScrollAreaScrollbarContext: <T extends ScrollAreaScollbarContext | null | undefined = ScrollAreaScollbarContext>(fallback?: T | undefined) => T extends null ? ScrollAreaScollbarContext | null : ScrollAreaScollbarContext, provideScrollAreaScrollbarContext: (contextValue: ScrollAreaScollbarContext) => ScrollAreaScollbarContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ScrollAreaScrollbarProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ScrollAreaScrollbarProps>, {
     orientation: string;
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ScrollAreaScrollbarProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ScrollAreaScrollbarProps>, {
     orientation: string;
     as: string;
 }>>>, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
     orientation: "vertical" | "horizontal";
 }, {}>, {
     default?(_: {}): any;

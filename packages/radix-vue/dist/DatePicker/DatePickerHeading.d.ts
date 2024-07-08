@@ -1,7 +1,8 @@
-import { type CalendarHeadingProps } from '..';
+import { CalendarHeadingProps } from '..';
+
 export interface DatePickerHeadingProps extends CalendarHeadingProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<DatePickerHeadingProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DatePickerHeadingProps>>>, {}, {}>, Readonly<{
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<DatePickerHeadingProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<DatePickerHeadingProps>>>, {}, {}>, Readonly<{
     default: (props: {
         /** Current month and year */
         headingValue: string;

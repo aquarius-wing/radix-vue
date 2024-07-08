@@ -1,4 +1,5 @@
-import { type MaybeElementRef } from '@vueuse/core';
+import { MaybeElementRef } from '@vueuse/core';
+
 /**
  * The `useHideOthers` function is a TypeScript function that takes a target element reference and
  * hides all other elements in ARIA when the target element is present, and restores the visibility of the

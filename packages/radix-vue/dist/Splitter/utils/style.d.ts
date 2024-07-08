@@ -1,6 +1,7 @@
-import type { PanelData } from "../SplitterPanel";
-import type { DragState } from './types';
-import type { CSSProperties } from 'vue';
+import { PanelData } from '../SplitterPanel';
+import { DragState } from './types';
+import { CSSProperties } from 'vue';
+
 type CursorState = 'horizontal' | 'intersection' | 'vertical';
 export declare function getCursorStyle(state: CursorState, constraintFlags: number): string;
 export declare function resetGlobalCursorStyle(): void;

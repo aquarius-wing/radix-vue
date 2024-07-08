@@ -1,10 +1,11 @@
-import { type DateValue } from '@internationalized/date';
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import { type Formatter } from '../shared';
-import { type CalendarIncrement } from '../shared/date';
-import type { Grid, Matcher, WeekDayFormat } from '../date';
-import type { Direction } from '../shared/types';
+import { DateValue } from '@internationalized/date';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { Formatter } from '../shared';
+import { CalendarIncrement } from '../shared/date';
+import { Grid, Matcher, WeekDayFormat } from '../date';
+import { Direction } from '../shared/types';
+
 type CalendarRootContext = {
     locale: Ref<string>;
     modelValue: Ref<DateValue | DateValue[] | undefined>;
@@ -100,7 +101,7 @@ export type CalendarRootEmits = {
     'update:placeholder': [date: DateValue];
 };
 export declare const injectCalendarRootContext: <T extends CalendarRootContext | null | undefined = CalendarRootContext>(fallback?: T | undefined) => T extends null ? CalendarRootContext | null : CalendarRootContext, provideCalendarRootContext: (contextValue: CalendarRootContext) => CalendarRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CalendarRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<CalendarRootProps>, {
     defaultValue: undefined;
     as: string;
     pagedNavigation: boolean;
@@ -117,10 +118,10 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     locale: string;
     isDateDisabled: undefined;
     isDateUnavailable: undefined;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (date: DateValue | undefined) => void;
     "update:placeholder": (date: DateValue) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MultipleCalendarRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MultipleCalendarRootProps>, {
     defaultValue: undefined;
     as: string;
     pagedNavigation: boolean;
@@ -137,7 +138,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     locale: string;
     isDateDisabled: undefined;
     isDateUnavailable: undefined;
-}>> | import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SingleCalendarRootProps>, {
+}>> | import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SingleCalendarRootProps>, {
     defaultValue: undefined;
     as: string;
     pagedNavigation: boolean;
@@ -166,11 +167,11 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     locale: string;
     numberOfMonths: number;
     pagedNavigation: boolean;
-    as: import('../Primitive').AsTag | import("vue").Component;
-    readonly: boolean;
+    as: import('../Primitive').AsTag | import('vue').Component;
     placeholder: DateValue;
     preventDeselect: boolean;
     weekdayFormat: WeekDayFormat;
+    readonly: boolean;
     initialFocus: boolean;
     isDateDisabled: Matcher;
     isDateUnavailable: Matcher;
@@ -183,11 +184,11 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     locale: string;
     numberOfMonths: number;
     pagedNavigation: boolean;
-    as: import('../Primitive').AsTag | import("vue").Component;
-    readonly: boolean;
+    as: import('../Primitive').AsTag | import('vue').Component;
     placeholder: DateValue;
     preventDeselect: boolean;
     weekdayFormat: WeekDayFormat;
+    readonly: boolean;
     initialFocus: boolean;
     isDateDisabled: Matcher;
     isDateUnavailable: Matcher;

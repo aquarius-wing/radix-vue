@@ -1,10 +1,11 @@
-import type { MenuRadioItemEmits, MenuRadioItemProps } from '../Menu';
+import { MenuRadioItemEmits, MenuRadioItemProps } from '../Menu';
+
 export type MenubarRadioItemEmits = MenuRadioItemEmits;
 export interface MenubarRadioItemProps extends MenuRadioItemProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<MenuRadioItemProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<MenuRadioItemProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     select: (event: Event) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenuRadioItemProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<MenuRadioItemProps>>> & {
     onSelect?: ((event: Event) => any) | undefined;
 }, {}, {}>, {
     default?(_: {}): any;

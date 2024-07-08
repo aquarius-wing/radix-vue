@@ -1,4 +1,5 @@
-import type { PrimitiveProps } from '../Primitive';
+import { PrimitiveProps } from '../Primitive';
+
 export type RadioEmits = {
     'update:checked': [value: boolean];
 };
@@ -13,13 +14,13 @@ export interface RadioProps extends PrimitiveProps {
     checked?: boolean;
     name?: string;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RadioProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RadioProps>, {
     disabled: boolean;
     checked: undefined;
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:checked": (value: boolean) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RadioProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<RadioProps>, {
     disabled: boolean;
     checked: undefined;
     as: string;
@@ -27,7 +28,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     "onUpdate:checked"?: ((value: boolean) => any) | undefined;
 }, {
     disabled: boolean;
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
     checked: boolean;
 }, {}>, Readonly<{
     default: (props: {

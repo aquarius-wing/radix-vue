@@ -1,6 +1,7 @@
-import type { ComputedRef, Ref } from 'vue';
-import type { Direction } from '../shared/types';
-import type { PrimitiveProps } from '../Primitive';
+import { ComputedRef, Ref } from 'vue';
+import { Direction } from '../shared/types';
+import { PrimitiveProps } from '../Primitive';
+
 export type AcceptableValue = string | number | boolean | Record<string, any>;
 type ArrayOrWrapped<T> = T extends any[] ? T : Array<T>;
 type ComboboxRootContext<T> = {
@@ -74,9 +75,9 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     multiple?: boolean | undefined;
     name?: string | undefined;
     asChild?: boolean | undefined;
-    as?: import('../Primitive').AsTag | import("vue").Component | undefined;
-    open?: boolean | undefined;
+    as?: import('../Primitive').AsTag | import('vue').Component | undefined;
     defaultOpen?: boolean | undefined;
+    open?: boolean | undefined;
     "onUpdate:open"?: ((value: boolean) => any) | undefined;
     modelValue?: T | T[] | undefined;
     "onUpdate:modelValue"?: ((value: T) => any) | undefined;
@@ -87,7 +88,7 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     resetSearchTermOnBlur?: boolean | undefined;
     "onUpdate:searchTerm"?: ((value: string) => any) | undefined;
     "onUpdate:selectedValue"?: ((value: T | undefined) => any) | undefined;
-} & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, __VLS_ctx?: {
+} & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: Readonly<{
         default: (props: {
             /** Current open state */
@@ -113,9 +114,9 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
         multiple?: boolean | undefined;
         name?: string | undefined;
         asChild?: boolean | undefined;
-        as?: import('../Primitive').AsTag | import("vue").Component | undefined;
-        open?: boolean | undefined;
+        as?: import('../Primitive').AsTag | import('vue').Component | undefined;
         defaultOpen?: boolean | undefined;
+        open?: boolean | undefined;
         "onUpdate:open"?: ((value: boolean) => any) | undefined;
         modelValue?: T | T[] | undefined;
         "onUpdate:modelValue"?: ((value: T) => any) | undefined;
@@ -126,7 +127,7 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
         resetSearchTermOnBlur?: boolean | undefined;
         "onUpdate:searchTerm"?: ((value: string) => any) | undefined;
         "onUpdate:selectedValue"?: ((value: T | undefined) => any) | undefined;
-    } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
+    } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
     expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
     attrs: any;
     slots: Readonly<{
@@ -145,7 +146,7 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
         }) => any;
     };
     emit: ((evt: "update:open", value: boolean) => void) & ((evt: "update:modelValue", value: T) => void) & ((evt: "update:searchTerm", value: string) => void) & ((evt: "update:selectedValue", value: T | undefined) => void);
-}>) => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+}>) => import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
     [key: string]: any;
 }> & {
     __ctx?: {
@@ -156,9 +157,9 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
             multiple?: boolean | undefined;
             name?: string | undefined;
             asChild?: boolean | undefined;
-            as?: import('../Primitive').AsTag | import("vue").Component | undefined;
-            open?: boolean | undefined;
+            as?: import('../Primitive').AsTag | import('vue').Component | undefined;
             defaultOpen?: boolean | undefined;
+            open?: boolean | undefined;
             "onUpdate:open"?: ((value: boolean) => any) | undefined;
             modelValue?: T | T[] | undefined;
             "onUpdate:modelValue"?: ((value: T) => any) | undefined;
@@ -169,7 +170,7 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
             resetSearchTermOnBlur?: boolean | undefined;
             "onUpdate:searchTerm"?: ((value: string) => any) | undefined;
             "onUpdate:selectedValue"?: ((value: T | undefined) => any) | undefined;
-        } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
+        } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
         expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
         attrs: any;
         slots: Readonly<{

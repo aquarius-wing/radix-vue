@@ -1,20 +1,21 @@
-import type { PrimitiveProps } from '../Primitive';
-import type { StringOrNumber } from '../shared/types';
+import { PrimitiveProps } from '../Primitive';
+import { StringOrNumber } from '../shared/types';
+
 export interface TabsTriggerProps extends PrimitiveProps {
     /** A unique value that associates the trigger with a content. */
     value: StringOrNumber;
     /** When `true`, prevents the user from interacting with the tab. */
     disabled?: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TabsTriggerProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TabsTriggerProps>, {
     disabled: boolean;
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TabsTriggerProps>, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<TabsTriggerProps>, {
     disabled: boolean;
     as: string;
 }>>>, {
     disabled: boolean;
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
 }, {}>, {
     default?(_: {}): any;
 }>;

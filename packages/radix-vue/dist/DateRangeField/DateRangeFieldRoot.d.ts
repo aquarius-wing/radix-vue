@@ -1,10 +1,11 @@
-import { type DateValue } from '@internationalized/date';
-import type { Ref } from 'vue';
-import type { PrimitiveProps } from '../Primitive';
-import { type Formatter } from '../shared';
-import { type DateRange, type Granularity, type HourCycle, type SegmentPart, type SegmentValueObj } from '../shared/date';
-import { type Matcher } from '../date';
-import type { Direction } from '../shared/types';
+import { DateValue } from '@internationalized/date';
+import { Ref } from 'vue';
+import { PrimitiveProps } from '../Primitive';
+import { Formatter } from '../shared';
+import { DateRange, Granularity, HourCycle, SegmentPart, SegmentValueObj } from '../shared/date';
+import { Matcher } from '../date';
+import { Direction } from '../shared/types';
+
 export type DateRangeType = 'start' | 'end';
 type DateRangeFieldRootContext = {
     locale: Ref<string>;
@@ -75,7 +76,7 @@ export type DateRangeFieldRootEmits = {
     'update:placeholder': [date: DateValue];
 };
 export declare const injectDateRangeFieldRootContext: <T extends DateRangeFieldRootContext | null | undefined = DateRangeFieldRootContext>(fallback?: T | undefined) => T extends null ? DateRangeFieldRootContext | null : DateRangeFieldRootContext, provideDateRangeFieldRootContext: (contextValue: DateRangeFieldRootContext) => DateRangeFieldRootContext;
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DateRangeFieldRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DateRangeFieldRootProps>, {
     defaultValue: undefined;
     disabled: boolean;
     readonly: boolean;
@@ -84,10 +85,10 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     isDateUnavailable: undefined;
 }>, {
     setFocusedElement: (el: HTMLElement) => void;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (args_0: DateRange) => void;
     "update:placeholder": (date: DateValue) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DateRangeFieldRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DateRangeFieldRootProps>, {
     defaultValue: undefined;
     disabled: boolean;
     readonly: boolean;
@@ -101,8 +102,8 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     defaultValue: DateRange;
     disabled: boolean;
     locale: string;
-    readonly: boolean;
     placeholder: DateValue;
+    readonly: boolean;
     isDateUnavailable: Matcher;
 }, {}>, {
     default?(_: {

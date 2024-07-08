@@ -1,4 +1,5 @@
-import { type PrimitiveProps } from '..';
+import { PrimitiveProps } from '..';
+
 export interface ListboxFilterProps extends PrimitiveProps {
     /** The controlled value of the filter. Can be binded-with with v-model. */
     modelValue?: string;
@@ -8,16 +9,16 @@ export interface ListboxFilterProps extends PrimitiveProps {
 export type ListboxFilterEmits = {
     'update:modelValue': [string];
 };
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ListboxFilterProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ListboxFilterProps>, {
     as: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (args_0: string) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ListboxFilterProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ListboxFilterProps>, {
     as: string;
 }>>> & {
     "onUpdate:modelValue"?: ((args_0: string) => any) | undefined;
 }, {
-    as: import('../Primitive').AsTag | import("vue").Component;
+    as: import('../Primitive').AsTag | import('vue').Component;
 }, {}>, Readonly<{
     default: (props: {
         /** Current input values */

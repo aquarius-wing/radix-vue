@@ -1,9 +1,10 @@
-import type { Measurable } from "./PopperRoot";
-import type { PrimitiveProps } from '../Primitive';
+import { Measurable } from './PopperRoot';
+import { PrimitiveProps } from '../Primitive';
+
 export interface PopperAnchorProps extends PrimitiveProps {
     element?: Measurable;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<PopperAnchorProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<PopperAnchorProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<PopperAnchorProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<PopperAnchorProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;

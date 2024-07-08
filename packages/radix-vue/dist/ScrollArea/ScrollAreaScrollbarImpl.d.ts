@@ -1,7 +1,7 @@
 export interface ScrollAreaScrollbarImplProps {
     isHorizontal: boolean;
 }
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<ScrollAreaScrollbarImplProps>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ScrollAreaScrollbarImplProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     onDragScroll: (payload: {
         x: number;
         y: number;
@@ -14,7 +14,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
         x: number;
         y: number;
     }) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ScrollAreaScrollbarImplProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ScrollAreaScrollbarImplProps>>> & {
     onOnDragScroll?: ((payload: {
         x: number;
         y: number;

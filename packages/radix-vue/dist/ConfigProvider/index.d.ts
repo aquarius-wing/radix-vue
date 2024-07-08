@@ -1,1 +1,1 @@
-export { default as ConfigProvider, type ConfigProviderProps } from "./ConfigProvider";
+export { default as ConfigProvider, type ConfigProviderProps } from './ConfigProvider';
