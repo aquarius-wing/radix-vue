@@ -1,7 +1,6 @@
 <script lang="ts">
-import type {PrimitiveProps} from "@/Primitive";
-import type {Message} from "@/AIChat/AIChatRoot.vue";
-
+import type { PrimitiveProps } from '@/Primitive'
+import type { Message } from '@/AIChat/AIChatRoot.vue'
 
 export interface AIChatMessageItemProps extends PrimitiveProps {
   /** The value given as data when submitted with a `name`. */
@@ -10,8 +9,8 @@ export interface AIChatMessageItemProps extends PrimitiveProps {
 </script>
 
 <script setup lang="ts">
-import {Primitive} from "@/Primitive";
-import {useForwardExpose, useId} from "@/shared";
+import { Primitive } from '@/Primitive'
+import { useForwardExpose, useId } from '@/shared'
 import { CollectionItem } from '@/Collection'
 import { injectAIChatRootContext } from './AIChatRoot.vue'
 
@@ -24,7 +23,7 @@ const optionId = useId(undefined, 'radix-vue-ai-chat-option')
 </script>
 
 <template>
-  <CollectionItem>
+  <CollectionItem :value="value">
     <Primitive
       :id="optionId"
       :ref="forwardRef"

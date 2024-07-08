@@ -2,6 +2,7 @@ export {
   default as AIChatRoot,
   type AIChatRootProps,
   type AIChatRootEmits,
+  type AIChatRootEvents,
   injectAIChatRootContext,
   provideAIChatRootContext,
 } from './AIChatRoot.vue'
@@ -24,3 +25,7 @@ export {
   default as AIChatSend,
   type AIChatSendProps,
 } from './AIChatSend.vue'
+// AIChatAutoScroll
+export {
+  default as AIChatAutoScroll,
+} from './AIChatAutoScroll.vue'
