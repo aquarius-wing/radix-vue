@@ -2388,6 +2388,8 @@ const [_a, Gi] = Q("AIChat"), gv = /* @__PURE__ */ w({
       r < t.contentElement.value.scrollHeight - t.contentElement.value.clientHeight - 10 ? e.value = !1 : e.value = !0;
     }), ee(t.messages, () => {
       e.value && l();
+    }, {
+      deep: !0
     });
     function s() {
       e.value = !0, l();
