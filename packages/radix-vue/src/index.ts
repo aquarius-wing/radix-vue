@@ -61,4 +61,5 @@ export {
   createContext,
   type Formatter,
   type DateRange,
+  handleAndDispatchCustomEvent,
 } from './shared'
