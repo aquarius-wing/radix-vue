@@ -415,7 +415,9 @@ function resizePanel(panelData: PanelData, unsafePanelSize: number) {
 
 function reevaluatePanelConstraints(panelData: PanelData, prevConstraints: PanelConstraints) {
   const { layout, panelDataArray } = eagerValuesRef.value
-
+  const index = findPanelDataIndex(panelDataArray, panelData)
+  panelDataArray[index] = panelData
+  eagerValuesRef.value.panelDataArrayChanged = true
   const {
     collapsedSize: prevCollapsedSize = 0,
     collapsible: prevCollapsible,
@@ -710,6 +712,8 @@ function panelDataHelper(
 <template>
   <Primitive
     :ref="forwardRef"
+    :as="as"
+    :as-child="asChild"
     :style="{
       display: 'flex',
       flexDirection: direction === 'horizontal' ? 'row' : 'column',

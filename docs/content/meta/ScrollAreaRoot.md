@@ -16,7 +16,7 @@
   },
   {
     'name': 'dir',
-    'description': '<p>The reading direction of the combobox when applicable. &lt;br&gt; If omitted, inherits globally from <code>DirectionProvider</code> or assumes LTR (left-to-right) reading mode.</p>\n',
+    'description': '<p>The reading direction of the combobox when applicable. &lt;br&gt; If omitted, inherits globally from <code>ConfigProvider</code> or assumes LTR (left-to-right) reading mode.</p>\n',
     'type': '\'ltr\' | \'rtl\'',
     'required': false
   },
@@ -33,5 +33,18 @@
     'type': '\'always\' | \'scroll\' | \'hover\' | \'auto\'',
     'required': false,
     'default': '\'hover\''
+  }
+]" />
+
+<MethodsTable :data="[
+  {
+    'name': 'scrollTop',
+    'description': '<p>Scroll viewport to top</p>\n',
+    'type': '() => void'
+  },
+  {
+    'name': 'scrollTopLeft',
+    'description': '<p>Scroll viewport to top-left</p>\n',
+    'type': '() => void'
   }
 ]" />
