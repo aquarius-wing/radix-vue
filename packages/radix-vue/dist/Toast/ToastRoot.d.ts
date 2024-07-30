@@ -52,6 +52,8 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
         open: boolean;
         /** Remaining time (in ms) */
         remaining: number;
+        /** Total time the toast will remain visible for (in ms) */
+        duration: number;
     }) => any;
 }> & {
     default: (props: {
@@ -59,6 +61,8 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
         open: boolean;
         /** Remaining time (in ms) */
         remaining: number;
+        /** Total time the toast will remain visible for (in ms) */
+        duration: number;
     }) => any;
 }>;
 export default _default;

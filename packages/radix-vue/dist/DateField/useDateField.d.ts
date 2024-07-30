@@ -4,6 +4,7 @@ import { DateValue } from '@internationalized/date';
 import { Ref } from 'vue';
 
 type SegmentAttrProps = {
+    disabled: boolean;
     segmentValues: SegmentValueObj;
     hourCycle: HourCycle;
     placeholder: DateValue;
@@ -18,7 +19,7 @@ declare function daySegmentAttrs(props: SegmentAttrProps): {
     'data-placeholder': string | undefined;
     role: string;
     contenteditable: boolean;
-    tabindex: number;
+    tabindex: number | undefined;
     spellcheck: boolean;
     inputmode: string;
     autocorrect: string;
@@ -34,7 +35,7 @@ declare function monthSegmentAttrs(props: SegmentAttrProps): {
     'aria-valuetext': string;
     'data-placeholder': string | undefined;
     role: string;
-    tabindex: number;
+    tabindex: number | undefined;
     spellcheck: boolean;
     inputmode: string;
     autocorrect: string;
@@ -50,7 +51,7 @@ declare function yearSegmentAttrs(props: SegmentAttrProps): {
     'data-placeholder': string | undefined;
     role: string;
     contenteditable: boolean;
-    tabindex: number;
+    tabindex: number | undefined;
     spellcheck: boolean;
     inputmode: string;
     autocorrect: string;
@@ -61,16 +62,16 @@ declare function hourSegmentAttrs(props: SegmentAttrProps): {};
 declare function minuteSegmentAttrs(props: SegmentAttrProps): {};
 declare function secondSegmentAttrs(props: SegmentAttrProps): {};
 declare function dayPeriodSegmentAttrs(props: SegmentAttrProps): {};
-declare function literalSegmentAttrs(_: SegmentAttrProps): {
+declare function literalSegmentAttrs(_props: SegmentAttrProps): {
     'aria-hidden': boolean;
     'data-segment': string;
 };
-declare function timeZoneSegmentAttrs(_: SegmentAttrProps): {
+declare function timeZoneSegmentAttrs(props: SegmentAttrProps): {
     role: string;
     'aria-label': string;
     'data-readonly': boolean;
     'data-segment': string;
-    tabindex: number;
+    tabindex: number | undefined;
     style: string;
 };
 export declare const segmentBuilders: {

@@ -1,6 +1,9 @@
 import { PrimitiveProps } from '../Primitive';
 
 export interface ViewportProps extends PrimitiveProps {
+    /**
+     * Will add `nonce` attribute to the style tag which can be used by Content Security Policy. <br> If omitted, inherits globally from `ConfigProvider`.
+     */
     nonce?: string;
 }
 declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ViewportProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ViewportProps>>>, {}, {}>, {

@@ -77,6 +77,7 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
 }, {}>, {
     default?(_: {
         remaining: number;
+        duration: number;
     }): any;
 }>;
 export default _default;

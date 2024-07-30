@@ -4,6 +4,7 @@ import { Ref } from 'vue';
 interface ConfigProviderContextValue {
     dir?: Ref<Direction>;
     scrollBody?: Ref<boolean | ScrollBodyOption>;
+    nonce?: Ref<string | undefined>;
     useId?: () => string;
 }
 export declare const injectConfigProviderContext: <T extends ConfigProviderContextValue | null | undefined = ConfigProviderContextValue>(fallback?: T | undefined) => T extends null ? ConfigProviderContextValue | null : ConfigProviderContextValue, provideConfigProviderContext: (contextValue: ConfigProviderContextValue) => ConfigProviderContextValue;
@@ -19,6 +20,11 @@ export interface ConfigProviderProps {
      */
     scrollBody?: boolean | ScrollBodyOption;
     /**
+     * The global `nonce` value of your application. This will be inherited by the related primitives.
+     * @type string
+     */
+    nonce?: string;
+    /**
      * The global `useId` injection as a workaround for preventing hydration issue.
      */
     useId?: () => string;
@@ -26,14 +32,17 @@ export interface ConfigProviderProps {
 declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ConfigProviderProps>, {
     dir: string;
     scrollBody: boolean;
+    nonce: undefined;
     useId: undefined;
 }>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ConfigProviderProps>, {
     dir: string;
     scrollBody: boolean;
+    nonce: undefined;
     useId: undefined;
 }>>>, {
     dir: Direction;
     scrollBody: boolean | ScrollBodyOption;
+    nonce: string;
     useId: () => string;
 }, {}>, {
     default?(_: {}): any;

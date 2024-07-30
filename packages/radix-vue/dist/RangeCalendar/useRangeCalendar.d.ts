@@ -18,4 +18,6 @@ export declare function useRangeCalendarState(props: UseRangeCalendarProps): {
     } | null>;
     isSelectionStart: (date: DateValue) => boolean;
     isSelectionEnd: (date: DateValue) => boolean;
+    isHighlightedStart: (date: DateValue) => boolean;
+    isHighlightedEnd: (date: DateValue) => boolean;
 };

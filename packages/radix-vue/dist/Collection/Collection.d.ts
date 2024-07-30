@@ -23,9 +23,17 @@ export declare function createCollection<ItemData = {}>(attrName?: string): {
 export declare const CollectionSlot: import('vue').DefineComponent<{}, () => import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
     [key: string]: any;
 }>, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{}>>, {}, {}>;
-export declare const CollectionItem: import('vue').DefineComponent<{}, () => import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
+export declare const CollectionItem: import('vue').DefineComponent<{
+    value: {
+        validator: () => boolean;
+    };
+}, () => import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
     [key: string]: any;
-}>, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{}>>, {}, {}>;
+}>, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
+    value: {
+        validator: () => boolean;
+    };
+}>>, {}, {}>;
 export declare function useCollection<ItemData = {}>(fallback?: CollectionContext<ItemData>): {
     getItems: () => ({
         ref: HTMLElement;

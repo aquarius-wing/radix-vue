@@ -38,6 +38,8 @@ type RangeCalendarRootContext = {
     isSelected: (date: DateValue) => boolean;
     isSelectionEnd: (date: DateValue) => boolean;
     isSelectionStart: (date: DateValue) => boolean;
+    isHighlightedStart: (date: DateValue) => boolean;
+    isHighlightedEnd: (date: DateValue) => boolean;
     prevPage: (step?: CalendarIncrement, prevPageFunc?: (date: DateValue) => DateValue) => void;
     nextPage: (step?: CalendarIncrement, nextPageFunc?: (date: DateValue) => DateValue) => void;
     isNextButtonDisabled: (step?: CalendarIncrement, nextPageFunc?: (date: DateValue) => DateValue) => boolean;
@@ -119,7 +121,6 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
     locale: string;
     isDateDisabled: undefined;
     isDateUnavailable: undefined;
-    initialView: string;
 }>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (date: DateRange) => void;
     "update:placeholder": (date: DateValue) => void;
@@ -143,7 +144,6 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
     locale: string;
     isDateDisabled: undefined;
     isDateUnavailable: undefined;
-    initialView: string;
 }>>> & {
     "onUpdate:modelValue"?: ((date: DateRange) => any) | undefined;
     "onUpdate:placeholder"?: ((date: DateValue) => any) | undefined;

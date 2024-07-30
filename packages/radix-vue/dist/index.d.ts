@@ -28,6 +28,7 @@ export * from './Popover';
 export * from './Progress';
 export * from './RadioGroup';
 export * from './RangeCalendar';
+export * from './RovingFocus';
 export * from './ScrollArea';
 export * from './Select';
 export * from './Separator';
