@@ -19657,6 +19657,7 @@ export {
   Xg as Viewport,
   ta as VisuallyHidden,
   Q as createContext,
+  jt as handleAndDispatchCustomEvent,
   xa as injectAIChatRootContext,
   Ji as provideAIChatRootContext,
   Ca as useBodyScrollLock,

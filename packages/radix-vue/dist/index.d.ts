@@ -47,4 +47,4 @@ export * from './Tree';
 export * from './Viewport';
 export { Primitive, Slot, type PrimitiveProps, type AsTag } from './Primitive';
 export { VisuallyHidden, type VisuallyHiddenProps } from './VisuallyHidden';
-export { useEmitAsProps, useForwardProps, useForwardPropsEmits, useForwardExpose, useId, useStateMachine, useBodyScrollLock, useDateFormatter, withDefault, createContext, type Formatter, type DateRange, } from './shared';
+export { useEmitAsProps, useForwardProps, useForwardPropsEmits, useForwardExpose, useId, useStateMachine, useBodyScrollLock, useDateFormatter, withDefault, createContext, type Formatter, type DateRange, handleAndDispatchCustomEvent, } from './shared';
