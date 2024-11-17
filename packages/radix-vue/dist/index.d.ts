@@ -6,6 +6,7 @@ export * from './Avatar';
 export * from './Calendar';
 export * from './Checkbox';
 export * from './Collapsible';
+export * from './Collection';
 export * from './Combobox';
 export * from './ConfigProvider';
 export * from './ContextMenu';

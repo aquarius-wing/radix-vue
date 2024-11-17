@@ -2254,9 +2254,9 @@ const [xa, ou] = ee("AIChat"), Bv = /* @__PURE__ */ x({
       defaultValue: [],
       passive: !0,
       deep: !0
-    }), r = T(), i = T(), { getItems: u, itemMapSize: d } = Jt("data-radix-vue-ai-chat-item");
-    return te(() => d.value, () => {
-      s.value = u().map((c) => c.value);
+    }), r = T(), i = T(), { getItems: u, reactiveItems: d, itemMapSize: c } = Jt("data-radix-vue-ai-chat-item");
+    return te(() => c.value, () => {
+      s.value = u().map((f) => f.value);
     }, {
       immediate: !0,
       flush: "post"
@@ -2264,19 +2264,19 @@ const [xa, ou] = ee("AIChat"), Bv = /* @__PURE__ */ x({
       prompt: l,
       messages: s,
       inputElement: r,
-      onInputElementChange: (c) => r.value = c,
+      onInputElementChange: (f) => r.value = f,
       contentElement: i,
-      onContentElementChange: (c) => i.value = c,
+      onContentElementChange: (f) => i.value = f,
       onSendMessage: () => {
         n("send");
       },
       emitter: e.emitter || nu()
-    }), (c, f) => (b(), S(o(O), {
+    }), (f, p) => (b(), S(o(O), {
       as: e.as,
-      "as-child": c.asChild
+      "as-child": f.asChild
     }, {
       default: h(() => [
-        w(c.$slots, "default")
+        w(f.$slots, "default")
       ]),
       _: 3
     }, 8, ["as", "as-child"]));
@@ -19495,6 +19495,8 @@ export {
   Xi as CollapsibleContent,
   Gi as CollapsibleRoot,
   qi as CollapsibleTrigger,
+  At as CollectionItem,
+  Qt as CollectionSlot,
   em as ComboboxAnchor,
   cm as ComboboxArrow,
   am as ComboboxCancel,
@@ -19761,11 +19763,15 @@ export {
   nb as TreeVirtualizer,
   ob as Viewport,
   na as VisuallyHidden,
+  Jt as createCollection,
   ee as createContext,
   Gt as handleAndDispatchCustomEvent,
   xa as injectAIChatRootContext,
+  eo as injectCollectionContext,
   ou as provideAIChatRootContext,
+  au as provideCollectionContext,
   Ca as useBodyScrollLock,
+  ea as useCollection,
   qn as useDateFormatter,
   Oe as useEmitAsProps,
   R as useForwardExpose,
