@@ -137,6 +137,12 @@ The button that clears the search term.
 
 <!-- @include: @/meta/ComboboxCancel.md -->
 
+### Empty
+
+Shown when none of the items match the query.
+
+<!-- @include: @/meta/ComboboxEmpty.md -->
+
 ### Portal
 
 When used, portals the content part into the `body`.
@@ -258,7 +264,9 @@ An optional arrow element to render alongside the content. This can be used to h
 
 Unlike native HTML form controls which only allow you to provide strings as values, `radix-vue` supports binding complex objects as well.
 
-```vue line=12,23
+Make sure to set the `displayValue` prop to set the input value on item selection.
+
+```vue line=12,18,26
 <script setup lang="ts">
 import { ref } from 'vue'
 import { ComboboxContent, ComboboxInput, ComboboxItem, ComboboxPortal, ComboboxRoot } from 'radix-vue'
@@ -274,7 +282,10 @@ const selectedPeople = ref(people[0])
 </script>
 
 <template>
-  <ComboboxRoot v-model="selectedPeople">
+  <ComboboxRoot
+    v-model="selectedPeople"
+    :display-value="(v) => v.name"
+  >
     <ComboboxInput />
     <ComboboxPortal>
       <ComboboxContent>
@@ -323,7 +334,7 @@ const selectedPeople = ref([people[0], people[1]])
 
 ### Custom filtering
 
-Internally, `ComboboxRoot` would apply default [filter function](https://github.com/radix-vue/radix-vue/blob/main/packages/radix-vue/src/Combobox/ComboboxRoot.vue#L128) to filter relevant `ComboboxItem` (only apply when `modelValue` is type `string`).
+Internally, `ComboboxRoot` would apply default [filter function](https://github.com/unovue/radix-vue/blob/main/packages/radix-vue/src/Combobox/ComboboxRoot.vue#L128) to filter relevant `ComboboxItem` (only apply when `modelValue` is type `string`).
 
 However this behavior can be replaced using 2 different method.
 

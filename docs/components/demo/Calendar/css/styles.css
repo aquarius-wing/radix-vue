@@ -40,7 +40,6 @@
 .CalendarHeading {
   font-weight: 500;
   color: #000000;
-  color: 15px;
 }
 
 .CalendarWrapper {
@@ -66,7 +65,7 @@
 }
 
 .CalendarGridRow {
-  display: grid
+  display: grid;
   margin-bottom: 0.25rem;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   width: 100%;

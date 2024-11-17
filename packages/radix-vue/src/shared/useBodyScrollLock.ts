@@ -64,8 +64,8 @@ const useBodyLockStackCount = createSharedComposable(() => {
       : ({ padding: 0, margin: 0 })
 
     if (verticalScrollbarWidth > 0) {
-      document.body.style.paddingRight = `${config.padding}px`
-      document.body.style.marginRight = `${config.margin}px`
+      document.body.style.paddingRight = typeof config.padding === 'number' ? `${config.padding}px` : String(config.padding)
+      document.body.style.marginRight = typeof config.margin === 'number' ? `${config.margin}px` : String(config.margin)
       document.body.style.setProperty('--scrollbar-width', `${verticalScrollbarWidth}px`)
       document.body.style.overflow = 'hidden'
     }
@@ -74,14 +74,7 @@ const useBodyLockStackCount = createSharedComposable(() => {
       stopTouchMoveListener = useEventListener(
         document,
         'touchmove',
-        (e: TouchEvent) => {
-          if (e.target !== document.documentElement)
-            return
-
-          if (e.touches.length > 1)
-            return
-          e.preventDefault?.()
-        },
+        (e: TouchEvent) => preventDefault(e),
         { passive: false },
       )
     }
@@ -112,4 +105,44 @@ export function useBodyScrollLock(initialState?: boolean | undefined) {
   })
 
   return locked
+}
+
+// Adapt from https://github.com/vueuse/vueuse/blob/main/packages/core/useScrollLock/index.ts#L28C10-L28C24
+function checkOverflowScroll(ele: Element): boolean {
+  const style = window.getComputedStyle(ele)
+  if (
+    style.overflowX === 'scroll'
+    || style.overflowY === 'scroll'
+    || (style.overflowX === 'auto' && ele.clientWidth < ele.scrollWidth)
+    || (style.overflowY === 'auto' && ele.clientHeight < ele.scrollHeight)
+  ) {
+    return true
+  }
+  else {
+    const parent = ele.parentNode as Element
+
+    if (!parent || parent.tagName === 'BODY')
+      return false
+
+    return checkOverflowScroll(parent)
+  }
+}
+
+function preventDefault(rawEvent: TouchEvent): boolean {
+  const e = rawEvent || window.event
+
+  const _target = e.target as Element
+
+  // Do not prevent if element or parentNodes have overflow: scroll set.
+  if (checkOverflowScroll(_target))
+    return false
+
+  // Do not prevent if the event has more than one touch (usually meaning this is a multi touch gesture like pinch to zoom).
+  if (e.touches.length > 1)
+    return true
+
+  if (e.preventDefault && e.cancelable)
+    e.preventDefault()
+
+  return false
 }

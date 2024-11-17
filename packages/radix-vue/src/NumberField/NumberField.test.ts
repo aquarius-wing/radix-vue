@@ -97,8 +97,10 @@ describe('numberField', () => {
   })
 
   it('should not be changed when disabled', async () => {
-    const { input, increment, decrement } = setup({ defaultValue: 0, disabled: true })
+    const { root, input, increment, decrement } = setup({ defaultValue: 0, disabled: true })
 
+    expect(root.getAttribute('data-disabled')).toBe('')
+    expect(input.getAttribute('data-disabled')).toBe('')
     await fireEvent.keyDown(input, { key: kbd.ARROW_UP })
     expect(input.value).toBe('0')
     await fireEvent.keyDown(input, { key: kbd.ARROW_DOWN })
@@ -230,6 +232,25 @@ describe('numberField', () => {
       input.value = '0'
       await userEvent.click(decrement)
       expect(input.value).toBe('-1')
+    })
+  })
+
+  describe('given setting the input value manually and keydown enter', async () => {
+    it('should it update the value appropriately', async () => {
+      const { input } = setup({
+        defaultValue: 6,
+        formatOptions: {
+          style: 'currency',
+          currency: 'EUR',
+          currencyDisplay: 'code',
+          currencySign: 'accounting',
+        },
+      })
+
+      input.value = '7'
+      expect(input.value).toBe('7')
+      await fireEvent.keyDown(input, { key: kbd.ENTER })
+      expect(input.value).toBe('EUR 7.00')
     })
   })
 })
