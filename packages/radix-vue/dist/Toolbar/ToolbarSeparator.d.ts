@@ -1,13 +1,12 @@
 import { PrimitiveProps } from '../Primitive';
-
 export interface ToolbarSeparatorProps extends PrimitiveProps {
 }
-declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<ToolbarSeparatorProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ToolbarSeparatorProps>>>, {}, {}>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToOption<ToolbarSeparatorProps>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToOption<ToolbarSeparatorProps>>>, {}, {}>, {
     default?(_: {}): any;
 }>;
 export default _default;
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
-type __VLS_TypePropsToRuntimeProps<T> = {
+type __VLS_TypePropsToOption<T> = {
     [K in keyof T]-?: {} extends Pick<T, K> ? {
         type: import('vue').PropType<__VLS_NonUndefinedable<T[K]>>;
     } : {

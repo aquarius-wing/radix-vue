@@ -1,7 +1,6 @@
 import { Ref } from 'vue';
 import { PrimitiveProps } from '../Primitive';
 import { DataOrientation, Direction, StringOrNumber } from '../shared/types';
-
 export interface TabsRootContext {
     modelValue: Ref<StringOrNumber | undefined>;
     changeModelValue: (value: StringOrNumber) => void;
@@ -40,14 +39,14 @@ export type TabsRootEmits<T extends StringOrNumber = StringOrNumber> = {
 };
 export declare const injectTabsRootContext: <T extends TabsRootContext | null | undefined = TabsRootContext>(fallback?: T | undefined) => T extends null ? TabsRootContext | null : TabsRootContext, provideTabsRootContext: (contextValue: TabsRootContext) => TabsRootContext;
 declare const _default: <T extends StringOrNumber = StringOrNumber>(__VLS_props: {
+    "onUpdate:modelValue"?: ((payload: T) => any) | undefined;
     defaultValue?: T | undefined;
+    orientation?: DataOrientation | undefined;
     dir?: Direction | undefined;
+    activationMode?: "automatic" | "manual" | undefined;
+    modelValue?: T | undefined;
     asChild?: boolean | undefined;
     as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-    modelValue?: T | undefined;
-    orientation?: DataOrientation | undefined;
-    "onUpdate:modelValue"?: ((payload: T) => any) | undefined;
-    activationMode?: "automatic" | "manual" | undefined;
 } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: Readonly<{
         default: (props: {
@@ -64,14 +63,14 @@ declare const _default: <T extends StringOrNumber = StringOrNumber>(__VLS_props:
     emit: (evt: "update:modelValue", payload: T) => void;
 } | undefined, __VLS_expose?: ((exposed: import('vue').ShallowUnwrapRef<{}>) => void) | undefined, __VLS_setup?: Promise<{
     props: {
+        "onUpdate:modelValue"?: ((payload: T) => any) | undefined;
         defaultValue?: T | undefined;
+        orientation?: DataOrientation | undefined;
         dir?: Direction | undefined;
+        activationMode?: "automatic" | "manual" | undefined;
+        modelValue?: T | undefined;
         asChild?: boolean | undefined;
         as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-        modelValue?: T | undefined;
-        orientation?: DataOrientation | undefined;
-        "onUpdate:modelValue"?: ((payload: T) => any) | undefined;
-        activationMode?: "automatic" | "manual" | undefined;
     } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
     expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
     attrs: any;
@@ -92,14 +91,14 @@ declare const _default: <T extends StringOrNumber = StringOrNumber>(__VLS_props:
 }> & {
     __ctx?: {
         props: {
+            "onUpdate:modelValue"?: ((payload: T) => any) | undefined;
             defaultValue?: T | undefined;
+            orientation?: DataOrientation | undefined;
             dir?: Direction | undefined;
+            activationMode?: "automatic" | "manual" | undefined;
+            modelValue?: T | undefined;
             asChild?: boolean | undefined;
             as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-            modelValue?: T | undefined;
-            orientation?: DataOrientation | undefined;
-            "onUpdate:modelValue"?: ((payload: T) => any) | undefined;
-            activationMode?: "automatic" | "manual" | undefined;
         } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
         expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
         attrs: any;
@@ -118,6 +117,6 @@ declare const _default: <T extends StringOrNumber = StringOrNumber>(__VLS_props:
     } | undefined;
 };
 export default _default;
-type __VLS_Prettify<T> = {
+type __VLS_PrettifyLocal<T> = {
     [K in keyof T]: T[K];
 } & {};

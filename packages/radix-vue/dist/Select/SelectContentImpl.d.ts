@@ -1,7 +1,6 @@
 import { Ref } from 'vue';
 import { PopperContentProps } from '../Popper';
 import { PointerDownOutsideEvent } from '../DismissableLayer';
-
 interface SelectContentContext {
     content?: Ref<HTMLElement | undefined>;
     viewport?: Ref<HTMLElement | undefined>;
@@ -46,7 +45,7 @@ export interface SelectContentImplProps extends PopperContentProps {
     bodyLock?: boolean;
 }
 export declare const injectSelectContentContext: <T extends SelectContentContext | null | undefined = SelectContentContext>(fallback?: T | undefined) => T extends null ? SelectContentContext | null : SelectContentContext, provideSelectContentContext: (contextValue: SelectContentContext) => SelectContentContext;
-declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectContentImplProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToOption<SelectContentImplProps>, {
     align: string;
     position: string;
     bodyLock: boolean;
@@ -54,7 +53,7 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
     escapeKeyDown: (event: KeyboardEvent) => void;
     pointerDownOutside: (event: PointerDownOutsideEvent) => void;
     closeAutoFocus: (event: Event) => void;
-}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectContentImplProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToOption<SelectContentImplProps>, {
     align: string;
     position: string;
     bodyLock: boolean;
@@ -70,8 +69,13 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
     default?(_: {}): any;
 }>;
 export default _default;
+type __VLS_WithDefaults<P, D> = {
+    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_PrettifyLocal<P[K] & {
+        default: D[K];
+    }> : P[K];
+};
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
-type __VLS_TypePropsToRuntimeProps<T> = {
+type __VLS_TypePropsToOption<T> = {
     [K in keyof T]-?: {} extends Pick<T, K> ? {
         type: import('vue').PropType<__VLS_NonUndefinedable<T[K]>>;
     } : {
@@ -79,16 +83,11 @@ type __VLS_TypePropsToRuntimeProps<T> = {
         required: true;
     };
 };
-type __VLS_WithDefaults<P, D> = {
-    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_Prettify<P[K] & {
-        default: D[K];
-    }> : P[K];
-};
-type __VLS_Prettify<T> = {
-    [K in keyof T]: T[K];
-} & {};
 type __VLS_WithTemplateSlots<T, S> = T & {
     new (): {
         $slots: S;
     };
 };
+type __VLS_PrettifyLocal<T> = {
+    [K in keyof T]: T[K];
+} & {};

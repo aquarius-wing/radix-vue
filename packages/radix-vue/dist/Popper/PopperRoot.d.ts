@@ -1,5 +1,4 @@
 import { Ref } from 'vue';
-
 export interface Measurable {
     getBoundingClientRect: () => DOMRect;
 }

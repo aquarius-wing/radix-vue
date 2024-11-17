@@ -2,7 +2,6 @@ import { EventHook } from '@vueuse/core';
 import { Ref } from 'vue';
 import { PrimitiveProps } from '../Primitive';
 import { AcceptableValue, DataOrientation, Direction } from '../shared/types';
-
 type ListboxRootContext<T> = {
     modelValue: Ref<T | Array<T> | undefined>;
     onValueChange: (val: T) => void;
@@ -66,25 +65,25 @@ export type ListboxRootEmits<T = AcceptableValue> = {
     'leave': [event: Event];
 };
 declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_props: {
-    defaultValue?: AcceptableValue | AcceptableValue[] | undefined;
-    dir?: Direction | undefined;
-    disabled?: boolean | undefined;
-    multiple?: boolean | undefined;
-    name?: string | undefined;
-    selectionBehavior?: "replace" | "toggle" | undefined;
-    asChild?: boolean | undefined;
-    as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-    modelValue?: AcceptableValue | AcceptableValue[] | undefined;
-    orientation?: DataOrientation | undefined;
     "onUpdate:modelValue"?: ((value: AcceptableValue) => any) | undefined;
     onEntryFocus?: ((event: CustomEvent<any>) => any) | undefined;
-    highlightOnHover?: boolean | undefined;
-    by?: string | ((a: AcceptableValue, b: AcceptableValue) => boolean) | undefined;
     onLeave?: ((event: Event) => any) | undefined;
     onHighlight?: ((payload: {
         ref: HTMLElement;
         value: AcceptableValue;
     } | undefined) => any) | undefined;
+    modelValue?: AcceptableValue | AcceptableValue[] | undefined;
+    defaultValue?: AcceptableValue | AcceptableValue[] | undefined;
+    multiple?: boolean | undefined;
+    orientation?: DataOrientation | undefined;
+    dir?: Direction | undefined;
+    disabled?: boolean | undefined;
+    selectionBehavior?: "replace" | "toggle" | undefined;
+    highlightOnHover?: boolean | undefined;
+    by?: string | ((a: AcceptableValue, b: AcceptableValue) => boolean) | undefined;
+    name?: string | undefined;
+    asChild?: boolean | undefined;
+    as?: import('../Primitive').AsTag | import('vue').Component | undefined;
 } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: Readonly<{
         default: (props: {
@@ -104,25 +103,25 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     } | undefined) => void);
 } | undefined, __VLS_expose?: ((exposed: import('vue').ShallowUnwrapRef<{}>) => void) | undefined, __VLS_setup?: Promise<{
     props: {
-        defaultValue?: AcceptableValue | AcceptableValue[] | undefined;
-        dir?: Direction | undefined;
-        disabled?: boolean | undefined;
-        multiple?: boolean | undefined;
-        name?: string | undefined;
-        selectionBehavior?: "replace" | "toggle" | undefined;
-        asChild?: boolean | undefined;
-        as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-        modelValue?: AcceptableValue | AcceptableValue[] | undefined;
-        orientation?: DataOrientation | undefined;
         "onUpdate:modelValue"?: ((value: AcceptableValue) => any) | undefined;
         onEntryFocus?: ((event: CustomEvent<any>) => any) | undefined;
-        highlightOnHover?: boolean | undefined;
-        by?: string | ((a: AcceptableValue, b: AcceptableValue) => boolean) | undefined;
         onLeave?: ((event: Event) => any) | undefined;
         onHighlight?: ((payload: {
             ref: HTMLElement;
             value: AcceptableValue;
         } | undefined) => any) | undefined;
+        modelValue?: AcceptableValue | AcceptableValue[] | undefined;
+        defaultValue?: AcceptableValue | AcceptableValue[] | undefined;
+        multiple?: boolean | undefined;
+        orientation?: DataOrientation | undefined;
+        dir?: Direction | undefined;
+        disabled?: boolean | undefined;
+        selectionBehavior?: "replace" | "toggle" | undefined;
+        highlightOnHover?: boolean | undefined;
+        by?: string | ((a: AcceptableValue, b: AcceptableValue) => boolean) | undefined;
+        name?: string | undefined;
+        asChild?: boolean | undefined;
+        as?: import('../Primitive').AsTag | import('vue').Component | undefined;
     } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
     expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
     attrs: any;
@@ -146,25 +145,25 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
 }> & {
     __ctx?: {
         props: {
-            defaultValue?: AcceptableValue | AcceptableValue[] | undefined;
-            dir?: Direction | undefined;
-            disabled?: boolean | undefined;
-            multiple?: boolean | undefined;
-            name?: string | undefined;
-            selectionBehavior?: "replace" | "toggle" | undefined;
-            asChild?: boolean | undefined;
-            as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-            modelValue?: AcceptableValue | AcceptableValue[] | undefined;
-            orientation?: DataOrientation | undefined;
             "onUpdate:modelValue"?: ((value: AcceptableValue) => any) | undefined;
             onEntryFocus?: ((event: CustomEvent<any>) => any) | undefined;
-            highlightOnHover?: boolean | undefined;
-            by?: string | ((a: AcceptableValue, b: AcceptableValue) => boolean) | undefined;
             onLeave?: ((event: Event) => any) | undefined;
             onHighlight?: ((payload: {
                 ref: HTMLElement;
                 value: AcceptableValue;
             } | undefined) => any) | undefined;
+            modelValue?: AcceptableValue | AcceptableValue[] | undefined;
+            defaultValue?: AcceptableValue | AcceptableValue[] | undefined;
+            multiple?: boolean | undefined;
+            orientation?: DataOrientation | undefined;
+            dir?: Direction | undefined;
+            disabled?: boolean | undefined;
+            selectionBehavior?: "replace" | "toggle" | undefined;
+            highlightOnHover?: boolean | undefined;
+            by?: string | ((a: AcceptableValue, b: AcceptableValue) => boolean) | undefined;
+            name?: string | undefined;
+            asChild?: boolean | undefined;
+            as?: import('../Primitive').AsTag | import('vue').Component | undefined;
         } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
         expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
         attrs: any;
@@ -186,6 +185,6 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     } | undefined;
 };
 export default _default;
-type __VLS_Prettify<T> = {
+type __VLS_PrettifyLocal<T> = {
     [K in keyof T]: T[K];
 } & {};

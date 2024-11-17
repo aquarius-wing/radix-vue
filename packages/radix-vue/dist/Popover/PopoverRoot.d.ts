@@ -1,5 +1,4 @@
 import { Ref } from 'vue';
-
 export interface PopoverRootProps {
     /**
      * The open state of the popover when it is initially rendered. Use when you do not need to control its open state.
@@ -32,13 +31,13 @@ export interface PopoverRootContext {
     hasCustomAnchor: Ref<boolean>;
 }
 export declare const injectPopoverRootContext: <T extends PopoverRootContext | null | undefined = PopoverRootContext>(fallback?: T | undefined) => T extends null ? PopoverRootContext | null : PopoverRootContext, providePopoverRootContext: (contextValue: PopoverRootContext) => PopoverRootContext;
-declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopoverRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToOption<PopoverRootProps>, {
     defaultOpen: boolean;
     open: undefined;
     modal: boolean;
 }>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (value: boolean) => void;
-}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<PopoverRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToOption<PopoverRootProps>, {
     defaultOpen: boolean;
     open: undefined;
     modal: boolean;
@@ -60,8 +59,13 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
     }) => any;
 }>;
 export default _default;
+type __VLS_WithDefaults<P, D> = {
+    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_PrettifyLocal<P[K] & {
+        default: D[K];
+    }> : P[K];
+};
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
-type __VLS_TypePropsToRuntimeProps<T> = {
+type __VLS_TypePropsToOption<T> = {
     [K in keyof T]-?: {} extends Pick<T, K> ? {
         type: import('vue').PropType<__VLS_NonUndefinedable<T[K]>>;
     } : {
@@ -69,16 +73,11 @@ type __VLS_TypePropsToRuntimeProps<T> = {
         required: true;
     };
 };
-type __VLS_WithDefaults<P, D> = {
-    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_Prettify<P[K] & {
-        default: D[K];
-    }> : P[K];
-};
-type __VLS_Prettify<T> = {
-    [K in keyof T]: T[K];
-} & {};
 type __VLS_WithTemplateSlots<T, S> = T & {
     new (): {
         $slots: S;
     };
 };
+type __VLS_PrettifyLocal<T> = {
+    [K in keyof T]: T[K];
+} & {};

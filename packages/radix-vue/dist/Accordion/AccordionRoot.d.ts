@@ -1,7 +1,6 @@
 import { ComputedRef, Ref } from 'vue';
 import { PrimitiveProps } from '../Primitive';
 import { DataOrientation, Direction, SingleOrMultipleProps, SingleOrMultipleType } from '../shared/types';
-
 export interface AccordionRootProps<ValidValue = string | string[], ExplicitType = SingleOrMultipleType> extends PrimitiveProps, SingleOrMultipleProps<ValidValue, ExplicitType> {
     /**
      * When type is "single", allows closing content when clicking trigger for an open item.
@@ -47,16 +46,16 @@ export type AccordionRootContext<P extends AccordionRootProps> = {
 };
 export declare const injectAccordionRootContext: <T extends AccordionRootContext<AccordionRootProps<string | string[], SingleOrMultipleType>> | null | undefined = AccordionRootContext<AccordionRootProps<string | string[], SingleOrMultipleType>>>(fallback?: T | undefined) => T extends null ? AccordionRootContext<AccordionRootProps<string | string[], SingleOrMultipleType>> | null : AccordionRootContext<AccordionRootProps<string | string[], SingleOrMultipleType>>, provideAccordionRootContext: (contextValue: AccordionRootContext<AccordionRootProps<string | string[], SingleOrMultipleType>>) => AccordionRootContext<AccordionRootProps<string | string[], SingleOrMultipleType>>;
 declare const _default: <ValidValue extends string | string[], ExplicitType extends SingleOrMultipleType>(__VLS_props: {
-    defaultValue?: ValidValue | undefined;
-    dir?: Direction | undefined;
+    "onUpdate:modelValue"?: ((value: (ExplicitType extends "single" ? string : string[]) | undefined) => any) | undefined;
+    collapsible?: boolean | undefined;
     disabled?: boolean | undefined;
-    type?: (ValidValue extends string ? "single" : ValidValue extends string[] ? "multiple" : ExplicitType extends "single" ? "single" : ExplicitType extends "multiple" ? "multiple" : never) | undefined;
+    dir?: Direction | undefined;
+    orientation?: DataOrientation | undefined;
     asChild?: boolean | undefined;
     as?: import('../Primitive').AsTag | import('vue').Component | undefined;
+    type?: (ValidValue extends string ? "single" : ValidValue extends string[] ? "multiple" : ExplicitType extends "single" ? "single" : ExplicitType extends "multiple" ? "multiple" : never) | undefined;
     modelValue?: ValidValue | undefined;
-    collapsible?: boolean | undefined;
-    orientation?: DataOrientation | undefined;
-    "onUpdate:modelValue"?: ((value: (ExplicitType extends "single" ? string : string[]) | undefined) => any) | undefined;
+    defaultValue?: ValidValue | undefined;
 } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: Readonly<{
         default: (props: {
@@ -73,16 +72,16 @@ declare const _default: <ValidValue extends string | string[], ExplicitType exte
     emit: (evt: "update:modelValue", value: (ExplicitType extends "single" ? string : string[]) | undefined) => void;
 } | undefined, __VLS_expose?: ((exposed: import('vue').ShallowUnwrapRef<{}>) => void) | undefined, __VLS_setup?: Promise<{
     props: {
-        defaultValue?: ValidValue | undefined;
-        dir?: Direction | undefined;
+        "onUpdate:modelValue"?: ((value: (ExplicitType extends "single" ? string : string[]) | undefined) => any) | undefined;
+        collapsible?: boolean | undefined;
         disabled?: boolean | undefined;
-        type?: (ValidValue extends string ? "single" : ValidValue extends string[] ? "multiple" : ExplicitType extends "single" ? "single" : ExplicitType extends "multiple" ? "multiple" : never) | undefined;
+        dir?: Direction | undefined;
+        orientation?: DataOrientation | undefined;
         asChild?: boolean | undefined;
         as?: import('../Primitive').AsTag | import('vue').Component | undefined;
+        type?: (ValidValue extends string ? "single" : ValidValue extends string[] ? "multiple" : ExplicitType extends "single" ? "single" : ExplicitType extends "multiple" ? "multiple" : never) | undefined;
         modelValue?: ValidValue | undefined;
-        collapsible?: boolean | undefined;
-        orientation?: DataOrientation | undefined;
-        "onUpdate:modelValue"?: ((value: (ExplicitType extends "single" ? string : string[]) | undefined) => any) | undefined;
+        defaultValue?: ValidValue | undefined;
     } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
     expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
     attrs: any;
@@ -103,16 +102,16 @@ declare const _default: <ValidValue extends string | string[], ExplicitType exte
 }> & {
     __ctx?: {
         props: {
-            defaultValue?: ValidValue | undefined;
-            dir?: Direction | undefined;
+            "onUpdate:modelValue"?: ((value: (ExplicitType extends "single" ? string : string[]) | undefined) => any) | undefined;
+            collapsible?: boolean | undefined;
             disabled?: boolean | undefined;
-            type?: (ValidValue extends string ? "single" : ValidValue extends string[] ? "multiple" : ExplicitType extends "single" ? "single" : ExplicitType extends "multiple" ? "multiple" : never) | undefined;
+            dir?: Direction | undefined;
+            orientation?: DataOrientation | undefined;
             asChild?: boolean | undefined;
             as?: import('../Primitive').AsTag | import('vue').Component | undefined;
+            type?: (ValidValue extends string ? "single" : ValidValue extends string[] ? "multiple" : ExplicitType extends "single" ? "single" : ExplicitType extends "multiple" ? "multiple" : never) | undefined;
             modelValue?: ValidValue | undefined;
-            collapsible?: boolean | undefined;
-            orientation?: DataOrientation | undefined;
-            "onUpdate:modelValue"?: ((value: (ExplicitType extends "single" ? string : string[]) | undefined) => any) | undefined;
+            defaultValue?: ValidValue | undefined;
         } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
         expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
         attrs: any;
@@ -131,6 +130,6 @@ declare const _default: <ValidValue extends string | string[], ExplicitType exte
     } | undefined;
 };
 export default _default;
-type __VLS_Prettify<T> = {
+type __VLS_PrettifyLocal<T> = {
     [K in keyof T]: T[K];
 } & {};

@@ -1,7 +1,6 @@
 import { Ref } from 'vue';
 import { PrimitiveProps } from '../Primitive';
 import { AcceptableValue } from './ComboboxRoot';
-
 export type SelectEvent<T> = CustomEvent<{
     originalEvent: PointerEvent;
     value?: T;
@@ -21,9 +20,9 @@ export interface ComboboxItemProps<T = AcceptableValue> extends PrimitiveProps {
     disabled?: boolean;
 }
 declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_props: {
-    disabled?: boolean | undefined;
-    value: T;
     onSelect?: ((event: SelectEvent<T>) => any) | undefined;
+    value: T;
+    disabled?: boolean | undefined;
     asChild?: boolean | undefined;
     as?: import('../Primitive').AsTag | import('vue').Component | undefined;
 } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
@@ -34,9 +33,9 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     emit: (evt: "select", event: SelectEvent<T>) => void;
 } | undefined, __VLS_expose?: ((exposed: import('vue').ShallowUnwrapRef<{}>) => void) | undefined, __VLS_setup?: Promise<{
     props: {
-        disabled?: boolean | undefined;
-        value: T;
         onSelect?: ((event: SelectEvent<T>) => any) | undefined;
+        value: T;
+        disabled?: boolean | undefined;
         asChild?: boolean | undefined;
         as?: import('../Primitive').AsTag | import('vue').Component | undefined;
     } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
@@ -51,9 +50,9 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
 }> & {
     __ctx?: {
         props: {
-            disabled?: boolean | undefined;
-            value: T;
             onSelect?: ((event: SelectEvent<T>) => any) | undefined;
+            value: T;
+            disabled?: boolean | undefined;
             asChild?: boolean | undefined;
             as?: import('../Primitive').AsTag | import('vue').Component | undefined;
         } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
@@ -66,3 +65,6 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     } | undefined;
 };
 export default _default;
+type __VLS_PrettifyLocal<T> = {
+    [K in keyof T]: T[K];
+} & {};

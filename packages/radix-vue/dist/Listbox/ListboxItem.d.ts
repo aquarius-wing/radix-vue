@@ -1,7 +1,6 @@
 import { Ref } from 'vue';
 import { PrimitiveProps } from '..';
 import { AcceptableValue } from '../shared/types';
-
 export interface ListboxItemProps<T = AcceptableValue> extends PrimitiveProps {
     /** The value given as data when submitted with a `name`. */
     value: T;
@@ -21,9 +20,9 @@ interface ListboxItemContext {
 }
 export declare const injectListboxItemContext: <T extends ListboxItemContext | null | undefined = ListboxItemContext>(fallback?: T | undefined) => T extends null ? ListboxItemContext | null : ListboxItemContext, provideListboxItemContext: (contextValue: ListboxItemContext) => ListboxItemContext;
 declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_props: {
-    disabled?: boolean | undefined;
-    value: AcceptableValue;
     onSelect?: ((event: SelectEvent<AcceptableValue>) => any) | undefined;
+    value: AcceptableValue;
+    disabled?: boolean | undefined;
     asChild?: boolean | undefined;
     as?: import('..').AsTag | import('vue').Component | undefined;
 } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
@@ -34,9 +33,9 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     emit: (evt: "select", event: SelectEvent<AcceptableValue>) => void;
 } | undefined, __VLS_expose?: ((exposed: import('vue').ShallowUnwrapRef<{}>) => void) | undefined, __VLS_setup?: Promise<{
     props: {
-        disabled?: boolean | undefined;
-        value: AcceptableValue;
         onSelect?: ((event: SelectEvent<AcceptableValue>) => any) | undefined;
+        value: AcceptableValue;
+        disabled?: boolean | undefined;
         asChild?: boolean | undefined;
         as?: import('..').AsTag | import('vue').Component | undefined;
     } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
@@ -51,9 +50,9 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
 }> & {
     __ctx?: {
         props: {
-            disabled?: boolean | undefined;
-            value: AcceptableValue;
             onSelect?: ((event: SelectEvent<AcceptableValue>) => any) | undefined;
+            value: AcceptableValue;
+            disabled?: boolean | undefined;
             asChild?: boolean | undefined;
             as?: import('..').AsTag | import('vue').Component | undefined;
         } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
@@ -66,6 +65,6 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     } | undefined;
 };
 export default _default;
-type __VLS_Prettify<T> = {
+type __VLS_PrettifyLocal<T> = {
     [K in keyof T]: T[K];
 } & {};

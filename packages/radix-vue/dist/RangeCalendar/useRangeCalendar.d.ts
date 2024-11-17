@@ -1,7 +1,6 @@
 import { DateValue } from '@internationalized/date';
 import { Ref } from 'vue';
 import { Matcher } from '../date';
-
 export type UseRangeCalendarProps = {
     start: Ref<DateValue | undefined>;
     end: Ref<DateValue | undefined>;

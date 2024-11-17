@@ -2,7 +2,6 @@ import { Granularity, HourCycle, SegmentContentObj, SegmentPart, SegmentValueObj
 import { Formatter } from '../../shared';
 import { DateValue } from '@internationalized/date';
 import { Ref } from 'vue';
-
 type SyncSegmentValuesProps = {
     value: DateValue;
     formatter: Formatter;

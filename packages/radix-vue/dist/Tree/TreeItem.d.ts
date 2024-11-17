@@ -1,5 +1,4 @@
 import { PrimitiveProps } from '../Primitive';
-
 export interface TreeItemProps<T> extends PrimitiveProps {
     /** Value given to this item */
     value: T;
@@ -25,12 +24,12 @@ export type TreeItemEmits<T> = {
     toggle: [event: ToggleEvent<T>];
 };
 declare const _default: <T extends Record<string, any>>(__VLS_props: {
-    value: T;
     onSelect?: ((event: SelectEvent<T>) => any) | undefined;
     onToggle?: ((event: ToggleEvent<T>) => any) | undefined;
+    value: T;
+    level: number;
     asChild?: boolean | undefined;
     as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-    level: number;
 } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: Readonly<{
         default: (props: {
@@ -59,12 +58,12 @@ declare const _default: <T extends Record<string, any>>(__VLS_props: {
     handleSelect: () => void;
 }>) => void) | undefined, __VLS_setup?: Promise<{
     props: {
-        value: T;
         onSelect?: ((event: SelectEvent<T>) => any) | undefined;
         onToggle?: ((event: ToggleEvent<T>) => any) | undefined;
+        value: T;
+        level: number;
         asChild?: boolean | undefined;
         as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-        level: number;
     } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
     expose(exposed: import('vue').ShallowUnwrapRef<{
         isExpanded: import('vue').ComputedRef<boolean>;
@@ -97,12 +96,12 @@ declare const _default: <T extends Record<string, any>>(__VLS_props: {
 }> & {
     __ctx?: {
         props: {
-            value: T;
             onSelect?: ((event: SelectEvent<T>) => any) | undefined;
             onToggle?: ((event: ToggleEvent<T>) => any) | undefined;
+            value: T;
+            level: number;
             asChild?: boolean | undefined;
             as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-            level: number;
         } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
         expose(exposed: import('vue').ShallowUnwrapRef<{
             isExpanded: import('vue').ComputedRef<boolean>;
@@ -133,6 +132,6 @@ declare const _default: <T extends Record<string, any>>(__VLS_props: {
     } | undefined;
 };
 export default _default;
-type __VLS_Prettify<T> = {
+type __VLS_PrettifyLocal<T> = {
     [K in keyof T]: T[K];
 } & {};

@@ -1,7 +1,6 @@
 import { ComputedRef, Ref } from 'vue';
 import { Direction } from '../shared/types';
 import { PrimitiveProps } from '../Primitive';
-
 export type AcceptableValue = string | number | boolean | Record<string, any>;
 type ArrayOrWrapped<T> = T extends any[] ? T : Array<T>;
 type ComboboxRootContext<T> = {
@@ -20,7 +19,7 @@ type ComboboxRootContext<T> = {
     inputElement: Ref<HTMLInputElement | undefined>;
     onInputElementChange: (el: HTMLInputElement) => void;
     onInputNavigation: (dir: 'up' | 'down' | 'home' | 'end') => void;
-    onInputEnter: () => void;
+    onInputEnter: (event: InputEvent) => void;
     selectedValue: Ref<T | undefined>;
     selectedElement: ComputedRef<HTMLElement | undefined>;
     onSelectedValueChange: (val: T) => void;
@@ -69,25 +68,25 @@ export interface ComboboxRootProps<T = AcceptableValue> extends PrimitiveProps {
     resetSearchTermOnBlur?: boolean;
 }
 declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_props: {
-    defaultValue?: T | T[] | undefined;
-    dir?: Direction | undefined;
-    disabled?: boolean | undefined;
-    multiple?: boolean | undefined;
-    name?: string | undefined;
-    asChild?: boolean | undefined;
-    as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-    defaultOpen?: boolean | undefined;
-    open?: boolean | undefined;
     "onUpdate:open"?: ((value: boolean) => any) | undefined;
-    modelValue?: T | T[] | undefined;
     "onUpdate:modelValue"?: ((value: T) => any) | undefined;
+    "onUpdate:searchTerm"?: ((value: string) => any) | undefined;
+    "onUpdate:selectedValue"?: ((value: T | undefined) => any) | undefined;
+    modelValue?: T | T[] | undefined;
+    defaultValue?: T | T[] | undefined;
+    open?: boolean | undefined;
+    defaultOpen?: boolean | undefined;
     searchTerm?: string | undefined;
     selectedValue?: T | undefined;
+    multiple?: boolean | undefined;
+    disabled?: boolean | undefined;
+    name?: string | undefined;
+    dir?: Direction | undefined;
     filterFunction?: ((val: ArrayOrWrapped<T>, term: string) => ArrayOrWrapped<T>) | undefined;
     displayValue?: ((val: T) => string) | undefined;
     resetSearchTermOnBlur?: boolean | undefined;
-    "onUpdate:searchTerm"?: ((value: string) => any) | undefined;
-    "onUpdate:selectedValue"?: ((value: T | undefined) => any) | undefined;
+    asChild?: boolean | undefined;
+    as?: import('../Primitive').AsTag | import('vue').Component | undefined;
 } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: Readonly<{
         default: (props: {
@@ -108,25 +107,25 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     emit: ((evt: "update:open", value: boolean) => void) & ((evt: "update:modelValue", value: T) => void) & ((evt: "update:searchTerm", value: string) => void) & ((evt: "update:selectedValue", value: T | undefined) => void);
 } | undefined, __VLS_expose?: ((exposed: import('vue').ShallowUnwrapRef<{}>) => void) | undefined, __VLS_setup?: Promise<{
     props: {
-        defaultValue?: T | T[] | undefined;
-        dir?: Direction | undefined;
-        disabled?: boolean | undefined;
-        multiple?: boolean | undefined;
-        name?: string | undefined;
-        asChild?: boolean | undefined;
-        as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-        defaultOpen?: boolean | undefined;
-        open?: boolean | undefined;
         "onUpdate:open"?: ((value: boolean) => any) | undefined;
-        modelValue?: T | T[] | undefined;
         "onUpdate:modelValue"?: ((value: T) => any) | undefined;
+        "onUpdate:searchTerm"?: ((value: string) => any) | undefined;
+        "onUpdate:selectedValue"?: ((value: T | undefined) => any) | undefined;
+        modelValue?: T | T[] | undefined;
+        defaultValue?: T | T[] | undefined;
+        open?: boolean | undefined;
+        defaultOpen?: boolean | undefined;
         searchTerm?: string | undefined;
         selectedValue?: T | undefined;
+        multiple?: boolean | undefined;
+        disabled?: boolean | undefined;
+        name?: string | undefined;
+        dir?: Direction | undefined;
         filterFunction?: ((val: ArrayOrWrapped<T>, term: string) => ArrayOrWrapped<T>) | undefined;
         displayValue?: ((val: T) => string) | undefined;
         resetSearchTermOnBlur?: boolean | undefined;
-        "onUpdate:searchTerm"?: ((value: string) => any) | undefined;
-        "onUpdate:selectedValue"?: ((value: T | undefined) => any) | undefined;
+        asChild?: boolean | undefined;
+        as?: import('../Primitive').AsTag | import('vue').Component | undefined;
     } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
     expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
     attrs: any;
@@ -151,25 +150,25 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
 }> & {
     __ctx?: {
         props: {
-            defaultValue?: T | T[] | undefined;
-            dir?: Direction | undefined;
-            disabled?: boolean | undefined;
-            multiple?: boolean | undefined;
-            name?: string | undefined;
-            asChild?: boolean | undefined;
-            as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-            defaultOpen?: boolean | undefined;
-            open?: boolean | undefined;
             "onUpdate:open"?: ((value: boolean) => any) | undefined;
-            modelValue?: T | T[] | undefined;
             "onUpdate:modelValue"?: ((value: T) => any) | undefined;
+            "onUpdate:searchTerm"?: ((value: string) => any) | undefined;
+            "onUpdate:selectedValue"?: ((value: T | undefined) => any) | undefined;
+            modelValue?: T | T[] | undefined;
+            defaultValue?: T | T[] | undefined;
+            open?: boolean | undefined;
+            defaultOpen?: boolean | undefined;
             searchTerm?: string | undefined;
             selectedValue?: T | undefined;
+            multiple?: boolean | undefined;
+            disabled?: boolean | undefined;
+            name?: string | undefined;
+            dir?: Direction | undefined;
             filterFunction?: ((val: ArrayOrWrapped<T>, term: string) => ArrayOrWrapped<T>) | undefined;
             displayValue?: ((val: T) => string) | undefined;
             resetSearchTermOnBlur?: boolean | undefined;
-            "onUpdate:searchTerm"?: ((value: string) => any) | undefined;
-            "onUpdate:selectedValue"?: ((value: T | undefined) => any) | undefined;
+            asChild?: boolean | undefined;
+            as?: import('../Primitive').AsTag | import('vue').Component | undefined;
         } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
         expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
         attrs: any;
@@ -192,6 +191,6 @@ declare const _default: <T extends AcceptableValue = AcceptableValue>(__VLS_prop
     } | undefined;
 };
 export default _default;
-type __VLS_Prettify<T> = {
+type __VLS_PrettifyLocal<T> = {
     [K in keyof T]: T[K];
 } & {};

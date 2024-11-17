@@ -1,5 +1,4 @@
 import { PrimitiveProps } from '../Primitive';
-
 export interface SplitterPanelProps extends PrimitiveProps {
     /** The size of panel when it is collapsed. */
     collapsedSize?: number;
@@ -47,7 +46,7 @@ export type PanelData = {
     idIsFromProps: boolean;
     order: number | undefined;
 };
-declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<SplitterPanelProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToOption<SplitterPanelProps>, {
     /** If panel is `collapsible`, collapse it fully. */
     collapse: () => void;
     /** If panel is currently collapsed, expand it to its most recent size. */
@@ -64,7 +63,7 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
     resize: (size: number, prevSize: number | undefined) => void;
     collapse: () => void;
     expand: () => void;
-}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<SplitterPanelProps>>> & {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToOption<SplitterPanelProps>>> & {
     onResize?: ((size: number, prevSize: number | undefined) => any) | undefined;
     onCollapse?: (() => any) | undefined;
     onExpand?: (() => any) | undefined;
@@ -85,7 +84,7 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
 }>;
 export default _default;
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
-type __VLS_TypePropsToRuntimeProps<T> = {
+type __VLS_TypePropsToOption<T> = {
     [K in keyof T]-?: {} extends Pick<T, K> ? {
         type: import('vue').PropType<__VLS_NonUndefinedable<T[K]>>;
     } : {

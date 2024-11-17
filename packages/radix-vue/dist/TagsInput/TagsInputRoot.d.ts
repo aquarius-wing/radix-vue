@@ -1,7 +1,6 @@
 import { PrimitiveProps } from '../Primitive';
 import { Direction } from '../shared/types';
 import { Ref } from 'vue';
-
 export type AcceptableInputValue = string | Record<string, any>;
 export interface TagsInputRootProps<T = AcceptableInputValue> extends PrimitiveProps {
     /** The controlled value of the tags input. Can be bind as `v-model`. */
@@ -59,25 +58,25 @@ export interface TagsInputRootContext<T = AcceptableInputValue> {
 }
 export declare const injectTagsInputRootContext: <T extends TagsInputRootContext<AcceptableInputValue> | null | undefined = TagsInputRootContext<AcceptableInputValue>>(fallback?: T | undefined) => T extends null ? TagsInputRootContext<AcceptableInputValue> | null : TagsInputRootContext<AcceptableInputValue>, provideTagsInputRootContext: (contextValue: TagsInputRootContext<AcceptableInputValue>) => TagsInputRootContext<AcceptableInputValue>;
 declare const _default: <T extends AcceptableInputValue = string>(__VLS_props: {
-    defaultValue?: T[] | undefined;
-    id?: string | undefined;
-    dir?: Direction | undefined;
-    disabled?: boolean | undefined;
-    name?: string | undefined;
     onInvalid?: ((payload: T) => any) | undefined;
-    asChild?: boolean | undefined;
-    as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-    required?: boolean | undefined;
-    modelValue?: T[] | undefined;
     "onUpdate:modelValue"?: ((payload: T[]) => any) | undefined;
-    displayValue?: ((value: T) => string) | undefined;
-    max?: number | undefined;
+    modelValue?: T[] | undefined;
+    defaultValue?: T[] | undefined;
     addOnPaste?: boolean | undefined;
     addOnTab?: boolean | undefined;
     addOnBlur?: boolean | undefined;
     duplicate?: boolean | undefined;
+    disabled?: boolean | undefined;
     delimiter?: string | undefined;
+    dir?: Direction | undefined;
+    max?: number | undefined;
+    required?: boolean | undefined;
+    name?: string | undefined;
+    id?: string | undefined;
     convertValue?: ((value: string) => T) | undefined;
+    displayValue?: ((value: T) => string) | undefined;
+    asChild?: boolean | undefined;
+    as?: import('../Primitive').AsTag | import('vue').Component | undefined;
 } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: Readonly<{
         default: (props: {
@@ -94,25 +93,25 @@ declare const _default: <T extends AcceptableInputValue = string>(__VLS_props: {
     emit: ((evt: "invalid", payload: T) => void) & ((evt: "update:modelValue", payload: T[]) => void);
 } | undefined, __VLS_expose?: ((exposed: import('vue').ShallowUnwrapRef<{}>) => void) | undefined, __VLS_setup?: Promise<{
     props: {
-        defaultValue?: T[] | undefined;
-        id?: string | undefined;
-        dir?: Direction | undefined;
-        disabled?: boolean | undefined;
-        name?: string | undefined;
         onInvalid?: ((payload: T) => any) | undefined;
-        asChild?: boolean | undefined;
-        as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-        required?: boolean | undefined;
-        modelValue?: T[] | undefined;
         "onUpdate:modelValue"?: ((payload: T[]) => any) | undefined;
-        displayValue?: ((value: T) => string) | undefined;
-        max?: number | undefined;
+        modelValue?: T[] | undefined;
+        defaultValue?: T[] | undefined;
         addOnPaste?: boolean | undefined;
         addOnTab?: boolean | undefined;
         addOnBlur?: boolean | undefined;
         duplicate?: boolean | undefined;
+        disabled?: boolean | undefined;
         delimiter?: string | undefined;
+        dir?: Direction | undefined;
+        max?: number | undefined;
+        required?: boolean | undefined;
+        name?: string | undefined;
+        id?: string | undefined;
         convertValue?: ((value: string) => T) | undefined;
+        displayValue?: ((value: T) => string) | undefined;
+        asChild?: boolean | undefined;
+        as?: import('../Primitive').AsTag | import('vue').Component | undefined;
     } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
     expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
     attrs: any;
@@ -133,25 +132,25 @@ declare const _default: <T extends AcceptableInputValue = string>(__VLS_props: {
 }> & {
     __ctx?: {
         props: {
-            defaultValue?: T[] | undefined;
-            id?: string | undefined;
-            dir?: Direction | undefined;
-            disabled?: boolean | undefined;
-            name?: string | undefined;
             onInvalid?: ((payload: T) => any) | undefined;
-            asChild?: boolean | undefined;
-            as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-            required?: boolean | undefined;
-            modelValue?: T[] | undefined;
             "onUpdate:modelValue"?: ((payload: T[]) => any) | undefined;
-            displayValue?: ((value: T) => string) | undefined;
-            max?: number | undefined;
+            modelValue?: T[] | undefined;
+            defaultValue?: T[] | undefined;
             addOnPaste?: boolean | undefined;
             addOnTab?: boolean | undefined;
             addOnBlur?: boolean | undefined;
             duplicate?: boolean | undefined;
+            disabled?: boolean | undefined;
             delimiter?: string | undefined;
+            dir?: Direction | undefined;
+            max?: number | undefined;
+            required?: boolean | undefined;
+            name?: string | undefined;
+            id?: string | undefined;
             convertValue?: ((value: string) => T) | undefined;
+            displayValue?: ((value: T) => string) | undefined;
+            asChild?: boolean | undefined;
+            as?: import('../Primitive').AsTag | import('vue').Component | undefined;
         } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
         expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
         attrs: any;
@@ -170,6 +169,6 @@ declare const _default: <T extends AcceptableInputValue = string>(__VLS_props: {
     } | undefined;
 };
 export default _default;
-type __VLS_Prettify<T> = {
+type __VLS_PrettifyLocal<T> = {
     [K in keyof T]: T[K];
 } & {};

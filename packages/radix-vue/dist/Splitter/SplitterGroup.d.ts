@@ -2,7 +2,6 @@ import { PanelConstraints, PanelData } from './SplitterPanel';
 import { Direction, DragState, ResizeEvent, ResizeHandler } from './utils/types';
 import { PrimitiveProps } from '../Primitive';
 import { CSSProperties, Ref } from 'vue';
-
 export interface SplitterGroupProps extends PrimitiveProps {
     /** Group id; falls back to `useId` when not provided. */
     id?: string | null;
@@ -24,7 +23,7 @@ export type PanelGroupStorage = {
     setItem: (name: string, value: string) => void;
 };
 export type PanelGroupContext = {
-    direction: 'horizontal' | 'vertical';
+    direction: Ref<Direction>;
     dragState: DragState | null;
     groupId: string;
     reevaluatePanelConstraints: (panelData: PanelData, prevConstraints: PanelConstraints) => void;
@@ -43,13 +42,13 @@ export type PanelGroupContext = {
     getPanelStyle: (panelData: PanelData, defaultSize: number | undefined) => CSSProperties;
 };
 export declare const injectPanelGroupContext: <T extends PanelGroupContext | null | undefined = PanelGroupContext>(fallback?: T | undefined) => T extends null ? PanelGroupContext | null : PanelGroupContext, providePanelGroupContext: (contextValue: PanelGroupContext) => PanelGroupContext;
-declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SplitterGroupProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToOption<SplitterGroupProps>, {
     autoSaveId: null;
     keyboardResizeBy: number;
     storage: () => PanelGroupStorage;
 }>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     layout: (val: number[]) => void;
-}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SplitterGroupProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToOption<SplitterGroupProps>, {
     autoSaveId: null;
     keyboardResizeBy: number;
     storage: () => PanelGroupStorage;
@@ -71,8 +70,13 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
     }) => any;
 }>;
 export default _default;
+type __VLS_WithDefaults<P, D> = {
+    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_PrettifyLocal<P[K] & {
+        default: D[K];
+    }> : P[K];
+};
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
-type __VLS_TypePropsToRuntimeProps<T> = {
+type __VLS_TypePropsToOption<T> = {
     [K in keyof T]-?: {} extends Pick<T, K> ? {
         type: import('vue').PropType<__VLS_NonUndefinedable<T[K]>>;
     } : {
@@ -80,16 +84,11 @@ type __VLS_TypePropsToRuntimeProps<T> = {
         required: true;
     };
 };
-type __VLS_WithDefaults<P, D> = {
-    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_Prettify<P[K] & {
-        default: D[K];
-    }> : P[K];
-};
-type __VLS_Prettify<T> = {
-    [K in keyof T]: T[K];
-} & {};
 type __VLS_WithTemplateSlots<T, S> = T & {
     new (): {
         $slots: S;
     };
 };
+type __VLS_PrettifyLocal<T> = {
+    [K in keyof T]: T[K];
+} & {};

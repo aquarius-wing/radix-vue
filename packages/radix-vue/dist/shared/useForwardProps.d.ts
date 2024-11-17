@@ -1,5 +1,4 @@
 import { MaybeRefOrGetter } from 'vue';
-
 /**
  * The `useForwardProps` function in TypeScript takes in a set of props and returns a computed value
  * that combines default props with assigned props from the current instance.

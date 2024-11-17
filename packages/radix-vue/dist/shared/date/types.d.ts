@@ -1,6 +1,5 @@
 import { DateValue } from '@internationalized/date';
 import { DATE_SEGMENT_PARTS, EDITABLE_SEGMENT_PARTS, NON_EDITABLE_SEGMENT_PARTS, TIME_SEGMENT_PARTS } from './parts';
-
 declare const daysOfWeek: readonly [0, 1, 2, 3, 4, 5, 6];
 export type DayOfWeek = {
     daysOfWeek: (typeof daysOfWeek)[number][];

@@ -1,5 +1,4 @@
 import { MaybeRefOrGetter } from 'vue';
-
 /**
  * The function `useForwardPropsEmits` takes in props and an optional emit function, and returns a
  * computed object that combines the parsed props and emits as props.

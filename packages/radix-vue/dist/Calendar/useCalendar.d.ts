@@ -2,7 +2,6 @@ import { DateValue } from '@internationalized/date';
 import { Ref } from 'vue';
 import { Grid, Matcher, WeekDayFormat } from '../date';
 import { CalendarIncrement } from '../shared/date';
-
 export type UseCalendarProps = {
     locale: Ref<string>;
     placeholder: Ref<DateValue>;

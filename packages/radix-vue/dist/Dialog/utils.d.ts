@@ -1,5 +1,4 @@
 import { Ref } from 'vue';
-
 export type WarningProps = {
     titleName?: string;
     contentName?: string;

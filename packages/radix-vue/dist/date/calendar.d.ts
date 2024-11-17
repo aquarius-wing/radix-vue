@@ -1,7 +1,6 @@
 import { DateValue } from '@internationalized/date';
 import { Grid } from './types';
 import { DateRange } from '../shared';
-
 export type WeekDayFormat = 'narrow' | 'short' | 'long';
 export type CreateSelectProps = {
     /**

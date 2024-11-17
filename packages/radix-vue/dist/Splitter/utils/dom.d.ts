@@ -1,5 +1,4 @@
 import { PanelData } from '../SplitterPanel';
-
 export declare function getPanelElement(id: string, scope?: ParentNode | HTMLElement): HTMLElement | null;
 export declare function getPanelElementsForGroup(groupId: string, scope?: ParentNode | HTMLElement): HTMLElement[];
 export declare function getPanelGroupElement(id: string, rootElement?: ParentNode | HTMLElement): HTMLElement | null;

@@ -1,5 +1,4 @@
 import { Direction, ResizeEvent } from './types';
-
 export declare function isKeyDown(event: ResizeEvent): event is KeyboardEvent;
 export declare function isMouseEvent(event: ResizeEvent): event is MouseEvent;
 export declare function isTouchEvent(event: ResizeEvent): event is TouchEvent;

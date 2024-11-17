@@ -1,6 +1,5 @@
 import { PanelGroupStorage } from '../SplitterGroup';
 import { PanelData } from '../SplitterPanel';
-
 export declare function initializeDefaultStorage(storageObject: PanelGroupStorage): void;
 export type PanelConfigurationState = {
     expandToSizes: {

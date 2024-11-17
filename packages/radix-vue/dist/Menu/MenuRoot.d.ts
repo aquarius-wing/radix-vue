@@ -1,6 +1,5 @@
 import { Ref } from 'vue';
 import { Direction } from './utils';
-
 export interface MenuContext {
     open: Ref<boolean>;
     onOpenChange: (open: boolean) => void;
@@ -34,12 +33,12 @@ export type MenuEmits = {
 };
 export declare const injectMenuContext: <T extends MenuContext | null | undefined = MenuContext>(fallback?: T | undefined) => T extends null ? MenuContext | null : MenuContext, provideMenuContext: (contextValue: MenuContext) => MenuContext;
 export declare const injectMenuRootContext: <T extends MenuRootContext | null | undefined = MenuRootContext>(fallback?: T | undefined) => T extends null ? MenuRootContext | null : MenuRootContext, provideMenuRootContext: (contextValue: MenuRootContext) => MenuRootContext;
-declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToOption<MenuProps>, {
     open: boolean;
     modal: boolean;
 }>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (payload: boolean) => void;
-}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<MenuProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToOption<MenuProps>, {
     open: boolean;
     modal: boolean;
 }>>> & {
@@ -51,8 +50,13 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
     default?(_: {}): any;
 }>;
 export default _default;
+type __VLS_WithDefaults<P, D> = {
+    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_PrettifyLocal<P[K] & {
+        default: D[K];
+    }> : P[K];
+};
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
-type __VLS_TypePropsToRuntimeProps<T> = {
+type __VLS_TypePropsToOption<T> = {
     [K in keyof T]-?: {} extends Pick<T, K> ? {
         type: import('vue').PropType<__VLS_NonUndefinedable<T[K]>>;
     } : {
@@ -60,16 +64,11 @@ type __VLS_TypePropsToRuntimeProps<T> = {
         required: true;
     };
 };
-type __VLS_WithDefaults<P, D> = {
-    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_Prettify<P[K] & {
-        default: D[K];
-    }> : P[K];
-};
-type __VLS_Prettify<T> = {
-    [K in keyof T]: T[K];
-} & {};
 type __VLS_WithTemplateSlots<T, S> = T & {
     new (): {
         $slots: S;
     };
 };
+type __VLS_PrettifyLocal<T> = {
+    [K in keyof T]: T[K];
+} & {};

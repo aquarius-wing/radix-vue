@@ -1,6 +1,5 @@
 import { ComputedRef, VNodeRef } from 'vue';
 import { CollapsibleRootProps } from '../Collapsible';
-
 declare enum AccordionItemState {
     Open = "open",
     Closed = "closed"
@@ -29,10 +28,10 @@ interface AccordionItemContext {
     value: ComputedRef<string>;
 }
 export declare const injectAccordionItemContext: <T extends AccordionItemContext | null | undefined = AccordionItemContext>(fallback?: T | undefined) => T extends null ? AccordionItemContext | null : AccordionItemContext, provideAccordionItemContext: (contextValue: AccordionItemContext) => AccordionItemContext;
-declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<AccordionItemProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_TypePropsToOption<AccordionItemProps>, {
     open: ComputedRef<boolean>;
     dataDisabled: ComputedRef<"" | undefined>;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<AccordionItemProps>>>, {}, {}>, Readonly<{
+}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToOption<AccordionItemProps>>>, {}, {}>, Readonly<{
     default: (props: {
         /** Current open state */
         open: boolean;
@@ -45,7 +44,7 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
 }>;
 export default _default;
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
-type __VLS_TypePropsToRuntimeProps<T> = {
+type __VLS_TypePropsToOption<T> = {
     [K in keyof T]-?: {} extends Pick<T, K> ? {
         type: import('vue').PropType<__VLS_NonUndefinedable<T[K]>>;
     } : {

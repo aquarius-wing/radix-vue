@@ -3,7 +3,6 @@ import { EventHook } from '@vueuse/core';
 import { Ref } from 'vue';
 import { useSelectionBehavior } from '../shared';
 import { Direction } from '../shared/types';
-
 export interface TreeRootProps<T = Record<string, any>, U extends Record<string, any> = Record<string, any>> extends PrimitiveProps {
     /** The controlled value of the tree. Can be binded-with with `v-model`. */
     modelValue?: U | U[];
@@ -17,6 +16,8 @@ export interface TreeRootProps<T = Record<string, any>, U extends Record<string,
     defaultExpanded?: string[];
     /** This function is passed the index of each item and should return a unique key for that item */
     getKey: (val: T) => string;
+    /** This function is passed the index of each item and should return a list of children for that item */
+    getChildren?: (val: T) => T[] | undefined;
     /** How multiple selection should behave in the collection. */
     selectionBehavior?: 'toggle' | 'replace';
     /** Whether multiple options can be selected or not.  */
@@ -41,6 +42,7 @@ interface TreeRootContext<T = Record<string, any>> {
     items: Ref<T[]>;
     expandedItems: Ref<T[]>;
     getKey: (val: T) => string;
+    getChildren: (val: T) => T[] | undefined;
     multiple: Ref<boolean>;
     disabled: Ref<boolean>;
     dir: Ref<Direction>;
@@ -64,21 +66,22 @@ export type FlattenedItem<T> = {
 };
 export declare const injectTreeRootContext: <T extends TreeRootContext<any> | null | undefined = TreeRootContext<any>>(fallback?: T | undefined) => T extends null ? TreeRootContext<any> | null : TreeRootContext<any>, provideTreeRootContext: (contextValue: TreeRootContext<any>) => TreeRootContext<any>;
 declare const _default: <T extends Record<string, any>, U extends Record<string, any>>(__VLS_props: {
-    defaultValue?: U | U[] | undefined;
-    dir?: Direction | undefined;
-    disabled?: boolean | undefined;
-    multiple?: boolean | undefined;
-    selectionBehavior?: "replace" | "toggle" | undefined;
-    asChild?: boolean | undefined;
-    as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-    modelValue?: U | U[] | undefined;
     "onUpdate:modelValue"?: ((val: U) => any) | undefined;
-    expanded?: string[] | undefined;
+    "onUpdate:expanded"?: ((val: string[]) => any) | undefined;
+    modelValue?: U | U[] | undefined;
+    defaultValue?: U | U[] | undefined;
     items?: T[] | undefined;
+    expanded?: string[] | undefined;
     defaultExpanded?: string[] | undefined;
     getKey: (val: T) => string;
+    getChildren?: ((val: T) => T[] | undefined) | undefined;
+    selectionBehavior?: "replace" | "toggle" | undefined;
+    multiple?: boolean | undefined;
+    dir?: Direction | undefined;
+    disabled?: boolean | undefined;
     propagateSelect?: boolean | undefined;
-    "onUpdate:expanded"?: ((val: string[]) => any) | undefined;
+    asChild?: boolean | undefined;
+    as?: import('../Primitive').AsTag | import('vue').Component | undefined;
 } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, __VLS_ctx?: {
     slots: Readonly<{
         default: (props: {
@@ -97,21 +100,22 @@ declare const _default: <T extends Record<string, any>, U extends Record<string,
     emit: ((evt: "update:modelValue", val: U) => void) & ((evt: "update:expanded", val: string[]) => void);
 } | undefined, __VLS_expose?: ((exposed: import('vue').ShallowUnwrapRef<{}>) => void) | undefined, __VLS_setup?: Promise<{
     props: {
-        defaultValue?: U | U[] | undefined;
-        dir?: Direction | undefined;
-        disabled?: boolean | undefined;
-        multiple?: boolean | undefined;
-        selectionBehavior?: "replace" | "toggle" | undefined;
-        asChild?: boolean | undefined;
-        as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-        modelValue?: U | U[] | undefined;
         "onUpdate:modelValue"?: ((val: U) => any) | undefined;
-        expanded?: string[] | undefined;
+        "onUpdate:expanded"?: ((val: string[]) => any) | undefined;
+        modelValue?: U | U[] | undefined;
+        defaultValue?: U | U[] | undefined;
         items?: T[] | undefined;
+        expanded?: string[] | undefined;
         defaultExpanded?: string[] | undefined;
         getKey: (val: T) => string;
+        getChildren?: ((val: T) => T[] | undefined) | undefined;
+        selectionBehavior?: "replace" | "toggle" | undefined;
+        multiple?: boolean | undefined;
+        dir?: Direction | undefined;
+        disabled?: boolean | undefined;
         propagateSelect?: boolean | undefined;
-        "onUpdate:expanded"?: ((val: string[]) => any) | undefined;
+        asChild?: boolean | undefined;
+        as?: import('../Primitive').AsTag | import('vue').Component | undefined;
     } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
     expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
     attrs: any;
@@ -134,21 +138,22 @@ declare const _default: <T extends Record<string, any>, U extends Record<string,
 }> & {
     __ctx?: {
         props: {
-            defaultValue?: U | U[] | undefined;
-            dir?: Direction | undefined;
-            disabled?: boolean | undefined;
-            multiple?: boolean | undefined;
-            selectionBehavior?: "replace" | "toggle" | undefined;
-            asChild?: boolean | undefined;
-            as?: import('../Primitive').AsTag | import('vue').Component | undefined;
-            modelValue?: U | U[] | undefined;
             "onUpdate:modelValue"?: ((val: U) => any) | undefined;
-            expanded?: string[] | undefined;
+            "onUpdate:expanded"?: ((val: string[]) => any) | undefined;
+            modelValue?: U | U[] | undefined;
+            defaultValue?: U | U[] | undefined;
             items?: T[] | undefined;
+            expanded?: string[] | undefined;
             defaultExpanded?: string[] | undefined;
             getKey: (val: T) => string;
+            getChildren?: ((val: T) => T[] | undefined) | undefined;
+            selectionBehavior?: "replace" | "toggle" | undefined;
+            multiple?: boolean | undefined;
+            dir?: Direction | undefined;
+            disabled?: boolean | undefined;
             propagateSelect?: boolean | undefined;
-            "onUpdate:expanded"?: ((val: string[]) => any) | undefined;
+            asChild?: boolean | undefined;
+            as?: import('../Primitive').AsTag | import('vue').Component | undefined;
         } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps;
         expose(exposed: import('vue').ShallowUnwrapRef<{}>): void;
         attrs: any;
@@ -169,6 +174,6 @@ declare const _default: <T extends Record<string, any>, U extends Record<string,
     } | undefined;
 };
 export default _default;
-type __VLS_Prettify<T> = {
+type __VLS_PrettifyLocal<T> = {
     [K in keyof T]: T[K];
 } & {};

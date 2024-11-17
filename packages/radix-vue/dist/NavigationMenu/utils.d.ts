@@ -3,6 +3,7 @@ export type Direction = 'ltr' | 'rtl';
 export declare function getOpenState(open: boolean): "open" | "closed";
 export declare function makeTriggerId(baseId: string, value: string): string;
 export declare function makeContentId(baseId: string, value: string): string;
+export declare const LINK_SELECT = "navigationMenu.linkSelect";
 export declare const EVENT_ROOT_CONTENT_DISMISS = "navigationMenu.rootContentDismiss";
 /**
  * Returns a list of potential tabbable candidates.

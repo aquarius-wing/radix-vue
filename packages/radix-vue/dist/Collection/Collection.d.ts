@@ -1,5 +1,4 @@
 import { Ref } from 'vue';
-
 interface CollectionContext<ItemData = {}> {
     collectionRef: Ref<HTMLElement | undefined>;
     itemMap: Ref<Map<HTMLElement, {

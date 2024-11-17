@@ -1,6 +1,5 @@
 import { Ref } from 'vue';
 import { Sizes } from './types';
-
 export interface ScrollAreaScrollbarVisibleContext {
     sizes: Ref<Sizes>;
     hasThumb: Ref<boolean>;
@@ -17,6 +16,7 @@ export interface ScrollAreaScrollbarVisibleContext {
 }
 export declare const injectScrollAreaScrollbarVisibleContext: <T extends ScrollAreaScrollbarVisibleContext | null | undefined = ScrollAreaScrollbarVisibleContext>(fallback?: T | undefined) => T extends null ? ScrollAreaScrollbarVisibleContext | null : ScrollAreaScrollbarVisibleContext, provideScrollAreaScrollbarVisibleContext: (contextValue: ScrollAreaScrollbarVisibleContext) => ScrollAreaScrollbarVisibleContext;
 declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{}, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{}>>, {}, {}>, {
+    default?(_: {}): any;
     default?(_: {}): any;
 }>;
 export default _default;

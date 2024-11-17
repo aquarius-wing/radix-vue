@@ -1,5 +1,4 @@
 import { DateValue } from '@internationalized/date';
-
 declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{}, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{}>>, {}, {}>, {
     default?(_: {
         segments: {

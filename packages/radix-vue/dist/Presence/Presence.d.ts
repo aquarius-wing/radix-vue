@@ -1,5 +1,4 @@
 import { Ref, SlotsType, VNode } from 'vue';
-
 export interface PresenceProps {
     /**
      * Conditional to mount or unmount the child element. Similar to `v-if`

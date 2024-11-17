@@ -1,6 +1,5 @@
 import { Ref, VNode } from 'vue';
 import { Direction } from '../shared/types';
-
 export interface SelectRootProps {
     /** The controlled open state of the Select. Can be bind as `v-model:open`. */
     open?: boolean;
@@ -53,14 +52,14 @@ export interface SelectNativeOptionsContext {
     onNativeOptionRemove: (option: VNode) => void;
 }
 export declare const injectSelectNativeOptionsContext: <T extends SelectNativeOptionsContext | null | undefined = SelectNativeOptionsContext>(fallback?: T | undefined) => T extends null ? SelectNativeOptionsContext | null : SelectNativeOptionsContext, provideSelectNativeOptionsContext: (contextValue: SelectNativeOptionsContext) => SelectNativeOptionsContext;
-declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToOption<SelectRootProps>, {
     defaultValue: string;
     modelValue: undefined;
     open: undefined;
 }>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:open": (value: boolean) => void;
     "update:modelValue": (value: string) => void;
-}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<SelectRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToOption<SelectRootProps>, {
     defaultValue: string;
     modelValue: undefined;
     open: undefined;
@@ -87,8 +86,13 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
     }) => any;
 }>;
 export default _default;
+type __VLS_WithDefaults<P, D> = {
+    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_PrettifyLocal<P[K] & {
+        default: D[K];
+    }> : P[K];
+};
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
-type __VLS_TypePropsToRuntimeProps<T> = {
+type __VLS_TypePropsToOption<T> = {
     [K in keyof T]-?: {} extends Pick<T, K> ? {
         type: import('vue').PropType<__VLS_NonUndefinedable<T[K]>>;
     } : {
@@ -96,16 +100,11 @@ type __VLS_TypePropsToRuntimeProps<T> = {
         required: true;
     };
 };
-type __VLS_WithDefaults<P, D> = {
-    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_Prettify<P[K] & {
-        default: D[K];
-    }> : P[K];
-};
-type __VLS_Prettify<T> = {
-    [K in keyof T]: T[K];
-} & {};
 type __VLS_WithTemplateSlots<T, S> = T & {
     new (): {
         $slots: S;
     };
 };
+type __VLS_PrettifyLocal<T> = {
+    [K in keyof T]: T[K];
+} & {};

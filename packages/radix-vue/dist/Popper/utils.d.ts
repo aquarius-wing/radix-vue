@@ -1,5 +1,4 @@
 import { Middleware, Placement } from '@floating-ui/vue';
-
 declare const SIDE_OPTIONS: readonly ["top", "right", "bottom", "left"];
 declare const ALIGN_OPTIONS: readonly ["start", "center", "end"];
 export type Side = (typeof SIDE_OPTIONS)[number];

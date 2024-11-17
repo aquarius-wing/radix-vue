@@ -1,6 +1,5 @@
 import { MaybeComputedElementRef } from '@vueuse/core';
 import { Ref } from 'vue';
-
 export declare function usePressedHold(options: {
     target?: MaybeComputedElementRef;
     disabled: Ref<boolean>;

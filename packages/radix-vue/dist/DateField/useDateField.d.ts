@@ -2,7 +2,6 @@ import { Formatter } from '../shared';
 import { HourCycle, SegmentPart, SegmentValueObj } from '../shared/date';
 import { DateValue } from '@internationalized/date';
 import { Ref } from 'vue';
-
 type SegmentAttrProps = {
     disabled: boolean;
     segmentValues: SegmentValueObj;

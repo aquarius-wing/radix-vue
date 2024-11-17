@@ -5,7 +5,6 @@ import { Formatter } from '../shared';
 import { DateRange, Granularity, HourCycle, SegmentPart, SegmentValueObj } from '../shared/date';
 import { Matcher } from '../date';
 import { Direction } from '../shared/types';
-
 export type DateRangeType = 'start' | 'end';
 type DateRangeFieldRootContext = {
     locale: Ref<string>;
@@ -76,7 +75,7 @@ export type DateRangeFieldRootEmits = {
     'update:placeholder': [date: DateValue];
 };
 export declare const injectDateRangeFieldRootContext: <T extends DateRangeFieldRootContext | null | undefined = DateRangeFieldRootContext>(fallback?: T | undefined) => T extends null ? DateRangeFieldRootContext | null : DateRangeFieldRootContext, provideDateRangeFieldRootContext: (contextValue: DateRangeFieldRootContext) => DateRangeFieldRootContext;
-declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DateRangeFieldRootProps>, {
+declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToOption<DateRangeFieldRootProps>, {
     defaultValue: undefined;
     disabled: boolean;
     readonly: boolean;
@@ -88,7 +87,7 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
 }, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (args_0: DateRange) => void;
     "update:placeholder": (date: DateValue) => void;
-}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<DateRangeFieldRootProps>, {
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToOption<DateRangeFieldRootProps>, {
     defaultValue: undefined;
     disabled: boolean;
     readonly: boolean;
@@ -121,8 +120,13 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
     }): any;
 }>;
 export default _default;
+type __VLS_WithDefaults<P, D> = {
+    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_PrettifyLocal<P[K] & {
+        default: D[K];
+    }> : P[K];
+};
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
-type __VLS_TypePropsToRuntimeProps<T> = {
+type __VLS_TypePropsToOption<T> = {
     [K in keyof T]-?: {} extends Pick<T, K> ? {
         type: import('vue').PropType<__VLS_NonUndefinedable<T[K]>>;
     } : {
@@ -130,16 +134,11 @@ type __VLS_TypePropsToRuntimeProps<T> = {
         required: true;
     };
 };
-type __VLS_WithDefaults<P, D> = {
-    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_Prettify<P[K] & {
-        default: D[K];
-    }> : P[K];
-};
-type __VLS_Prettify<T> = {
-    [K in keyof T]: T[K];
-} & {};
 type __VLS_WithTemplateSlots<T, S> = T & {
     new (): {
         $slots: S;
     };
 };
+type __VLS_PrettifyLocal<T> = {
+    [K in keyof T]: T[K];
+} & {};
